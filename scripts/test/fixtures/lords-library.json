@@ -1,0 +1,38 @@
+{
+  "feed": "lords-library",
+  "url": "https://lordslibrary.parliament.uk/feed/",
+  "format": "rss",
+  "fetchedAt": "2026-09-23T17:17:00Z",
+  "items": [
+    {
+      "title": "House of Lords Appointments Commission: Role and powers",
+      "link": "https://lordslibrary.parliament.uk/house-of-lords-appointments-commission-role-and-powers/",
+      "date": "Tue, 15 Sep 2026 14:00:45 +0000",
+      "description": "The House of Lords Appointments Commission (HOLAC) vets nominations to the House and recommends non-party political members. While its advice is usually followed, it is not a statutory body and the prime minister can choose to disregard its advice. This briefing provides an overview of the role and powers of the commission and summarises recent debates concerning its reform.",
+      "categories": [
+        "House of Lords reform"
+      ]
+    },
+    {
+      "title": "Health partnerships between the UK and organisations in Africa and Asia",
+      "link": "https://lordslibrary.parliament.uk/health-partnerships-between-the-uk-and-organisations-in-africa-and-asia/",
+      "date": "Mon, 14 Sep 2026 17:12:22 +0000",
+      "description": "The UK government and health organisations have established numerous health partnerships with organisations in Africa and Asia to support the development of healthcare in those countries. Independent evaluations conclude that many are effective, although some do not result in sustained changes to the broader health system. Recently, there have been concerns for the future of these programmes",
+      "categories": []
+    },
+    {
+      "title": "Empty homes in England and Wales",
+      "link": "https://lordslibrary.parliament.uk/empty-homes-in-england-and-wales/",
+      "date": "Mon, 14 Sep 2026 13:21:54 +0000",
+      "description": "Stakeholders have argued that each empty home removes a property from the housing market at a time of unaffordable rents, rising homelessness, record levels of temporary accommodation use and long waits for social housing. A group of industry stakeholders have called on the government to produce a national empty homes strategy aimed at bringing such properties back into use.",
+      "categories": []
+    },
+    {
+      "title": "Civil service impartiality",
+      "link": "https://lordslibrary.parliament.uk/civil-service-impartiality/",
+      "date": "Mon, 14 Sep 2026 12:52:05 +0000",
+      "description": "The idea of civil service impartiality, defined as the ability to serve the government of the day without fear or favour, is one of the core values promoted by the civil service code. The cabinet secretary, Dame Antonia Romeo, has recently announced plans to update the code but at the same time reiterated that impartiality remains integral to the work of the civil service.",
+      "categories": []
+    }
+  ]
+}

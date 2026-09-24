@@ -1,0 +1,20 @@
+{
+  "name": "case-in-point",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Up-to-date politics news mapped to the Pearson Edexcel A level Politics spec: case studies and evidence for essays.",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update-news.mjs",
+    "update:fixtures": "node scripts/update-news.mjs --fixtures scripts/test/fixtures --now 2026-09-23T18:00:00Z",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build-site.mjs",
+    "test": "node --test scripts/test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.1"
+  }
+}

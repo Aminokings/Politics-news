@@ -1,0 +1,47 @@
+{
+  "_help": "News sources. region = uk | us | intl (a hint for the tagger). kind = news | analysis | explainer | official. politicsOnly = keep stories even if no spec topic is detected. weight = ranking boost (1 = normal). Set enabled:false to switch a feed off. See README > 'Adding or removing news sources'.",
+  "feeds": [
+    {"id": "bbc-politics", "name": "BBC News", "section": "Politics", "url": "https://feeds.bbci.co.uk/news/politics/rss.xml", "home": "https://www.bbc.co.uk/news/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 1.1},
+    {"id": "guardian-politics", "name": "The Guardian", "section": "Politics", "url": "https://www.theguardian.com/politics/rss", "home": "https://www.theguardian.com/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 1.0},
+    {"id": "sky-politics", "name": "Sky News", "section": "Politics", "url": "https://feeds.skynews.com/feeds/rss/politics.xml", "home": "https://news.sky.com/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 1.0},
+    {"id": "telegraph-politics", "name": "The Telegraph", "section": "Politics", "url": "https://www.telegraph.co.uk/politics/rss.xml", "home": "https://www.telegraph.co.uk/politics/", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 0.95, "note": "Many articles are behind a paywall."},
+    {"id": "independent-politics", "name": "The Independent", "section": "Politics", "url": "https://www.independent.co.uk/news/uk/politics/rss", "home": "https://www.independent.co.uk/news/uk/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 0.9},
+    {"id": "govuk-no10", "name": "GOV.UK", "section": "Prime Minister's Office", "url": "https://www.gov.uk/government/organisations/prime-ministers-office-10-downing-street.atom", "home": "https://www.gov.uk/government/organisations/prime-ministers-office-10-downing-street", "region": "uk", "kind": "official", "politicsOnly": false, "weight": 0.9},
+    {"id": "parliament-bills", "name": "UK Parliament", "section": "Government bills", "url": "https://bills.parliament.uk/rss/allbills.rss", "home": "https://bills.parliament.uk/", "region": "uk", "kind": "official", "politicsOnly": true, "weight": 0.8, "defaultTags": ["parl-legislation"], "onlyCategories": ["Government Bill"], "billStages": true},
+    {"id": "commons-library", "name": "House of Commons Library", "section": "Research briefings", "url": "https://commonslibrary.parliament.uk/feed/", "home": "https://commonslibrary.parliament.uk/", "region": "uk", "kind": "explainer", "politicsOnly": false, "weight": 1.0},
+    {"id": "lords-library", "name": "House of Lords Library", "section": "Briefings", "url": "https://lordslibrary.parliament.uk/feed/", "home": "https://lordslibrary.parliament.uk/", "region": "uk", "kind": "explainer", "politicsOnly": false, "weight": 0.95},
+    {"id": "constitution-unit", "name": "The Constitution Unit (UCL)", "section": "Blog", "url": "https://blogs.ucl.ac.uk/constitution-unit/feed/", "home": "https://constitution-unit.com/", "region": "uk", "kind": "analysis", "politicsOnly": false, "weight": 1.0},
+    {"id": "ukandeu", "name": "UK in a Changing Europe", "section": "Analysis", "url": "https://ukandeu.ac.uk/feed/", "home": "https://ukandeu.ac.uk/", "region": "uk", "kind": "analysis", "politicsOnly": false, "weight": 0.95},
+    {"id": "lse-british-politics", "name": "LSE British Politics and Policy", "section": "Blog", "url": "https://blogs.lse.ac.uk/politicsandpolicy/feed/", "home": "https://blogs.lse.ac.uk/politicsandpolicy/", "region": "uk", "kind": "analysis", "politicsOnly": false, "weight": 0.9},
+    {"id": "ifg", "name": "Institute for Government", "section": "Comment & explainers", "url": "https://www.instituteforgovernment.org.uk/rss.xml", "home": "https://www.instituteforgovernment.org.uk/", "region": "uk", "kind": "analysis", "politicsOnly": false, "weight": 1.0, "excludeLinks": ["/person/", "/team/"], "descriptionMode": "firstParagraph"},
+    {"id": "bbc-us", "name": "BBC News", "section": "US & Canada", "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml", "home": "https://www.bbc.co.uk/news/world/us_and_canada", "region": "us", "kind": "news", "politicsOnly": false, "weight": 1.05},
+    {"id": "guardian-us-politics", "name": "The Guardian", "section": "US politics", "url": "https://www.theguardian.com/us-news/us-politics/rss", "home": "https://www.theguardian.com/us-news/us-politics", "region": "us", "kind": "news", "politicsOnly": true, "weight": 1.0},
+    {"id": "npr-politics", "name": "NPR", "section": "Politics", "url": "https://feeds.npr.org/1014/rss.xml", "home": "https://www.npr.org/sections/politics/", "region": "us", "kind": "news", "politicsOnly": true, "weight": 1.0},
+    {"id": "pbs-politics", "name": "PBS News", "section": "Politics", "url": "https://www.pbs.org/newshour/feeds/rss/politics", "home": "https://www.pbs.org/newshour/politics", "region": "us", "kind": "news", "politicsOnly": false, "weight": 1.0, "excludeTitles": ["^News Wrap:", "^WATCH LIVE:"]},
+    {"id": "thehill", "name": "The Hill", "section": "News", "url": "https://thehill.com/homenews/feed/", "home": "https://thehill.com/", "region": "us", "kind": "news", "politicsOnly": false, "weight": 0.9},
+    {"id": "politico-us", "name": "Politico", "section": "Politics", "url": "https://rss.politico.com/politics-news.xml", "home": "https://www.politico.com/politics", "region": "us", "kind": "news", "politicsOnly": true, "weight": 0.95},
+    {"id": "sky-us", "name": "Sky News", "section": "US", "url": "https://feeds.skynews.com/feeds/rss/us.xml", "home": "https://news.sky.com/us", "region": "us", "kind": "news", "politicsOnly": false, "weight": 0.9},
+    {"id": "scotusblog", "name": "SCOTUSblog", "section": "Supreme Court", "url": "https://www.scotusblog.com/feed/", "home": "https://www.scotusblog.com/", "region": "us", "kind": "analysis", "politicsOnly": true, "weight": 1.0, "defaultTags": ["us-scotus"]},
+    {"id": "lse-us-politics", "name": "LSE US Politics and Policy", "section": "Blog", "url": "https://blogs.lse.ac.uk/usappblog/feed/", "home": "https://blogs.lse.ac.uk/usappblog/", "region": "us", "kind": "analysis", "politicsOnly": false, "weight": 0.9},
+    {"id": "bbc-world", "name": "BBC News", "section": "World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "home": "https://www.bbc.co.uk/news/world", "region": "intl", "kind": "news", "politicsOnly": false, "weight": 1.05},
+    {"id": "guardian-world", "name": "The Guardian", "section": "World", "url": "https://www.theguardian.com/world/rss", "home": "https://www.theguardian.com/world", "region": "intl", "kind": "news", "politicsOnly": false, "weight": 1.0},
+    {"id": "sky-world", "name": "Sky News", "section": "World", "url": "https://feeds.skynews.com/feeds/rss/world.xml", "home": "https://news.sky.com/world", "region": "intl", "kind": "news", "politicsOnly": false, "weight": 0.95},
+    {"id": "aljazeera", "name": "Al Jazeera", "section": "News", "url": "https://www.aljazeera.com/xml/rss/all.xml", "home": "https://www.aljazeera.com/", "region": "intl", "kind": "news", "politicsOnly": false, "weight": 0.95},
+    {
+      "id": "un-news",
+      "name": "UN News",
+      "section": "Top stories",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "home": "https://news.un.org/en/",
+      "region": "intl",
+      "kind": "official",
+      "politicsOnly": false,
+      "weight": 1.0,
+      "linkRewrite": [
+        ["/feed/view/", "/"]
+      ]
+    },
+    {"id": "politico-eu", "name": "Politico Europe", "section": "News", "url": "https://www.politico.eu/feed/", "home": "https://www.politico.eu/", "region": "intl", "kind": "news", "politicsOnly": false, "weight": 0.95},
+    {"id": "carbonbrief", "name": "Carbon Brief", "section": "Climate", "url": "https://www.carbonbrief.org/feed/", "home": "https://www.carbonbrief.org/", "region": "intl", "kind": "analysis", "politicsOnly": false, "weight": 0.95}
+  ]
+}

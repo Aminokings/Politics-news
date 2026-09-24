@@ -1,0 +1,30 @@
+{
+  "feed": "carbonbrief",
+  "url": "https://www.carbonbrief.org/feed/",
+  "format": "rss",
+  "fetchedAt": "2026-09-23T17:21:00Z",
+  "items": [
+    {
+      "title": "Explainer: How sea level rise poses an 'existential threat' to humans, heritage and nature",
+      "link": "https://www.carbonbrief.org/explainer-how-sea-level-rise-poses-an-existential-threat-to-humans-heritage-and-nature",
+      "date": "Tue, 22 Sep 2026 15:14:21 +0000",
+      "description": "For millions of people around the world, rising sea levels are already reshaping economies, livelihoods and cultures. The world's oceans… The post Explainer: How sea level rise poses an 'existential threat' to humans, heritage and nature appeared first on Carbon Brief.",
+      "categories": [
+        "Uncategorized"
+      ]
+    },
+    {
+      "title": "Analysis: Nepal's $20m 'loss-and-damage' claim only covers 0.7% of flood costs",
+      "link": "https://www.carbonbrief.org/analysis-nepals-20m-loss-and-damage-claim-only-covers-0-7-of-flood-costs",
+      "date": "Tue, 22 Sep 2026 14:43:30 +0000",
+      "description": "The Nepali government has requested $20m from the UN fund for \"loss and damage\", following the devastating floods that hit… The post Analysis: Nepal's $20m 'loss-and-damage' claim only covers 0.7% of flood costs appeared first on Carbon Brief.",
+      "categories": [
+        "Uncategorized",
+        "Climate finance",
+        "Extreme weather",
+        "Flooding",
+        "Loss and damage"
+      ]
+    }
+  ]
+}

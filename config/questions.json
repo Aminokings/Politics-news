@@ -1,0 +1,1723 @@
+{
+  "_help": "Exam-style practice questions (written for this site — not official Pearson questions). A story appears under a question when it has one of the question's tags; it appears under a strand when its text also matches one of the strand's 'match' keywords (same syntax as spec.json). Strand 'tags' (optional) narrows which stories count for that strand. Hints give recent examples — check dates before using them.",
+  "formats": {
+    "evaluate": {
+      "label": "30-mark essay",
+      "marks": 30,
+      "ao": "AO1 10 · AO2 10 · AO3 10",
+      "tip": "Argue both for and against the view, weigh the arguments and reach a substantiated judgement. Paper 2 essays must also draw on Component 1 (synoptic)."
+    },
+    "ideas": {
+      "label": "24-mark ideas essay",
+      "marks": 24,
+      "ao": "AO1 8 · AO2 8 · AO3 8",
+      "tip": "Named thinkers from the spec carry the marks. Use news only to illustrate a point, and cover both sides."
+    },
+    "examine": {
+      "label": "12-mark 'Examine'",
+      "marks": 12,
+      "ao": "AO1 6 · AO2 6",
+      "tip": "Compare the two sides point by point (similarities and differences). No overall judgement needed."
+    },
+    "analyse": {
+      "label": "12-mark 'Analyse'",
+      "marks": 12,
+      "ao": "AO1 6 · AO2 6",
+      "tip": "Explain the differences and why they exist. 3A: use at least one comparative theory (rational, cultural, structural). 3B: link to core political ideas."
+    }
+  },
+  "questions": [
+    {
+      "id": "ukpol-participation",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that the UK is experiencing a participation crisis.",
+      "tags": ["dp-democracy", "vb-voting", "pp-system", "dp-pressure"],
+      "sides": {"a": "Yes: a participation crisis", "b": "No: participation is changing, not collapsing"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Turnout is low and falling",
+          "hint": "2024 general election turnout was 59.7%, the lowest since 2001. Turnout at the May 2026 Scottish Parliament election fell to about 53%.",
+          "match": ["turnout", "apathy", "abstain*", "didn't vote", "record low", "stayed at home"]
+        },
+        {
+          "side": "a",
+          "title": "Trust and party membership are weak",
+          "hint": "Labour's membership fell by about a fifth during 2025 (figures published Aug 2026).",
+          "match": ["trust", "distrust", "disillusion*", "anti-politics", "re:membership (?:fell|falls|drop|decline|slump)", "lost members"]
+        },
+        {
+          "side": "b",
+          "title": "New forms of participation are thriving",
+          "hint": "E-petitions, protests and campaigns show engagement outside elections, e.g. the 'Unite the Kingdom' rally in London on 13 Sept 2025 (estimates of 110,000–150,000 people).",
+          "match": ["petition*", "protest*", "rally", "re:\\bmarch(?:ed|es|ers|ing)\\b", "campaigners", "campaign group*", "strike*", "activis*"]
+        },
+        {
+          "side": "b",
+          "title": "Some contests show rising engagement",
+          "hint": "Turnout at the May 2026 Senedd election (51.6%) was the highest ever for a Welsh devolved election. Green Party membership passed 200,000 in March 2026.",
+          "match": ["record turnout", "highest turnout", "re:membership (?:surge|rise|rose|soar|record|pass)", "joined", "new members"]
+        }
+      ],
+      "judgement": "Distinguish declining traditional participation (voting, party membership) from growing alternative participation. The 'crisis' is patchy, not total."
+    },
+    {
+      "id": "ukpol-votes16",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that the voting age should be lowered to 16 for all UK elections.",
+      "tags": ["dp-franchise", "dp-democracy"],
+      "sides": {"a": "Yes: lower the voting age", "b": "No: keep it at 18"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Consistency with Scotland and Wales",
+          "hint": "16- and 17-year-olds already vote in Scottish Parliament and Senedd elections, including the May 2026 Senedd election.",
+          "match": ["votes at 16", "voting age", "re:16[- ]and 17[- ]year[- ]olds", "Senedd", "Holyrood", "young voters"]
+        },
+        {
+          "side": "a",
+          "title": "Part of a wider push to boost participation",
+          "hint": "The Representation of the People Bill (introduced Feb 2026; in the Lords from Sept 2026) would lower the voting age to 16 and create powers to extend automatic voter registration.",
+          "match": ["automatic voter registration", "automatic registration", "Representation of the People Bill", "franchise", "registration"]
+        },
+        {
+          "side": "b",
+          "title": "Maturity and low youth turnout",
+          "hint": "Critics argue 16-year-olds lack experience and point to low youth turnout.",
+          "match": ["youth turnout", "young people", "maturity", "too young", "low turnout"]
+        },
+        {
+          "side": "b",
+          "title": "Accusations of partisan motives",
+          "hint": "Opponents claim franchise changes are designed to help the governing party.",
+          "match": ["partisan", "gerrymander*", "rig*", "advantage", "oppose*", "criticis*"]
+        }
+      ],
+      "judgement": "Weigh principle (consistency, rights) against practice (turnout, maturity). The devolved experience is your best evidence."
+    },
+    {
+      "id": "ukpol-pressure",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that pressure groups have a positive impact on UK democracy.",
+      "tags": ["dp-pressure", "dp-rights"],
+      "sides": {"a": "Positive impact", "b": "Negative impact"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "They win concessions and represent people between elections",
+          "hint": "After farmers' protests, the government raised the inheritance-tax relief threshold for farms from £1m to £2.5m (Dec 2025).",
+          "match": ["campaign*", "U-turn*", "concession*", "climbdown", "victory", "pressure from", "petition*", "backed down"]
+        },
+        {
+          "side": "a",
+          "title": "Expertise and scrutiny",
+          "hint": "Think tanks and charities such as the IFS, Resolution Foundation and Institute for Government supply evidence to MPs and the media.",
+          "match": ["think tank*", "think-tank*", "report", "research", "charity", "charities", "warn*", "Institute for"]
+        },
+        {
+          "side": "b",
+          "title": "Unequal influence and elitism",
+          "hint": "Wealthy donors and insider groups get access others don't, and lobbying rows keep recurring.",
+          "match": ["lobbying", "lobbyist*", "donor*", "access", "insider", "cash for", "revolving door"]
+        },
+        {
+          "side": "b",
+          "title": "Direct action can undermine democracy",
+          "hint": "Palestine Action was proscribed in July 2025, and thousands have been arrested for showing support. The Supreme Court gave permission to appeal in July 2026.",
+          "match": ["direct action", "arrest*", "proscri*", "disrupt*", "criminal damage", "vandal*", "Palestine Action"]
+        }
+      ],
+      "judgement": "Pluralist vs elitist views: groups enhance democracy when access is open and methods are lawful."
+    },
+    {
+      "id": "ukpol-rights",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that rights are well protected in the UK.",
+      "tags": ["dp-rights", "rel-judiciary", "rel-sovereignty"],
+      "sides": {"a": "Rights are well protected", "b": "Rights are poorly protected"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Courts and the Human Rights Act",
+          "hint": "Judicial review lets courts check ministers. The High Court ruled the Palestine Action ban unlawful in Feb 2026, although the Court of Appeal reversed this in June 2026.",
+          "match": ["judicial review", "ruled", "unlawful", "Human Rights Act", "cs:ECHR", "High Court", "Supreme Court"]
+        },
+        {
+          "side": "a",
+          "title": "Parliament, pressure groups and the EHRC",
+          "hint": "Liberty, Amnesty and Parliament's Joint Committee on Human Rights challenge rights-restricting laws.",
+          "match": ["Liberty", "Amnesty", "Joint Committee on Human Rights", "cs:EHRC", "Equality and Human Rights Commission", "campaign*"]
+        },
+        {
+          "side": "b",
+          "title": "Parliamentary sovereignty lets governments restrict rights",
+          "hint": "Critics point to new public-order laws (e.g. the Crime and Policing Act 2026) and the Immigration and Asylum Bill (2026), which narrows how Article 8 applies.",
+          "match": ["protest law*", "protest powers", "restrict*", "curb*", "crackdown", "ban", "banned", "Crime and Policing", "Article 8", "Immigration and Asylum Bill"]
+        },
+        {
+          "side": "b",
+          "title": "Pressure to leave the ECHR",
+          "hint": "The Conservatives (Oct 2025) and Reform UK both pledge to leave the ECHR.",
+          "match": ["leave the ECHR", "quit the ECHR", "exit the ECHR", "withdraw from the ECHR", "Strasbourg", "European Court of Human Rights"]
+        }
+      ],
+      "judgement": "Rights rest mainly on ordinary statute and convention, so how secure they are depends on political will."
+    },
+    {
+      "id": "ukpol-multiparty",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that the UK now has a multi-party system.",
+      "tags": ["pp-system", "pp-minor", "pp-established", "es-systems", "vb-voting"],
+      "sides": {"a": "Yes: multi-party", "b": "No: still two-party dominant"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Votes are spread across five parties",
+          "hint": "The BBC's projected national share at the May 2026 local elections was Reform 26%, Green 18%, Labour 17%, Conservative 17%, Lib Dem 16%.",
+          "match": ["poll*", "vote share", "projected national share", "multi-party", "five-party", "four-party", "fragment*"]
+        },
+        {
+          "side": "a",
+          "title": "Minor parties win seats and power",
+          "hint": "Plaid Cymru governs Wales (from May 2026). Reform gained about 1,450 councillors in May 2026. The Greens won the Gorton & Denton by-election (Feb 2026).",
+          "match": ["by-election", "gain*", "won", "wins", "takes control", "councillors", "seats in", "minority government"]
+        },
+        {
+          "side": "b",
+          "title": "FPTP still delivers two-party dominance at Westminster",
+          "hint": "In 2024 Labour won 411 seats on 33.7% of the vote, while Reform won 5 seats on 14.3%.",
+          "match": ["first past the post", "cs:FPTP", "majority", "seats", "two-party"]
+        },
+        {
+          "side": "b",
+          "title": "Labour and the Conservatives still form government and opposition",
+          "hint": "Burnham leads a Labour majority government; the Conservatives are still the official opposition.",
+          "match": ["official opposition", "Labour government", "main parties", "cs:Conservatives", "Tories"]
+        }
+      ],
+      "judgement": "Separate the party system in votes (multi-party) from seats and government at Westminster (two-party dominant)."
+    },
+    {
+      "id": "ukpol-labour",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that the Labour Party has abandoned its traditional socialist values.",
+      "tags": ["pp-established", "ideas-socialism", "exec-pm"],
+      "sides": {"a": "Yes: values abandoned", "b": "No: still socialist at heart"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Fiscal caution and welfare restraint",
+          "hint": "In July 2025, 49 Labour MPs voted against the government's welfare bill even after the PIP cuts were dropped.",
+          "match": ["welfare cuts", "spending cuts", "austerity", "fiscal rules", "benefit cuts", "winter fuel", "business-friendly", "pro-business"]
+        },
+        {
+          "side": "a",
+          "title": "Tough line on immigration",
+          "hint": "The Immigration and Asylum Bill passed second reading 264–90 (July 2026), with 14 Labour MPs voting against.",
+          "match": ["immigration", "asylum", "deport*", "Immigration and Asylum Bill", "migrants"]
+        },
+        {
+          "side": "b",
+          "title": "Public ownership and workers' rights",
+          "hint": "Employment Rights Act 2025. Steel nationalisation was in the May 2026 King's Speech.",
+          "match": ["nationalis*", "public ownership", "Employment Rights", "workers' rights", "trade union*", "steel", "Great British"]
+        },
+        {
+          "side": "b",
+          "title": "Redistribution to cut poverty",
+          "hint": "The two-child benefit limit was scrapped from April 2026 (Budget, Nov 2025).",
+          "match": ["two-child", "child poverty", "redistribut*", "wealth tax", "tax the rich", "inequality"]
+        }
+      ],
+      "judgement": "Labour has always balanced socialist values with electability. Compare the current party with New Labour's Third Way."
+    },
+    {
+      "id": "ukpol-conservatives",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that the Conservative Party has abandoned one-nation conservatism.",
+      "tags": ["pp-established", "ideas-conservatism", "pp-minor"],
+      "sides": {"a": "Yes: one-nation abandoned", "b": "No: one-nation ideas survive"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Shift right on the ECHR and immigration",
+          "hint": "Kemi Badenoch pledged to leave the ECHR in Oct 2025.",
+          "match": ["cs:ECHR", "deport*", "immigration", "net zero", "right-wing", "hardline", "lurch*"]
+        },
+        {
+          "side": "a",
+          "title": "Competing with Reform UK",
+          "hint": "Robert Jenrick defected to Reform the day he was sacked from the shadow cabinet (Jan 2026).",
+          "match": ["cs:Reform", "defect*", "Farage", "pact", "merger"]
+        },
+        {
+          "side": "b",
+          "title": "One-nation voices remain",
+          "hint": "Badenoch's Aug 2026 reshuffle made Tom Tugendhat Shadow Foreign Secretary.",
+          "match": ["re:\\bone[- ]nation\\b", "moderate*", "centrist", "Tugendhat", "compassionate"]
+        },
+        {
+          "side": "b",
+          "title": "Pragmatic offers on public services",
+          "hint": "Look for Conservative policies on the NHS, cost of living and public services.",
+          "match": ["cs:NHS", "public services", "cost of living", "pragmati*"]
+        }
+      ],
+      "judgement": "Use the one-nation vs New Right tension from your conservatism notes."
+    },
+    {
+      "id": "ukpol-minor",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that minor parties have little influence in UK politics.",
+      "tags": ["pp-minor", "pp-system", "es-systems"],
+      "sides": {"a": "Little influence", "b": "Significant influence"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "FPTP blocks them at Westminster",
+          "hint": "Reform won 14.3% of the vote but only 5 seats in 2024.",
+          "match": ["cs:FPTP", "first past the post", "seats", "squeeze*", "wasted vote*"]
+        },
+        {
+          "side": "b",
+          "title": "They win elections and run governments",
+          "hint": "Plaid governs Wales, the SNP governs Scotland, and Reform runs councils after May 2026.",
+          "match": ["won", "wins", "gain*", "takes control", "First Minister", "by-election", "councillors"]
+        },
+        {
+          "side": "b",
+          "title": "They push the big parties' agendas",
+          "hint": "Immigration policy hardened across the main parties as Reform rose in the polls.",
+          "match": ["pressure from", "threat from", "response to Reform", "immigration", "copy*", "adopt*", "lurch"]
+        },
+        {
+          "side": "b",
+          "title": "They crowd the polls",
+          "hint": "Polls in Sept 2026 had Reform within a few points of Labour (Opinium, 9–11 Sept: Labour 27%, Reform 25%, Conservatives 19%, Greens 11%, Lib Dems 10%).",
+          "match": ["poll lead", "leads the polls", "ahead in the polls", "top the poll*", "tops the poll*", "overtake*", "surge*", "neck and neck"]
+        }
+      ],
+      "judgement": "Influence is not the same as seats: weigh agenda-setting, devolved power and pressure on the big two."
+    },
+    {
+      "id": "ukpol-funding",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that party funding in the UK should be reformed.",
+      "tags": ["pp-system", "dp-pressure"],
+      "sides": {"a": "Yes: reform funding", "b": "No: current rules are adequate"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Big donors can buy influence",
+          "hint": "Christopher Harborne gave Reform UK £9m in Q3 2025, reported as the largest donation on record from a living person.",
+          "match": ["donation*", "donor*", "re:£\\s?\\d+(?:\\.\\d+)?\\s?m\\b", "gift*", "bankroll*", "funding", "Harborne"]
+        },
+        {
+          "side": "a",
+          "title": "Risk of foreign interference",
+          "hint": "The Rycroft Review (Mar 2026) recommended pausing crypto donations. The Representation of the People Bill caps donations from overseas electors.",
+          "match": ["foreign interference", "overseas", "crypto", "Rycroft", "Electoral Commission", "Met Police"]
+        },
+        {
+          "side": "b",
+          "title": "State funding is unpopular and costly",
+          "hint": "Taxpayer funding of parties has little public support.",
+          "match": ["state funding", "taxpayer*", "public money", "Short money"]
+        },
+        {
+          "side": "b",
+          "title": "Transparency rules already exist",
+          "hint": "Donations over the reporting threshold are published by the Electoral Commission.",
+          "match": ["declared", "register of interests", "transparen*", "Electoral Commission"]
+        }
+      ],
+      "judgement": "Weigh fairness and trust against free expression and the cost and unpopularity of state funding."
+    },
+    {
+      "id": "ukpol-fptp",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that first-past-the-post should be replaced for general elections.",
+      "tags": ["es-systems", "pp-system"],
+      "sides": {"a": "Yes: replace FPTP", "b": "No: keep FPTP"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Disproportional outcomes",
+          "hint": "In 2024 Labour won 63% of seats on 33.7% of the vote; the Greens won 4 seats on 6.4%.",
+          "match": ["disproportion*", "proportional", "cs:FPTP", "first past the post", "electoral reform", "wasted vote*", "Make Votes Matter", "voting system"]
+        },
+        {
+          "side": "a",
+          "title": "PR works elsewhere in the UK",
+          "hint": "The first closed-list Senedd election (May 2026) produced a Plaid minority government. Holyrood uses AMS.",
+          "match": ["closed list", "closed-list", "cs:AMS", "additional member", "D'Hondt", "Senedd", "Holyrood", "proportional representation"]
+        },
+        {
+          "side": "b",
+          "title": "Strong single-party government",
+          "hint": "FPTP usually produces majorities that can deliver a manifesto, and voters can hold them to account.",
+          "match": ["strong government", "stable", "majority", "single-party", "accountab*", "coalition", "minority government"]
+        },
+        {
+          "side": "b",
+          "title": "Constituency link and public support",
+          "hint": "Voters rejected the Alternative Vote in the 2011 referendum.",
+          "match": ["constituency link", "constituenc*", "referendum", "alternative vote"]
+        }
+      ],
+      "judgement": "Compare how the systems perform using the devolved elections; whether reform happens depends on who benefits."
+    },
+    {
+      "id": "ukpol-referendums",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that referendums should be used more often in the UK.",
+      "tags": ["es-referendums", "dp-democracy", "con-devolution"],
+      "sides": {"a": "Yes: use them more", "b": "No: use them rarely"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Legitimacy for big constitutional questions",
+          "hint": "Calls for independence referendums and border polls show demand for direct say on the constitution.",
+          "match": ["referendum*", "let the people decide", "mandate", "popular vote", "independence referendum", "indyref*", "border poll"]
+        },
+        {
+          "side": "b",
+          "title": "Divisive and oversimplified",
+          "hint": "Brexit's legacy is often cited as a warning.",
+          "match": ["divisive", "Brexit", "misinformation", "second referendum", "turnout"]
+        },
+        {
+          "side": "b",
+          "title": "Undermines representative democracy",
+          "hint": "Referendums can bypass the deliberation of Parliament.",
+          "match": ["parliamentary sovereignty", "representative democracy", "cs:MPs"]
+        }
+      ],
+      "judgement": "Referendums settle issues only when turnout and margins are decisive."
+    },
+    {
+      "id": "ukpol-class",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that social class is no longer the main factor explaining voting behaviour in the UK.",
+      "tags": ["vb-voting", "es-systems"],
+      "sides": {"a": "Class is no longer the main factor", "b": "Class still matters most"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Age and education now divide voters more",
+          "hint": "Age and education gaps have grown as class dealignment has continued.",
+          "match": ["age gap", "young voters", "older voters", "graduate*", "education", "generational", "demographic*", "under-30s"]
+        },
+        {
+          "side": "a",
+          "title": "Leaders and competence (valence)",
+          "hint": "After becoming PM, Andy Burnham was the only party leader with a positive net rating (Opinium, Sept 2026).",
+          "match": ["net rating", "approval", "leader rating*", "competence", "trust*", "popular*", "favourab*"]
+        },
+        {
+          "side": "b",
+          "title": "Class still shapes votes, in new ways",
+          "hint": "Reform's support is strongest among working-class voters.",
+          "match": ["working-class", "working class", "red wall", "blue wall", "class"]
+        }
+      ],
+      "judgement": "Class dealignment is real, but class interacts with age and education. Use your three election case studies."
+    },
+    {
+      "id": "ukpol-media",
+      "component": "ukpol",
+      "paper": "Paper 1",
+      "type": "evaluate",
+      "text": "Evaluate the view that the media has a significant influence on political outcomes in the UK.",
+      "tags": ["vb-media", "vb-voting"],
+      "sides": {"a": "Significant influence", "b": "Limited influence"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Investigations drive the political agenda",
+          "hint": "A Channel 4 News undercover investigation (Sept 2026) was followed by a Met Police inquiry into Reform's donations.",
+          "match": ["investigation", "undercover", "exclusive", "revealed", "front page", "scandal"]
+        },
+        {
+          "side": "a",
+          "title": "Social media shapes campaigns",
+          "hint": "The Electoral Commission's report on the 2026 Senedd election (Sept 2026) raised concerns about misinformation and abuse of candidates.",
+          "match": ["social media", "TikTok", "misinformation", "disinformation", "deepfake*", "online", "algorithm*", "influencer*"]
+        },
+        {
+          "side": "b",
+          "title": "Regulation and impartiality limit broadcasters",
+          "hint": "Ofcom enforces due impartiality on TV and radio.",
+          "match": ["Ofcom", "impartiality", "regulat*", "cs:BBC", "licence fee"]
+        },
+        {
+          "side": "b",
+          "title": "Voters filter what they see",
+          "hint": "Reinforcement theory: people seek out media that confirms what they already think.",
+          "match": ["trust", "sceptic*", "echo chamber*", "reinforce*"]
+        }
+      ],
+      "judgement": "The media shapes which issues matter (agenda-setting) more than it changes individual votes directly."
+    },
+    {
+      "id": "ukgov-codify",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that the UK constitution should be codified.",
+      "tags": ["con-nature", "rel-sovereignty", "parl-lords"],
+      "sides": {"a": "Yes: codify it", "b": "No: keep it uncodified"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Conventions are fragile",
+          "hint": "The first assisted dying bill fell when the session ended in April 2026 because peers tabled so many amendments that it could not finish its Lords stages. Public lawyer Mark Elliott asked whether this was 'a constitutional outrage' (he argued it was not). The episode shows how much rests on unwritten conventions.",
+          "match": ["convention*", "constitutional crisis", "constitutional outrage", "codif*", "written constitution"]
+        },
+        {
+          "side": "a",
+          "title": "Rights and devolution aren't entrenched",
+          "hint": "Both the Human Rights Act and the devolution settlements can be changed by a simple Act of Parliament.",
+          "match": ["entrench*", "Human Rights Act", "repeal", "Sewel", "devolution"]
+        },
+        {
+          "side": "b",
+          "title": "Flexibility lets it evolve",
+          "hint": "The House of Lords (Hereditary Peers) Act 2026 removed the remaining hereditary peers through ordinary legislation.",
+          "match": ["reform*", "royal assent", "flexib*", "re:\\bAct 20\\d\\d\\b", "Hereditary Peers"]
+        },
+        {
+          "side": "b",
+          "title": "Keeps decisions with elected MPs, not judges",
+          "hint": "Codification would give judges power to strike down laws.",
+          "match": ["sovereign*", "unelected judges", "judges", "judicial"]
+        }
+      ],
+      "judgement": "Codification would move power from Parliament to judges. Decide whether that is a gain in rights or a loss in accountability."
+    },
+    {
+      "id": "ukgov-devolution",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that devolution has strengthened the United Kingdom.",
+      "tags": ["con-devolution", "es-referendums"],
+      "sides": {"a": "Strengthened the UK", "b": "Weakened the UK"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Governments that reflect distinct electorates",
+          "hint": "Plaid Cymru's Rhun ap Iorwerth became the first non-Labour First Minister of Wales in May 2026.",
+          "match": ["Senedd", "Holyrood", "Scottish Government", "Welsh Government", "First Minister", "Stormont", "devolved"]
+        },
+        {
+          "side": "a",
+          "title": "More power closer to people in England",
+          "hint": "The English Devolution and Community Empowerment Act 2026 created a framework of 'strategic authorities', some led by elected mayors.",
+          "match": ["mayor*", "combined authorit*", "strategic authorit*", "English Devolution", "local power*"]
+        },
+        {
+          "side": "b",
+          "title": "Tension and independence pressure",
+          "hint": "Look for rows over funding, Sewel and independence.",
+          "match": ["independence", "clash*", "row", "legal challenge", "Sewel", "Barnett", "Section 35", "funding"]
+        },
+        {
+          "side": "b",
+          "title": "Unequal devolution",
+          "hint": "Four new mayoral elections were postponed to 2028 (announced Dec 2025).",
+          "match": ["postpone*", "asymmetric", "English question", "West Lothian", "cancelled"]
+        }
+      ],
+      "judgement": "Devolution may strengthen the Union by accommodating nationalism, or weaken it by fuelling it."
+    },
+    {
+      "id": "ukgov-parl-check",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that Parliament is an effective check on the executive.",
+      "tags": ["parl-commons", "rel-execparl", "parl-lords", "parl-legislation"],
+      "sides": {"a": "Effective check", "b": "Ineffective check"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Backbench rebellions force U-turns",
+          "hint": "In July 2025, 49 Labour MPs voted against the welfare bill even after the PIP cuts were dropped.",
+          "match": ["re:\\brebel", "revolt", "U-turn*", "climbdown", "concession*", "backbench*"]
+        },
+        {
+          "side": "a",
+          "title": "Select committees and humble addresses",
+          "hint": "In Feb 2026 MPs used a humble address to force the release of Peter Mandelson's vetting files.",
+          "match": ["select committee*", "humble address", "urgent question", "cs:PMQs", "grilled", "committee"]
+        },
+        {
+          "side": "a",
+          "title": "The Lords revise bills",
+          "hint": "Peers won changes to the Employment Rights Act 2025, including a six-month qualifying period for unfair-dismissal protection.",
+          "match": ["cs:Lords", "peers", "Lords amendment*", "Lords defeat*", "ping-pong"]
+        },
+        {
+          "side": "b",
+          "title": "Big majorities and the whips",
+          "hint": "The Immigration and Asylum Bill passed second reading 264–90 in July 2026.",
+          "match": ["majority", "whip*", "passed", "comfortabl*", "guillotine", "programme motion"]
+        },
+        {
+          "side": "b",
+          "title": "The executive controls the agenda",
+          "hint": "Governments set the legislative programme and use secondary legislation.",
+          "match": ["King's Speech", "secondary legislation", "statutory instrument*", "Henry VIII", "skeleton bill"]
+        }
+      ],
+      "judgement": "Effectiveness depends on the government's majority and unity. 2025–26 shows backbenchers can bite."
+    },
+    {
+      "id": "ukgov-lords",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that the House of Lords is an effective chamber.",
+      "tags": ["parl-lords", "parl-legislation", "con-nature"],
+      "sides": {"a": "Effective", "b": "Ineffective"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Expertise and detailed revision",
+          "hint": "Crossbench experts scrutinise the detail of bills.",
+          "match": ["crossbench*", "expert*", "peers", "scrutin*", "Lords amendment*"]
+        },
+        {
+          "side": "a",
+          "title": "Forces government concessions",
+          "hint": "The Lords forced concessions on the Employment Rights Bill (late 2025) and the Hereditary Peers Bill (Mar 2026).",
+          "match": ["Lords defeat*", "concession*", "peers vote*", "peers back*", "ping-pong"]
+        },
+        {
+          "side": "b",
+          "title": "Lacks democratic legitimacy",
+          "hint": "Even after the last hereditary peers left (Apr 2026), every member is unelected.",
+          "match": ["unelected", "legitima*", "appoint*", "crony*", "abolish*", "elected second chamber", "peerage*"]
+        },
+        {
+          "side": "b",
+          "title": "Limited powers",
+          "hint": "The Salisbury convention and the Parliament Acts limit the Lords' ability to block legislation.",
+          "match": ["Salisbury", "Parliament Act*", "delay", "cannot block"]
+        }
+      ],
+      "judgement": "Effective at revising, weak at checking. Legitimacy remains the core problem."
+    },
+    {
+      "id": "ukgov-backbenchers",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that backbench MPs have significant influence over government.",
+      "tags": ["parl-commons", "rel-execparl", "parl-legislation", "exec-pm"],
+      "sides": {"a": "Significant influence", "b": "Limited influence"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Rebellions and pressure on leaders",
+          "hint": "Ministerial resignations and MPs' loss of confidence were followed by Keir Starmer announcing his resignation (June 2026).",
+          "match": ["re:\\brebel", "backbench*", "leadership", "no confidence", "letters", "resign*", "revolt"]
+        },
+        {
+          "side": "a",
+          "title": "Private members' bills and free votes",
+          "hint": "A revived assisted dying bill was defeated at second reading 270–286 (Sept 2026) on a free vote.",
+          "match": ["private member's bill", "private members' bill*", "free vote", "conscience vote", "assisted dying", "ten minute rule"]
+        },
+        {
+          "side": "a",
+          "title": "Select committees",
+          "hint": "Committee chairs are elected by MPs and question ministers in public.",
+          "match": ["select committee*", "committee chair*", "report"]
+        },
+        {
+          "side": "b",
+          "title": "Payroll vote and party discipline",
+          "hint": "Ministers and aides must vote with the government; rebels can lose the whip.",
+          "match": ["whip*", "payroll", "suspended", "loyal*", "ministerial"]
+        },
+        {
+          "side": "b",
+          "title": "Government controls time and legislation",
+          "hint": "Most parliamentary time goes on government business.",
+          "match": ["government bill", "King's Speech", "timetable"]
+        }
+      ],
+      "judgement": "Individually weak, collectively powerful, especially when a government's popularity falls."
+    },
+    {
+      "id": "ukgov-pm-power",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that the Prime Minister is dominant over the cabinet.",
+      "tags": ["exec-pm", "exec-resp"],
+      "sides": {"a": "PM dominant", "b": "PM constrained"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Patronage and No 10 control",
+          "hint": "Andy Burnham removed 15 cabinet ministers when he formed his government (July 2026).",
+          "match": ["reshuffle*", "sack*", "appoint*", "No 10", "Downing Street", "chief of staff", "patronage", "presidential", "centralis*"]
+        },
+        {
+          "side": "b",
+          "title": "PMs depend on cabinet and party support",
+          "hint": "Wes Streeting quit the cabinet saying he had lost confidence in Starmer (May 2026); Starmer announced his resignation in June.",
+          "match": ["resign*", "quit*", "lost confidence", "leadership challenge", "leadership contest", "ousted", "cabinet revolt", "cabinet split"]
+        },
+        {
+          "side": "b",
+          "title": "Events and external pressures",
+          "hint": "By-election defeats, poll slumps and market reactions all limit PMs.",
+          "match": ["crisis", "by-election", "poll*", "market*", "U-turn*"]
+        }
+      ],
+      "judgement": "PM power is contingent on the majority, popularity, party unity and events."
+    },
+    {
+      "id": "ukgov-imr",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that individual ministerial responsibility is still an important convention.",
+      "tags": ["exec-resp", "exec-pm"],
+      "sides": {"a": "Still important", "b": "No longer important"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Ministers still resign over conduct",
+          "hint": "Angela Rayner resigned in Sept 2025 after breaching the ministerial code over stamp duty.",
+          "match": ["resign*", "stepped down", "ministerial code", "ethics adviser", "breach*", "sacked"]
+        },
+        {
+          "side": "b",
+          "title": "Officials take the blame",
+          "hint": "Olly Robbins, the Foreign Office's top civil servant, was sacked during the Mandelson vetting row (2026).",
+          "match": ["civil servant*", "permanent secretary", "official*", "blamed", "scapegoat*"]
+        },
+        {
+          "side": "b",
+          "title": "Ministers survive if the PM backs them",
+          "hint": "Look for ministers who refuse to resign despite criticism.",
+          "match": ["refused to resign", "survive*", "full confidence", "clings on", "no resignation"]
+        }
+      ],
+      "judgement": "Resignations now depend more on political survival than on accepting responsibility."
+    },
+    {
+      "id": "ukgov-cmr",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that collective ministerial responsibility is still observed in UK government.",
+      "tags": ["exec-resp", "exec-pm", "parl-legislation"],
+      "sides": {"a": "Still observed", "b": "Weakened"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Ministers resign when they can't support policy",
+          "hint": "Anneliese Dodds resigned over aid cuts (Feb 2025); John Healey and Al Carns resigned over defence spending (June 2026).",
+          "match": ["resign*", "quit*", "in protest", "cannot support", "over the decision"]
+        },
+        {
+          "side": "b",
+          "title": "Free votes and open splits",
+          "hint": "Assisted dying was a free vote: Labour MPs split 190 for, 153 against (Sept 2026).",
+          "match": ["free vote", "split*", "leak*", "briefing against", "openly", "cabinet row"]
+        }
+      ],
+      "judgement": "The convention bends to political need: suspended when useful, enforced when convenient."
+    },
+    {
+      "id": "ukgov-supreme-court",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that the UK Supreme Court has significant influence over government.",
+      "tags": ["rel-judiciary", "dp-rights"],
+      "sides": {"a": "Significant influence", "b": "Limited influence"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Landmark rulings shape policy",
+          "hint": "For Women Scotland (Apr 2025) ruled that 'woman' in the Equality Act means biological sex. The EHRC's revised code of practice followed in May 2026.",
+          "match": ["Supreme Court", "ruling", "ruled", "judgment", "landmark"]
+        },
+        {
+          "side": "a",
+          "title": "Judicial review of ministers",
+          "hint": "Courts can rule that ministers acted unlawfully.",
+          "match": ["judicial review", "unlawful", "quash*", "High Court", "Court of Appeal"]
+        },
+        {
+          "side": "b",
+          "title": "Parliament can legislate around rulings",
+          "hint": "Parliamentary sovereignty means Parliament has the final word.",
+          "match": ["legislat*", "overturn*", "new law", "sovereign*"]
+        },
+        {
+          "side": "b",
+          "title": "Courts often defer to government",
+          "hint": "The Court of Appeal overturned the High Court and ruled the Palestine Action ban lawful in June 2026.",
+          "match": ["overturned", "reversed", "upheld", "lawful", "appeal allowed", "dismissed"]
+        }
+      ],
+      "judgement": "Influence without supremacy: the court shapes policy through interpretation, but Parliament has the last word."
+    },
+    {
+      "id": "ukgov-sovereignty",
+      "component": "ukgov",
+      "paper": "Paper 2",
+      "type": "evaluate",
+      "text": "Evaluate the view that Brexit restored parliamentary sovereignty.",
+      "tags": ["rel-sovereignty", "rel-eu"],
+      "sides": {"a": "Yes: sovereignty restored", "b": "No: sovereignty still shared"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "EU law no longer overrides Acts of Parliament",
+          "hint": "Parliament can now legislate without EU supremacy.",
+          "match": ["take back control", "sovereign*", "Brexit", "EU law"]
+        },
+        {
+          "side": "b",
+          "title": "The UK–EU reset brings back rule-taking",
+          "hint": "The European Partnership Bill (King's Speech, May 2026) allows dynamic alignment with EU rules for the SPS agrifood deal.",
+          "match": ["reset", "dynamic alignment", "European Partnership", "cs:SPS", "agrifood", "EU rules", "rule-taker*", "Erasmus*", "youth experience"]
+        },
+        {
+          "side": "b",
+          "title": "Other constraints: ECHR, devolution, the people",
+          "hint": "Sovereignty is also limited by treaties, devolved institutions and referendums.",
+          "match": ["cs:ECHR", "Strasbourg", "devolved", "referendum", "executive"]
+        }
+      ],
+      "judgement": "Legal sovereignty was restored; political and practical sovereignty remain shared."
+    },
+    {
+      "id": "ideas-conservatism-state",
+      "component": "ideas",
+      "paper": "Paper 1",
+      "type": "ideas",
+      "text": "To what extent do conservatives agree about the role of the state?",
+      "tags": ["ideas-conservatism", "pp-established"],
+      "sides": {"a": "Agree", "b": "Disagree"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Shared belief in order, authority and tradition",
+          "hint": "Link to Hobbes and Burke.",
+          "match": ["law and order", "tradition*", "authority", "stability", "order"]
+        },
+        {
+          "side": "b",
+          "title": "One-nation paternalism vs New Right small state",
+          "hint": "Compare one-nation spending on public services with New Right tax cuts and deregulation (Oakeshott/Burke vs Rand/Nozick).",
+          "match": ["tax cuts", "deregulat*", "small state", "public services", "re:\\bone[- ]nation\\b", "neoliberal*", "Thatcher*"]
+        }
+      ],
+      "judgement": "Thinkers carry the marks: Hobbes, Burke, Oakeshott vs Rand and Nozick."
+    },
+    {
+      "id": "ideas-socialism-economy",
+      "component": "ideas",
+      "paper": "Paper 1",
+      "type": "ideas",
+      "text": "To what extent do socialists agree on the role of the state in the economy?",
+      "tags": ["ideas-socialism", "pp-established"],
+      "sides": {"a": "Agree", "b": "Disagree"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Common ownership and state control",
+          "hint": "Nationalisation (e.g. rail, steel) echoes traditional socialism (Marx, Luxemburg, Webb).",
+          "match": ["nationalis*", "public ownership", "common ownership", "steel", "rail", "Great British"]
+        },
+        {
+          "side": "b",
+          "title": "Social democracy and the Third Way accept markets",
+          "hint": "Crosland backed 'state-managed capitalism': a mixed economy with full employment and welfare. Giddens's Third Way went further, accepting the free market and rejecting heavy state intervention.",
+          "match": ["Third Way", "New Labour", "private sector", "business", "market*", "growth", "investment"]
+        }
+      ],
+      "judgement": "Marx and Luxemburg vs Crosland and Giddens: disagreement on means, agreement on equality as the goal."
+    },
+    {
+      "id": "ideas-liberalism-state",
+      "component": "ideas",
+      "paper": "Paper 1",
+      "type": "ideas",
+      "text": "To what extent do liberals agree about the role of the state?",
+      "tags": ["ideas-liberalism", "dp-rights"],
+      "sides": {"a": "Agree", "b": "Disagree"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Classical: freedom from interference",
+          "hint": "Locke and Mill: a limited state that protects liberty.",
+          "match": ["free speech", "civil libert*", "freedom", "small state", "tax cuts", "deregulat*"]
+        },
+        {
+          "side": "b",
+          "title": "Modern: an enabling state",
+          "hint": "Rawls and Friedan: welfare and equality of opportunity.",
+          "match": ["welfare state", "equality of opportunity", "public services", "social justice", "child poverty"]
+        }
+      ],
+      "judgement": "Both strands share individualism; they disagree on whether the state threatens or enables freedom."
+    },
+    {
+      "id": "ideas-nationalism-inclusive",
+      "component": "ideas",
+      "paper": "Paper 2",
+      "type": "ideas",
+      "text": "To what extent is nationalism an inclusive ideology?",
+      "tags": ["ideas-nationalism", "gl-state"],
+      "sides": {"a": "Inclusive", "b": "Exclusive"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Liberal and civic nationalism: self-determination for all",
+          "hint": "Link to Mazzini and Rousseau.",
+          "match": ["self-determination", "independence", "civic", "Ukraine", "sovereignty", "Scottish independence"]
+        },
+        {
+          "side": "b",
+          "title": "Exclusive and expansionist nationalism",
+          "hint": "Link to Maurras. Expansionist claims on territory are current examples.",
+          "match": ["far-right", "far right", "anti-immigr*", "flag*", "annex*", "expansion*", "Greenland", "ethnic", "Donroe"]
+        }
+      ],
+      "judgement": "Mazzini and Rousseau vs Maurras; Garvey on anti-colonial nationalism."
+    },
+    {
+      "id": "ideas-feminism-sex-gender",
+      "component": "ideas",
+      "paper": "Paper 2",
+      "type": "ideas",
+      "text": "To what extent do feminists agree on the nature of sex and gender?",
+      "tags": ["ideas-feminism"],
+      "sides": {"a": "Agree", "b": "Disagree"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Shared goal of ending patriarchy and discrimination",
+          "hint": "Pay gaps and violence against women are common concerns.",
+          "match": ["gender pay gap", "misogyn*", "violence against women", "equal pay", "women's rights"]
+        },
+        {
+          "side": "b",
+          "title": "Divisions over sex and gender",
+          "hint": "The debate after For Women Scotland (Apr 2025) shows splits between gender-critical and trans-inclusive positions.",
+          "match": ["biological sex", "gender identity", "For Women Scotland", "trans rights", "gender-critical", "transgender"]
+        }
+      ],
+      "judgement": "de Beauvoir and Millett vs hooks and post-modern feminism."
+    },
+    {
+      "id": "ideas-ecologism-means",
+      "component": "ideas",
+      "paper": "Paper 2",
+      "type": "ideas",
+      "text": "To what extent do ecologists agree on how to achieve sustainability?",
+      "tags": ["ideas-ecologism", "gl-environment"],
+      "sides": {"a": "Agree", "b": "Disagree"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Shallow green: green growth within capitalism",
+          "hint": "Renewables and net zero targets without changing the economic system.",
+          "match": ["green growth", "renewable*", "net zero", "investment", "clean energy", "green jobs"]
+        },
+        {
+          "side": "b",
+          "title": "Deep ecology and social ecology: systemic change",
+          "hint": "Leopold's land ethic, Bookchin (the crisis comes from social hierarchy) and Merchant (the domination of nature is linked to the domination of women). Schumacher's 'Buddhist economics' also rejects growth for its own sake.",
+          "match": ["degrowth", "system change", "anti-capitalis*", "activist*", "Just Stop Oil", "Extinction Rebellion", "biodiversity", "rewild*"]
+        }
+      ],
+      "judgement": "Shallow greens seek green growth within capitalism. Leopold, Schumacher, Bookchin and Merchant all demand deeper change but disagree about the cause: human attitudes, consumerism, social hierarchy or patriarchy."
+    },
+    {
+      "id": "ideas-multiculturalism-diversity",
+      "component": "ideas",
+      "paper": "Paper 2",
+      "type": "ideas",
+      "text": "To what extent do multiculturalists agree about how diversity should be accommodated?",
+      "tags": ["ideas-multiculturalism"],
+      "sides": {"a": "Agree", "b": "Disagree"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Liberal multiculturalism: diversity within shared values",
+          "hint": "Link to Kymlicka.",
+          "match": ["integration", "British values", "cohesion", "shared values"]
+        },
+        {
+          "side": "b",
+          "title": "Pluralist multiculturalism",
+          "hint": "Parekh (rejects universalist liberalism; individuals are culturally embedded) and Modood (strong cultural identities alongside a shared national story).",
+          "match": ["minority rights", "diversity", "recognition", "identity", "community"]
+        }
+      ],
+      "judgement": "Kymlicka vs Parekh vs Modood."
+    },
+    {
+      "id": "usa-imperial",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that the modern US presidency is an imperial presidency.",
+      "tags": ["us-presidency", "us-scotus", "us-congress", "us-constitution"],
+      "sides": {"a": "Yes: imperial", "b": "No: effectively constrained"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Governing by executive action",
+          "hint": "Trump signed 225 executive orders in 2025 (Federal Register).",
+          "match": ["executive order*", "unilateral*", "emergency powers", "tariff*", "Section 301", "pardon*", "clemency"]
+        },
+        {
+          "side": "a",
+          "title": "Military action without Congress",
+          "hint": "US forces seized Venezuela's Maduro in January 2026 with no prior authorisation from Congress. The US–Israeli war on Iran from February 2026 prompted repeated war-powers votes.",
+          "match": ["war powers", "without Congress", "without congressional", "congressional authori*", "military action", "airstrike*", "strikes on", "troops", "deploy*", "commander-in-chief"]
+        },
+        {
+          "side": "a",
+          "title": "Control of the executive branch",
+          "hint": "Trump v. Slaughter (June 2026) overruled Humphrey's Executor, letting presidents remove FTC commissioners at will.",
+          "match": ["fired", "independent agenc*", "Humphrey's Executor", "unitary executive", "removal"]
+        },
+        {
+          "side": "b",
+          "title": "The courts push back",
+          "hint": "Learning Resources v. Trump (Feb 2026, 6–3) struck down IEEPA tariffs. Trump v. Barbara (June 2026) struck down the birthright-citizenship order.",
+          "match": ["struck down", "strikes down", "blocked", "blocks", "ruled against", "rules against", "injunction", "unconstitutional", "unlawful", "halts", "court rejects"]
+        },
+        {
+          "side": "b",
+          "title": "Congress and public opinion constrain",
+          "hint": "Both chambers passed a non-binding Iran war-powers resolution in June 2026 (House 215–208, Senate 50–48). Trump's approval was about 35% in Sept 2026.",
+          "match": ["war powers resolution", "shutdown", "approval rating*", "low approval", "unpopular", "Senate rejects", "Congress blocks", "rebuke*", "override"]
+        }
+      ],
+      "judgement": "'Imperial' vs 'imperilled': power expands in foreign and emergency policy, but courts, Congress and elections still bite."
+    },
+    {
+      "id": "usa-congress-check",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that Congress is an effective check on the president.",
+      "tags": ["us-congress", "us-presidency"],
+      "sides": {"a": "Effective check", "b": "Ineffective check"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Power of the purse",
+          "hint": "The 43-day shutdown (Oct–Nov 2025) and the 76-day DHS funding lapse (Feb–Apr 2026).",
+          "match": ["shutdown", "appropriation*", "spending bill", "continuing resolution", "funding", "power of the purse", "rider*"]
+        },
+        {
+          "side": "a",
+          "title": "Oversight and discharge petitions",
+          "hint": "A discharge petition forced a vote on the Epstein Files Transparency Act, which passed the House 427–1 (Nov 2025).",
+          "match": ["discharge petition", "oversight", "subpoena*", "hearing*", "testif*", "investigat*", "Epstein files"]
+        },
+        {
+          "side": "b",
+          "title": "Party loyalty in a narrow majority",
+          "hint": "A Venezuela war-powers resolution was killed 50–50, with VP Vance breaking the tie (Jan 2026).",
+          "match": ["party line", "party-line", "loyal*", "tie-break*", "cs:Vance", "rubber stamp", "fall in line", "falls in line"]
+        },
+        {
+          "side": "b",
+          "title": "Gridlock and the filibuster",
+          "hint": "The filibuster lets a Senate minority block legislation.",
+          "match": ["filibuster", "cloture", "gridlock", "60 votes", "nuclear option"]
+        }
+      ],
+      "judgement": "Congress checks most when the president's party is split or unpopular. Watch the 3 November 2026 midterms."
+    },
+    {
+      "id": "usa-scotus-political",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that the US Supreme Court is more political than judicial.",
+      "tags": ["us-scotus", "us-rights"],
+      "sides": {"a": "More political", "b": "More judicial"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Ideological voting blocs",
+          "hint": "22.7% of October Term 2025 decisions were ideological 6–3 splits (SCOTUSblog).",
+          "match": ["re:\\b6[-–]3\\b", "conservative majority", "liberal justices", "ideolog*", "partisan", "politicis*", "politiciz*", "dissent*"]
+        },
+        {
+          "side": "a",
+          "title": "The emergency docket shapes policy",
+          "hint": "The administration won 23 of 31 emergency applications decided by mid-Sept 2026 (Brennan Center).",
+          "match": ["shadow docket", "emergency docket", "emergency order", "emergency application"]
+        },
+        {
+          "side": "b",
+          "title": "It rules against the president",
+          "hint": "The tariffs case (Learning Resources) and Trump v. Barbara both went against the administration.",
+          "match": ["ruled against", "struck down", "rebuke*", "blow to Trump", "against the administration"]
+        },
+        {
+          "side": "b",
+          "title": "Legal reasoning and unanimity",
+          "hint": "44% of October Term 2025 decisions were unanimous.",
+          "match": ["unanimous", "9-0", "originalis*", "textualis*", "precedent"]
+        }
+      ],
+      "judgement": "Judicial philosophy (originalism vs living constitution) explains more than party loyalty."
+    },
+    {
+      "id": "usa-civil-rights",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that civil rights are effectively protected in the US today.",
+      "tags": ["us-rights", "us-scotus", "us-federalism"],
+      "sides": {"a": "Effectively protected", "b": "Poorly protected"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Courts uphold core rights",
+          "hint": "Trump v. Barbara (June 2026) upheld birthright citizenship under the 14th Amendment.",
+          "match": ["upheld", "protect*", "14th Amendment", "birthright", "First Amendment", "equal protection"]
+        },
+        {
+          "side": "b",
+          "title": "Voting rights weakened",
+          "hint": "Louisiana v. Callais (Apr 2026) sharply narrowed Section 2 of the Voting Rights Act.",
+          "match": ["Voting Rights Act", "cs:VRA", "voting rights", "majority-Black", "racial gerrymander*", "redistricting"]
+        },
+        {
+          "side": "b",
+          "title": "Immigration enforcement and civil liberties",
+          "hint": "Renée Good and Alex Pretti were killed by federal immigration agents in Minneapolis in January 2026.",
+          "match": ["cs:ICE", "deport*", "immigration raid*", "detention", "federal agents", "protest*"]
+        },
+        {
+          "side": "b",
+          "title": "LGBTQ+ and DEI rollbacks",
+          "hint": "US v. Skrmetti (2025) and West Virginia v. B.P.J. (2026) upheld state restrictions affecting transgender people.",
+          "match": ["transgender", "trans athlete*", "cs:DEI", "affirmative action", "gender-affirming"]
+        }
+      ],
+      "judgement": "Protection depends on which rights, which states and which branch. The Court is no longer the reliable guarantor it was in the Warren era."
+    },
+    {
+      "id": "usa-federalism",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that federalism is in decline in the US.",
+      "tags": ["us-federalism", "us-constitution", "us-elections"],
+      "sides": {"a": "In decline", "b": "Still strong"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Federal pressure on states",
+          "hint": "National Guard deployments to Los Angeles, DC and other cities (2025), and threats to cut funding to sanctuary jurisdictions.",
+          "match": ["National Guard", "federal troops", "federal agents", "sanctuary", "Insurrection Act", "funding cut*", "preempt*"]
+        },
+        {
+          "side": "b",
+          "title": "States resist and go their own way",
+          "hint": "California voters passed Prop 50 (64.4%, Nov 2025) to redraw House maps. Minnesota sued over Operation Metro Surge.",
+          "match": ["governor*", "sues", "sued", "lawsuit", "Newsom", "Pritzker", "Walz", "Prop 50", "redistricting", "state legislature*"]
+        },
+        {
+          "side": "b",
+          "title": "Courts protect state power",
+          "hint": "Trump v. Illinois (Dec 2025) refused to allow the Chicago National Guard deployment.",
+          "match": ["Trump v. Illinois", "Tenth Amendment", "states' rights", "blocked"]
+        }
+      ],
+      "judgement": "Federalism is contested, not dead: coercive federal action provokes energetic state resistance."
+    },
+    {
+      "id": "usa-money",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that money is the most important factor in US elections.",
+      "tags": ["us-elections", "us-groups", "us-parties"],
+      "sides": {"a": "Money matters most", "b": "Other factors matter more"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Super PACs and mega-donors",
+          "hint": "The crypto super PAC Fairshake and its affiliates had more than $193m in cash on hand for the 2026 midterms by January 2026. NRSC v. FEC (June 2026) struck down limits on party coordinated spending.",
+          "match": ["super PAC*", "cs:PAC", "cs:PACs", "fundrais*", "re:raised \\$", "donor*", "campaign finance", "dark money", "Musk", "war chest", "outside spending", "campaign spending", "re:\\$\\d+(?:\\.\\d+)?\\s?(?:m|bn|million|billion)\\b"]
+        },
+        {
+          "side": "b",
+          "title": "Money doesn't guarantee victory",
+          "hint": "Abdul El-Sayed beat AIPAC-backed Haley Stevens in Michigan's Senate primary (Aug 2026) despite heavy outside spending.",
+          "match": ["outspent", "despite", "upset", "grassroots", "lost"]
+        },
+        {
+          "side": "b",
+          "title": "Partisanship and the national mood",
+          "hint": "Democrats led the generic ballot by about 7.5 points in Sept 2026, with Trump's approval around 35%.",
+          "match": ["generic ballot", "approval", "partisan*", "national mood", "swing", "incumbent*"]
+        }
+      ],
+      "judgement": "Money is necessary but not sufficient. It matters most in primaries and open seats."
+    },
+    {
+      "id": "usa-competitive",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that congressional elections are no longer genuinely competitive.",
+      "tags": ["us-elections", "us-congress", "us-parties"],
+      "sides": {"a": "Not competitive", "b": "Still competitive"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "The redistricting war",
+          "hint": "Texas, California, Florida and other states redrew their House maps mid-decade in 2025–26.",
+          "match": ["gerrymander*", "redistricting", "new map", "district lines", "Prop 50", "mid-decade"]
+        },
+        {
+          "side": "a",
+          "title": "Incumbency advantage",
+          "hint": "Well over 90% of House incumbents who ran again in 2024 won.",
+          "match": ["incumbent*", "incumbency", "safe seat*", "re-elect*"]
+        },
+        {
+          "side": "b",
+          "title": "Primaries unseat incumbents",
+          "hint": "Sen. John Cornyn lost his Texas primary runoff to Ken Paxton (May 2026). Eleven House incumbents lost primaries in 2026.",
+          "match": ["primary", "primaries", "runoff", "ousted", "defeated", "challenger*"]
+        },
+        {
+          "side": "b",
+          "title": "Open seats and toss-ups",
+          "hint": "There were 73 open House seats (Cook, Aug 2026), and Cook rated seven Senate races as toss-ups (Sept 2026).",
+          "match": ["toss-up", "competitive", "open seat*", "retire*", "battleground*"]
+        }
+      ],
+      "judgement": "Competition has moved from general elections into primaries in most districts."
+    },
+    {
+      "id": "usa-parties-divided",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that the Democratic and Republican parties are more divided internally than ever.",
+      "tags": ["us-parties", "us-congress", "us-elections"],
+      "sides": {"a": "More divided than ever", "b": "Still largely united"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Republican splits",
+          "hint": "Marjorie Taylor Greene resigned after a feud with Trump (effective Jan 2026). Rep. Kevin Kiley left the GOP (Mar 2026).",
+          "match": ["split*", "rift", "infighting", "cs:MAGA", "establishment", "Massie", "Greene", "Kiley", "break with Trump", "defect*"]
+        },
+        {
+          "side": "a",
+          "title": "Democratic splits",
+          "hint": "Insurgent wins for Zohran Mamdani (NYC, 2025) and Graham Platner (Maine, 2026), and pressure on Chuck Schumer.",
+          "match": ["progressive*", "insurgent*", "Schumer", "Mamdani", "Platner", "cs:DNC", "Ken Martin", "moderates"]
+        },
+        {
+          "side": "b",
+          "title": "High party unity in Congress",
+          "hint": "The One Big Beautiful Bill Act passed the House 218–214 (July 2025), almost entirely on party lines.",
+          "match": ["party-line", "party line", "united", "unity", "polariz*", "polaris*"]
+        }
+      ],
+      "judgement": "Parties are internally divided but externally polarised: they fight each other more than themselves."
+    },
+    {
+      "id": "usa-interest-groups",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "evaluate",
+      "text": "Evaluate the view that interest groups have too much influence in US politics.",
+      "tags": ["us-groups", "us-elections"],
+      "sides": {"a": "Too much influence", "b": "Healthy pluralism"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Money and access",
+          "hint": "Abdul El-Sayed overcame more than $60m in campaign spending, mostly from pro-Israel groups, to win Michigan's Senate primary (Aug 2026). The AI super PAC Leading the Future has raised over $140m.",
+          "match": ["lobby*", "cs:AIPAC", "cs:NRA", "Fairshake", "Leading the Future", "crypto industry", "AI industry", "Heritage Foundation", "Project 2025"]
+        },
+        {
+          "side": "b",
+          "title": "Pluralism, including rights groups",
+          "hint": "The ACLU and the NAACP Legal Defense Fund litigated key 2026 cases.",
+          "match": ["cs:ACLU", "cs:NAACP", "lawsuit", "sued", "coalition", "grassroots", "advocates"]
+        },
+        {
+          "side": "b",
+          "title": "Spending doesn't guarantee results",
+          "hint": "AIPAC-backed Haley Stevens lost the Michigan Senate primary (Aug 2026).",
+          "match": ["despite", "lost", "defeat*", "failed to"]
+        }
+      ],
+      "judgement": "Elitist vs pluralist theory: influence is real, but it is contested."
+    },
+    {
+      "id": "usa-examine-courts",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "examine",
+      "text": "Examine the differences between the US and UK Supreme Courts in their ability to check the executive.",
+      "tags": ["us-scotus", "rel-judiciary"],
+      "sides": {"a": "US Supreme Court", "b": "UK Supreme Court"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Can strike down executive actions under a sovereign constitution",
+          "hint": "E.g. Learning Resources v. Trump (2026) struck down IEEPA tariffs.",
+          "tags": ["us-scotus"],
+          "match": ["Supreme Court", "struck down", "unconstitutional", "ruling", "ruled"]
+        },
+        {
+          "side": "b",
+          "title": "Limited by parliamentary sovereignty",
+          "hint": "UK courts can rule that ministers acted unlawfully (judicial review) but cannot strike down Acts of Parliament.",
+          "tags": ["rel-judiciary"],
+          "match": ["judicial review", "unlawful", "Supreme Court", "High Court", "Court of Appeal", "ruling"]
+        }
+      ],
+      "judgement": "Examine questions need clear point-by-point comparison, not a verdict."
+    },
+    {
+      "id": "usa-examine-legislatures",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "examine",
+      "text": "Examine the differences between the US Congress and the UK Parliament in their ability to scrutinise the executive.",
+      "tags": ["us-congress", "parl-commons", "rel-execparl"],
+      "sides": {"a": "US Congress", "b": "UK Parliament"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Separation of powers: purse, oversight, confirmations",
+          "hint": "Shutdowns, subpoenas and Senate confirmations.",
+          "tags": ["us-congress"],
+          "match": ["shutdown", "oversight", "subpoena*", "hearing*", "confirm*", "appropriation*"]
+        },
+        {
+          "side": "b",
+          "title": "Fusion of powers: PMQs, select committees, whips",
+          "hint": "Scrutiny from inside a government-dominated chamber.",
+          "tags": ["parl-commons", "rel-execparl"],
+          "match": ["cs:PMQs", "select committee*", "whip*", "re:\\brebel", "urgent question"]
+        }
+      ],
+      "judgement": "Structural differences (separation vs fusion of powers) explain most of the contrast."
+    },
+    {
+      "id": "usa-analyse-parties",
+      "component": "usa",
+      "paper": "Paper 3A",
+      "type": "analyse",
+      "text": "Analyse the differences between the party systems of the USA and the UK. In your answer you must consider the relevance of at least one comparative theory.",
+      "tags": ["us-parties", "us-elections", "pp-system", "pp-minor"],
+      "sides": {"a": "USA", "b": "UK"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Two-party dominance, weaker party discipline, primaries",
+          "hint": "Structural: primaries and federalism decentralise the parties.",
+          "tags": ["us-parties", "us-elections"],
+          "match": ["primar*", "cs:Republican*", "rcs:(?<!Liberal )\\bDemocrats?\\b", "third part*", "caucus"]
+        },
+        {
+          "side": "b",
+          "title": "Multi-party votes, strong whips",
+          "hint": "Structural: FPTP and the fusion of powers. Cultural: class dealignment.",
+          "tags": ["pp-system", "pp-minor"],
+          "match": ["cs:Reform", "cs:Green*", "Lib Dem*", "cs:SNP", "whip*", "multi-party"]
+        }
+      ],
+      "judgement": "Name the theory (rational, cultural or structural) and explain why it accounts for the difference."
+    },
+    {
+      "id": "global-unsc",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that the UN Security Council is ineffective in maintaining global peace and security.",
+      "tags": ["gl-un-nato", "gl-power", "gl-rights"],
+      "sides": {"a": "Ineffective", "b": "Effective"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Vetoes paralyse it",
+          "hint": "China and Russia vetoed a Gulf-backed Hormuz shipping draft (Apr 2026). The US vetoed Gaza ceasefire drafts in 2025.",
+          "match": ["veto*", "deadlock*", "paralys*", "blocked", "fails to"]
+        },
+        {
+          "side": "a",
+          "title": "Great powers act without it",
+          "hint": "The US seized Maduro in Caracas (Jan 2026) without UN authorisation; China called it illegal.",
+          "match": ["unilateral*", "without UN", "without the UN", "without Security Council", "illegal", "violation of international law", "UN Charter"]
+        },
+        {
+          "side": "b",
+          "title": "Resolutions still authorise action",
+          "hint": "Resolution 2803 (Nov 2025, 13–0–2) endorsed the US plan for Gaza, welcomed the Board of Peace and authorised a temporary International Stabilization Force.",
+          "match": ["resolution*", "adopted", "authoris*", "authoriz*", "mandate", "peacekeep*", "re:stabili[sz]ation force"]
+        },
+        {
+          "side": "b",
+          "title": "Reform and renewal",
+          "hint": "UN80 reforms and the 2026 Secretary-General selection, with Security Council straw polls from July 2026.",
+          "match": ["cs:UN80", "reform*", "Secretary-General", "straw poll*", "General Assembly"]
+        }
+      ],
+      "judgement": "Effective where the P5's interests align (e.g. Haiti, the Gaza framework), paralysed where they clash (Ukraine, Iran)."
+    },
+    {
+      "id": "global-nato",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that NATO remains an effective and relevant organisation.",
+      "tags": ["gl-un-nato", "gl-regionalism", "gl-power"],
+      "sides": {"a": "Effective and relevant", "b": "Weakened or outdated"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Deterrence and collective defence",
+          "hint": "Allies pledged 5% of GDP on defence by 2035 (The Hague, June 2025). Poland and Estonia invoked Article 4 in Sept 2025.",
+          "match": ["cs:NATO", "Article 5", "Article 4", "deterren*", "defence spending", "defense spending", "Eastern Sentry", "allies", "Rutte", "summit"]
+        },
+        {
+          "side": "b",
+          "title": "Transatlantic tensions",
+          "hint": "In January 2026 Trump threatened tariffs on European allies over Greenland before backing down.",
+          "match": ["Greenland", "tension*", "rift", "burden-sharing", "free-rid*", "withdraw*"]
+        },
+        {
+          "side": "b",
+          "title": "Europe builds alternatives",
+          "hint": "The EU's €150bn SAFE defence loans and the Ukraine 'coalition of the willing'.",
+          "match": ["cs:SAFE", "ReArm", "European defence", "European defense", "coalition of the willing", "strategic autonomy", "European army"]
+        }
+      ],
+      "judgement": "NATO's relevance has grown with the Russian threat even as US commitment has become less predictable."
+    },
+    {
+      "id": "global-economic",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that global economic governance has failed to address global issues.",
+      "tags": ["gl-economic", "gl-state"],
+      "sides": {"a": "It has failed", "b": "It has succeeded"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Trade wars sideline the WTO",
+          "hint": "After the Supreme Court struck down the IEEPA tariffs (Feb 2026), the US switched to Section 122 and then Section 301 tariffs.",
+          "match": ["tariff*", "trade war", "cs:WTO", "protectionis*", "trade barriers", "retaliat*", "Section 301"]
+        },
+        {
+          "side": "a",
+          "title": "Poverty and debt persist",
+          "hint": "Look for debt distress, aid cuts and off-track development goals.",
+          "match": ["poverty", "debt crisis", "debt distress", "aid cuts", "cs:SDGs", "off track", "inequality", "famine"]
+        },
+        {
+          "side": "b",
+          "title": "IMF and World Bank crisis support",
+          "hint": "Emergency lending and debt relief.",
+          "match": ["cs:IMF", "World Bank", "loan*", "bailout", "debt relief", "financing"]
+        },
+        {
+          "side": "b",
+          "title": "G7 and G20 coordination",
+          "hint": "The G7 (Évian, June 2026) launched a Critical Minerals Resilience and Production Alliance.",
+          "match": ["cs:G7", "cs:G20", "summit", "agreement", "alliance", "trade deal*"]
+        }
+      ],
+      "judgement": "Institutions reflect the power of their biggest members; they fail when the biggest member opts out."
+    },
+    {
+      "id": "global-courts",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that international courts have been ineffective in protecting human rights.",
+      "tags": ["gl-rights"],
+      "sides": {"a": "Ineffective", "b": "Effective"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Powerful states defy them",
+          "hint": "The US sanctioned ICC President Tomoko Akane (Aug 2026). The ICC warrants for Putin and Netanyahu remain unenforced.",
+          "match": ["sanction*", "arrest warrant*", "defy", "ignored", "not enforced", "withdraw*", "leave the ICC"]
+        },
+        {
+          "side": "a",
+          "title": "Slow and selective",
+          "hint": "South Africa v Israel at the ICJ is unlikely to be decided for years (written stages run to 2029).",
+          "match": ["delay*", "slow", "selective", "double standard*", "politicis*", "politiciz*"]
+        },
+        {
+          "side": "b",
+          "title": "Accountability does happen",
+          "hint": "Charges against Rodrigo Duterte were confirmed (Apr 2026); his ICC trial opens on 30 November 2026.",
+          "match": ["Duterte", "trial", "charges", "convict*", "advisory opinion", "cs:ICJ", "ruling", "accountab*"]
+        },
+        {
+          "side": "b",
+          "title": "They set norms states must answer to",
+          "hint": "ICJ advisory opinions shape international law.",
+          "match": ["international law", "landmark", "obligation*", "precedent"]
+        }
+      ],
+      "judgement": "Courts shape norms and occasionally deliver justice, but enforcement depends on states cooperating."
+    },
+    {
+      "id": "global-intervention",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that humanitarian intervention is rarely successful.",
+      "tags": ["gl-rights", "gl-un-nato", "gl-power"],
+      "sides": {"a": "Rarely successful", "b": "Can succeed"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "The world fails to act in the worst crises",
+          "hint": "The RSF took El Fasher, Sudan, in Oct 2025 after a siege of more than 500 days.",
+          "match": ["Sudan", "El Fasher", "cs:RSF", "genocide", "atrocit*", "famine", "failure to", "fails to"]
+        },
+        {
+          "side": "a",
+          "title": "Interventions look self-interested",
+          "hint": "The US presented its Venezuela operation (Jan 2026) as law enforcement rather than humanitarian action, and Trump spoke of bringing in US oil companies. This fits the realist critique that interventions serve self-interest.",
+          "match": ["regime change", "unilateral*", "oil", "self-interest", "Donroe", "Monroe"]
+        },
+        {
+          "side": "b",
+          "title": "Authorised missions can help",
+          "hint": "UNSC Resolution 2793 turned the Haiti mission into a 5,500-strong Gang Suppression Force.",
+          "match": ["peacekeep*", "Gang Suppression Force", "mission", "protect civilians", "cs:R2P", "responsibility to protect", "re:stabili[sz]ation force", "humanitarian corridor"]
+        }
+      ],
+      "judgement": "Success depends on legitimacy (a UN mandate), clear aims and staying power."
+    },
+    {
+      "id": "global-climate",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that global environmental governance has been ineffective in tackling climate change.",
+      "tags": ["gl-environment", "ideas-ecologism"],
+      "sides": {"a": "Ineffective", "b": "Effective"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Major emitters walk away",
+          "hint": "The US left the Paris Agreement (effective 27 Jan 2026) and is leaving the UNFCCC (effective Feb 2027).",
+          "match": ["withdraw*", "Paris", "cs:UNFCCC", "pull out", "quit"]
+        },
+        {
+          "side": "a",
+          "title": "Pledges fall short",
+          "hint": "UNEP's 2025 Emissions Gap Report projected 2.3–2.5°C of warming even if pledges are met.",
+          "match": ["emissions gap", "re:1\\.5", "off track", "record emissions", "hottest", "fossil fuel*", "weak"]
+        },
+        {
+          "side": "b",
+          "title": "Agreements keep moving forward",
+          "hint": "COP30 (Belém, Nov 2025) agreed to triple adaptation finance by 2035. COP31 meets in Antalya, 9–20 Nov 2026.",
+          "match": ["cs:COP31", "cs:COP30", "agreement", "deal", "pledge*", "climate finance", "adaptation", "NDC*", "renewable*"]
+        },
+        {
+          "side": "b",
+          "title": "Law and litigation raise pressure",
+          "hint": "The ICJ gave an advisory opinion on states' climate obligations in July 2025.",
+          "match": ["cs:ICJ", "advisory opinion", "legal obligation*", "lawsuit*", "court"]
+        }
+      ],
+      "judgement": "Consensus-based, mostly non-binding governance struggles with the 'tragedy of the commons'."
+    },
+    {
+      "id": "global-polarity",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that the world is now multipolar.",
+      "tags": ["gl-power", "gl-theories", "gl-economic"],
+      "sides": {"a": "Yes: multipolar", "b": "No: unipolar or bipolar"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Rising powers and the Global South",
+          "hint": "BRICS (11 members plus 10 partners) met in New Delhi in Sept 2026. Pakistan, Qatar, Egypt and Turkey all mediated conflicts in 2026.",
+          "match": ["BRICS", "cs:SCO", "Global South", "middle power*", "multipolar", "India", "Modi", "Brazil", "Turkey", "mediat*"]
+        },
+        {
+          "side": "b",
+          "title": "US hard power is unmatched",
+          "hint": "US military action in Venezuela and Iran (2026).",
+          "match": ["US military", "superpower", "hegemon*", "unipolar", "dollar", "Pentagon", "strikes"]
+        },
+        {
+          "side": "b",
+          "title": "A US–China bipolar rivalry",
+          "hint": "The Busan trade truce (Oct 2025) and Xi Jinping's state visit to Washington (Sept 2026).",
+          "match": ["US-China", "cs:Xi", "Beijing", "rivalry", "bipolar", "Taiwan", "trade truce"]
+        }
+      ],
+      "judgement": "Economic multipolarity and military unipolarity, with a US–China rivalry at the core."
+    },
+    {
+      "id": "global-eu-actor",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that the EU is a significant global actor.",
+      "tags": ["gl-regionalism", "gl-economic"],
+      "sides": {"a": "Significant", "b": "Limited"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Economic and sanctions power",
+          "hint": "EU sanctions packages on Russia (20th in Apr 2026, 21st in July 2026) and a €90bn loan to Ukraine for 2026–27.",
+          "match": ["EU sanctions", "sanctions package", "trade deal", "Mercosur", "free trade agreement", "loan", "single market"]
+        },
+        {
+          "side": "a",
+          "title": "Enlargement and normative power",
+          "hint": "Accession negotiating clusters opened for Ukraine and Moldova in June–July 2026.",
+          "match": ["enlargement", "accession", "candidate*", "membership talks", "cluster*"]
+        },
+        {
+          "side": "b",
+          "title": "Divisions and reliance on the US",
+          "hint": "Unanimity rules let single states block action.",
+          "match": ["divided", "split*", "veto*", "Hungary", "unanimity", "dependent on", "cs:NATO", "weak"]
+        },
+        {
+          "side": "b",
+          "title": "Concessions in trade with the US",
+          "hint": "The July 2025 EU–US 'Turnberry' deal capped US tariffs on most EU goods at 15%.",
+          "match": ["Turnberry", "15%", "concession*", "capitulat*", "trade deal"]
+        }
+      ],
+      "judgement": "An economic and regulatory superpower, but a military and diplomatic middleweight."
+    },
+    {
+      "id": "global-sovereignty",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "evaluate",
+      "text": "Evaluate the view that globalisation has undermined state sovereignty.",
+      "tags": ["gl-state", "gl-economic"],
+      "sides": {"a": "Undermined", "b": "Not undermined"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Global shocks no state can control",
+          "hint": "Iran's closure of the Strait of Hormuz (Mar 2026) sent Brent crude to about $126.",
+          "match": ["Hormuz", "oil price*", "supply chain*", "global economy", "interdependen*", "migration", "cyber*", "tech giant*"]
+        },
+        {
+          "side": "b",
+          "title": "States are reasserting control",
+          "hint": "The US announced its withdrawal from 66 international bodies (Jan 2026). Trump told the UN 'there is no global government' (Sept 2026).",
+          "match": ["tariff*", "border*", "withdraw*", "sovereign*", "protectionis*", "America First", "national interest", "reshoring"]
+        }
+      ],
+      "judgement": "Globalisation constrains weak states far more than powerful ones."
+    },
+    {
+      "id": "global-analyse-theories",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "analyse",
+      "text": "Analyse the divisions between realists and liberals over the role of international organisations. In your answer you must discuss any relevant core political ideas.",
+      "tags": ["gl-theories", "gl-un-nato", "gl-power", "gl-economic"],
+      "sides": {"a": "Realist view", "b": "Liberal view"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "States act in self-interest; organisations reflect power",
+          "hint": "Vetoes and unilateral action.",
+          "match": ["veto*", "unilateral*", "national interest", "military", "power politics"]
+        },
+        {
+          "side": "b",
+          "title": "Institutions enable cooperation",
+          "hint": "Resolutions, agreements and interdependence.",
+          "match": ["cooperat*", "multilateral*", "agreement", "resolution", "interdependen*", "rules-based"]
+        }
+      ],
+      "judgement": "Link realism to conservative ideas about human nature, and liberalism to liberal ideas about rationality and progress."
+    },
+    {
+      "id": "global-examine-regional",
+      "component": "global",
+      "paper": "Paper 3B",
+      "type": "examine",
+      "text": "Examine the differences between the EU and one other regional organisation in how far they address contemporary global issues.",
+      "tags": ["gl-regionalism"],
+      "sides": {"a": "The EU", "b": "Another regional organisation"},
+      "strands": [
+        {
+          "side": "a",
+          "title": "Supranational institutions, sanctions and a single market",
+          "hint": "The Commission, sanctions packages and trade deals.",
+          "match": ["cs:EU", "European Union", "sanctions", "single market", "Commission"]
+        },
+        {
+          "side": "b",
+          "title": "Intergovernmental and consensus-based",
+          "hint": "E.g. ASEAN, the African Union, USMCA.",
+          "match": ["cs:ASEAN", "African Union", "cs:AU", "Arab League", "cs:USMCA", "Mercosur", "cs:ECOWAS", "cs:GCC"]
+        }
+      ],
+      "judgement": "Compare depth of integration, decision-making and capacity to act."
+    }
+  ]
+}

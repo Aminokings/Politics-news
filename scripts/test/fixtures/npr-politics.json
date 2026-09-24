@@ -1,0 +1,78 @@
+{
+  "feed": "npr-politics",
+  "url": "https://feeds.npr.org/1014/rss.xml",
+  "format": "rss",
+  "fetchedAt": "2026-09-23T17:19:00Z",
+  "items": [
+    {
+      "title": "White House launches 'Trump TV' after ban on major news outlets",
+      "link": "https://www.npr.org/2026/09/22/nx-s1-5977768/trump-tv-media-ban-white-house",
+      "date": "Tue, 22 Sep 2026 17:31:01 -0400",
+      "description": "Days after President Trump barred reporters from three major news outlets from the White House, the administration has launched a 24/7 YouTube channel promising to put its \"biggest moments all in one place.\"",
+      "categories": []
+    },
+    {
+      "title": "RFK Jr.'s ethics disclosure reveals free travel and hefty book advances",
+      "link": "https://www.npr.org/2026/09/22/nx-s1-5974931/rfk-jr-s-ethics-disclosure-reveals-free-travel-and-hefty-book-advances",
+      "date": "Tue, 22 Sep 2026 16:46:24 -0400",
+      "description": "Health Secretary Robert F. Kennedy Jr.'s latest financial disclosure reveals he accepted free flights to Fiji and Greece and lucrative book advances.",
+      "categories": []
+    },
+    {
+      "title": "Is President Trump the world's peacekeeper?",
+      "link": "https://www.npr.org/2026/09/22/nx-s1-5976857/is-president-trump-the-worlds-peacekeeper",
+      "date": "Tue, 22 Sep 2026 16:46:23 -0400",
+      "description": "NPR's Mary Louise Kelly speaks with State Department spokesman Tommy Pigott about President Trump's speech to the United Nations and America's place in the world.",
+      "categories": []
+    },
+    {
+      "title": "Trump's D.C. arch is now a military complex. Here's how that complicates things",
+      "link": "https://www.npr.org/2026/09/22/nx-s1-5977646/trump-dc-arch-military-complex-questions",
+      "date": "Tue, 22 Sep 2026 15:25:05 -0400",
+      "description": "The future of Trump's D.C. arch was already fraught. Then he rebranded it as a military complex. Experts say that only raises more legal and logistical questions.",
+      "categories": []
+    },
+    {
+      "title": "The House Freedom Caucus has to transform — it could preview the GOP's post-Trump era",
+      "link": "https://www.npr.org/2026/09/22/g-s1-144369/freedom-caucus-trump-republicans",
+      "date": "Tue, 22 Sep 2026 05:00:00 -0400",
+      "description": "The conservative House Freedom Caucus grew in prominence alongside President Trump. Now they are considering what the future of their movement looks like.",
+      "categories": []
+    },
+    {
+      "title": "Trump heads to the U.N. looking for wins after a rough week",
+      "link": "https://www.npr.org/2026/09/22/nx-s1-5976843/trump-heads-to-u-n-looking-for-wins-after-a-rough-week",
+      "date": "Tue, 22 Sep 2026 05:00:00 -0400",
+      "description": "The past couple of weeks have been particularly challenging for Trump with a series of legal and political setbacks.",
+      "categories": []
+    },
+    {
+      "title": "A U.S. House race in Arizona could hinge on voters' opinion of the Big Beautiful Bill",
+      "link": "https://www.npr.org/2026/09/22/nx-s1-5973072/a-u-s-house-race-in-arizona-could-hinge-on-voters-opinion-of-the-big-beautiful-bill",
+      "date": "Tue, 22 Sep 2026 04:47:14 -0400",
+      "description": "The reelection campaign by a Republican congressman in Arizona could hinge on voter perceptions of last year's massive GOP-backed spending bill.",
+      "categories": []
+    },
+    {
+      "title": "Trump's big weekend: The arch, Greenland, and media outlets banned from White House",
+      "link": "https://www.npr.org/2026/09/21/nx-s1-5976738/trumps-big-weekend-the-arch-greenland-and-media-outlets-banned-from-white-house",
+      "date": "Mon, 21 Sep 2026 17:52:34 -0400",
+      "description": "President Trump's exertion of power over the press, Greenland and even the D.C. landscape are teeing up questions over the president's limits.",
+      "categories": []
+    },
+    {
+      "title": "Many GOP candidates still echo Trump's 2020 claims. Lots of voters want to move on",
+      "link": "https://www.npr.org/2026/09/21/nx-s1-5974313/election-denial-trump-2026",
+      "date": "Mon, 21 Sep 2026 05:00:00 -0400",
+      "description": "While many Republican candidates, even in some critical tossup races, still back President Trump's baseless claims about election integrity, some GOP voters say they are ready to move on.",
+      "categories": []
+    },
+    {
+      "title": "CNN, MS NOW and Politico sue Trump after being barred from White House",
+      "link": "https://www.npr.org/2026/09/21/nx-s1-5975451/reporters-say-they-were-blocked-from-entering-white-house-after-trump-banned-outlets",
+      "date": "Mon, 21 Sep 2026 04:39:38 -0400",
+      "description": "Reporters from CNN, MS NOW and Politico say they were prevented from entering the White House grounds after President Trump announced plans to ban all three outlets.",
+      "categories": []
+    }
+  ]
+}

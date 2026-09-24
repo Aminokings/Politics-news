@@ -1,0 +1,258 @@
+{
+  "feed": "parliament-bills",
+  "url": "https://bills.parliament.uk/rss/allbills.rss",
+  "format": "rss",
+  "fetchedAt": "2026-09-23T17:24:00Z",
+  "items": [
+    {
+      "title": "Infants, Parents and Carers Bill",
+      "link": "https://bills.parliament.uk/bills/4156",
+      "date": "2026-09-23T15:09:37+01:00",
+      "description": "A Bill to make provision about support for infants, parents and carers of infants, and prospective parents and carers, including provision relating to assessment of needs and to reporting requirements relating to such support; and for connected purposes.",
+      "categories": [
+        "Private Members' Bill (Ballot Bill)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Medical Services (Rural Areas) Bill",
+      "link": "https://bills.parliament.uk/bills/4257",
+      "date": "2026-09-23T13:08:07+01:00",
+      "description": "A Bill to require the Secretary of State to prepare a strategy for expanding the provision of Minor Injuries Units and Urgent Treatment Centres in rural areas; to require the Secretary of State to report to Parliament annually on the implementation of the strategy; and for connected purposes.",
+      "categories": [
+        "Private Members' Bill (under the Ten Minute Rule)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Housing Bill",
+      "link": "https://bills.parliament.uk/bills/4302",
+      "date": "2026-09-18T16:33:32+01:00",
+      "description": "A Bill to establish a target for the annual provision of 150,000 new social homes in England; to require the Secretary of State to report to Parliament on progress in meeting that target; to provide local authorities with further powers relating to social housing, affordable housing, and the right to buy, including to end the right to buy; to make provision for a scheme enabling social housing",
+      "categories": [
+        "Private Members' Bill (Presentation Bill)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Social Housing Bill [HL]",
+      "link": "https://bills.parliament.uk/bills/4126",
+      "date": "2026-09-18T16:27:58+01:00",
+      "description": "A Bill to make provision about social housing.",
+      "categories": [
+        "Government Bill",
+        "Lords"
+      ]
+    },
+    {
+      "title": "Immigration and Asylum Bill",
+      "link": "https://bills.parliament.uk/bills/4254",
+      "date": "2026-09-18T11:59:08+01:00",
+      "description": "A Bill to Make provision about immigration, asylum and modern slavery; and for connected purposes.",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Public Office (Accountability) Bill",
+      "link": "https://bills.parliament.uk/bills/4019",
+      "date": "2026-09-17T18:54:39+01:00",
+      "description": "A Bill to Impose a duty on public authorities and public officials to act with candour, transparency and frankness; to make provision for the enforcement of that duty in their dealings with inquiries and investigations; to require public authorities to promote and take steps to maintain ethical conduct within all parts of the authority; to create an offence in relation to public authorities and",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Representation of the People Bill",
+      "link": "https://bills.parliament.uk/bills/4080",
+      "date": "2026-09-17T18:53:34+01:00",
+      "description": "Make provision extending the right to vote to 16 and 17 year olds; to make provision about the registration of voters; to make provision about the administration and conduct of elections, referendums and recall petitions; to make provision about election agents' addresses; to make provision about political expenditure and political donations; to make provision about information to be included in",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Financial Services and Markets Bill [HL]",
+      "link": "https://bills.parliament.uk/bills/4129",
+      "date": "2026-09-17T14:20:05+01:00",
+      "description": "A Bill to make provision about the regulation of financial services and markets; and for connected purposes.",
+      "categories": [
+        "Government Bill",
+        "Lords"
+      ]
+    },
+    {
+      "title": "Health Bill",
+      "link": "https://bills.parliament.uk/bills/4124",
+      "date": "2026-09-17T14:14:57+01:00",
+      "description": "A Bill to make provision about health and social care.",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Railways Bill",
+      "link": "https://bills.parliament.uk/bills/4030",
+      "date": "2026-09-17T12:17:45+01:00",
+      "description": "A Bill to make provision about railways and railway services; and for connected purposes.",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Malvern Hills Bill [HL]",
+      "link": "https://bills.parliament.uk/bills/3897",
+      "date": "2026-09-17T10:25:22+01:00",
+      "description": "A Bill to repeal and re-enact certain enactments relating to the Malvern Hills Conservators and the management of the Malvern Hills, to reconstitute and rename those Conservators as the Malvern Hills Trust and to confer further powers on the Malvern Hills Trust, to make further provision in relation to the Malvern Hills, and for other purposes.",
+      "categories": [
+        "Private Bill",
+        "Lords"
+      ]
+    },
+    {
+      "title": "E-Scooters (Safety and Sale) Bill [HL]",
+      "link": "https://bills.parliament.uk/bills/4301",
+      "date": "2026-09-17T09:16:00+01:00",
+      "description": "A Bill to require the Secretary of State to set prescribed safety requirements for e-scooters offered for sale, including limits on speed and power output; to prohibit the marketing, sale and supply of e-scooters for use on roads or other public places where such use is unlawful; to prohibit the sale and supply of equipment capable of modifying an e-scooter to circumvent prescribed safety",
+      "categories": [
+        "Private Members' Bill (Starting in the House of Lords)",
+        "Lords"
+      ]
+    },
+    {
+      "title": "Armed Forces Bill",
+      "link": "https://bills.parliament.uk/bills/4065",
+      "date": "2026-09-16T18:38:29+01:00",
+      "description": "A Bill to continue the Armed Forces Act 2006; to amend that Act and other enactments relating to the armed forces; to make provision about the reserve forces; to make provision about visiting forces; to make provision about the Ministry of Defence Police; to make provision about the defence functions of the Oil and Pipelines Agency; to make provision about the protection of military remains; and",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Cyber Security and Resilience (Network and Information Systems) Bill",
+      "link": "https://bills.parliament.uk/bills/4035",
+      "date": "2026-09-16T18:36:51+01:00",
+      "description": "A Bill to Make provision, including provision amending the Network and Information Systems Regulations 2018, about the security and resilience of network and information systems used or relied on in connection with the carrying on of essential activities.",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Student Finance (Review) Bill",
+      "link": "https://bills.parliament.uk/bills/4300",
+      "date": "2026-09-16T12:05:01+01:00",
+      "description": "A Bill to require the Secretary of State to review student finance in England; to require the review to consider loan repayment arrangements and thresholds; to require the review to consider the terms and conditions applying to student loans when they were issued; to require the review to consider the relationship between student finance loan repayment thresholds and average earnings; and for",
+      "categories": [
+        "Private Members' Bill (under the Ten Minute Rule)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Commercial Payments Bill [HL]",
+      "link": "https://bills.parliament.uk/bills/4128",
+      "date": "2026-09-16T11:25:07+01:00",
+      "description": "A bill to make provision about payment terms in commercial contracts; to make provision about interest on late payment of commercial debts; to ban retention clauses in the construction sector; to expand the powers of the Small Business Commissioner in relation to payment disputes and poor payment practices; to amend the Enterprise Act 2016 in connection with other functions of the Small Business",
+      "categories": [
+        "Government Bill",
+        "Lords"
+      ]
+    },
+    {
+      "title": "Sovereign Grant Bill",
+      "link": "https://bills.parliament.uk/bills/4280",
+      "date": "2026-09-16T11:05:52+01:00",
+      "description": "A Bill to Specify the amount of the Sovereign Grant for the financial year 2027-28 and the percentage of the income account net surplus of the Crown Estate to be used by the Royal Trustees to determine the amount of the Sovereign Grant in subsequent financial years; to confer a duty and a power on the Treasury to specify the amount of the Sovereign Grant in subsequent financial years in certain",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Domestic Abuse (Pets etc) Bill",
+      "link": "https://bills.parliament.uk/bills/4251",
+      "date": "2026-09-16T10:10:36+01:00",
+      "description": "A Bill to make provision about protection for pets and other domestic animals within domestic abuse proceedings, including through non-molestation orders and occupation orders; to amend the definitions of controlling or coercive behaviour and economic abuse to include abuse involving pets and domestic animals; to extend the application of Domestic Abuse Protection Orders to cover pets and",
+      "categories": [
+        "Private Members' Bill (Presentation Bill)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Church Appointments (Repeal of Discriminatory Provision) Bill",
+      "link": "https://bills.parliament.uk/bills/4296",
+      "date": "2026-09-15T16:36:41+01:00",
+      "description": "A Bill to Repeal provision which prohibits persons of the Roman Catholic or Jewish faiths from advising the Crown on appointments in the Church of England or Church of Scotland; and to repeal provision which precludes such persons from making ecclesiastical appointments.",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Planning and Development (Community Infrastructure) Bill",
+      "link": "https://bills.parliament.uk/bills/4299",
+      "date": "2026-09-15T12:54:09+01:00",
+      "description": "A Bill to require housing developers to construct any planned community infrastructure before commencing construction of housing with which the planned community infrastructure is associated; and for connected purposes.",
+      "categories": [
+        "Private Members' Bill (Presentation Bill)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Barbers and Hairdressers (Registration) Bill",
+      "link": "https://bills.parliament.uk/bills/4297",
+      "date": "2026-09-15T12:48:43+01:00",
+      "description": "A Bill to make provision for the compulsory registration of barbers and hairdressers in England.",
+      "categories": [
+        "Private Members' Bill (Presentation Bill)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Rural Communities (Public Services and Energy) Bill",
+      "link": "https://bills.parliament.uk/bills/4298",
+      "date": "2026-09-15T12:48:11+01:00",
+      "description": "A Bill to require the Secretary of State to carry out a review of the adequacy of local government funding for rural communities, and to require that review to consider the additional costs of delivering public services in sparsely populated areas; to require the Secretary of State to carry out a review of access to healthcare services for rural communities, and to require that review to consider",
+      "categories": [
+        "Private Members' Bill (Presentation Bill)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Courts and Tribunals Bill",
+      "link": "https://bills.parliament.uk/bills/4083",
+      "date": "2026-09-14T23:23:50+01:00",
+      "description": "A Bill to Make provision in relation to criminal courts in England and Wales; to make provision about the leadership of tribunals; to amend section 1 of the Children Act 1989 to remove the presumption relating to the involvement of parents in the life of a child; and for connected purposes.",
+      "categories": [
+        "Government Bill",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Sale and Supply of Glue Traps (Prohibition) Bill",
+      "link": "https://bills.parliament.uk/bills/4271",
+      "date": "2026-09-14T17:09:10+01:00",
+      "description": "A Bill to prohibit the sale and supply of glue traps other than to a person with a glue trap licence; and for connected purposes.",
+      "categories": [
+        "Private Members' Bill (Presentation Bill)",
+        "Commons"
+      ]
+    },
+    {
+      "title": "Multi-Storey Car Parks (Safety) Bill",
+      "link": "https://bills.parliament.uk/bills/4186",
+      "date": "2026-09-14T17:07:57+01:00",
+      "description": "A Bill to increase the minimum required height of guarding in multi-storey car parks; to make provision about the height of guarding in existing multi-storey car parks; to require 24-hour staffing of multi-storey car parks; and for connected purposes.",
+      "categories": [
+        "Private Members' Bill (Presentation Bill)",
+        "Commons"
+      ]
+    }
+  ]
+}

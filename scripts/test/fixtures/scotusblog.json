@@ -1,0 +1,69 @@
+{
+  "feed": "scotusblog",
+  "url": "https://www.scotusblog.com/feed/",
+  "format": "rss",
+  "fetchedAt": "2026-09-23T17:19:00Z",
+  "items": [
+    {
+      "title": "Respecting our multi-branch lawmaking process",
+      "link": "https://www.scotusblog.com/2026/09/respecting-our-multi-branch-lawmaking-process/",
+      "date": "Wed, 23 Sep 2026 14:00:00 +0000",
+      "description": "In my inaugural entry for this column, I critiqued the Supreme Court's reliance on an abstract conception of the \"separation of powers.\" Because the Constitution does not contain a \"separation of powers\" clause, but instead contains a collection of specific provisions that enforce the separation of powers in specific ways, I contended that the court should more carefully refer to the specific",
+      "categories": []
+    },
+    {
+      "title": "The decision before the decision",
+      "link": "https://www.scotusblog.com/2026/09/the-decision-before-the-decision/",
+      "date": "Wed, 23 Sep 2026 13:30:00 +0000",
+      "description": "On Friday, Aug. 21, Chief Justice John Roberts issued an administrative, or temporary, stay, allowing construction to continue on the White House ballroom. The order put on hold a district court injunction that would have halted work by midnight, and it explained nothing, staying the injunction \"pending further order.\" Ten days later, the court concluded that the challengers to the ballroom",
+      "categories": []
+    },
+    {
+      "title": "Missouri congressional redistricting battle goes to Supreme Court for the third time",
+      "link": "https://www.scotusblog.com/2026/09/missouri-congressional-redistricting-battle-goes-to-supreme-court-for-the-third-time/",
+      "date": "Wed, 23 Sep 2026 13:21:00 +0000",
+      "description": "Less than two weeks after the Supreme Court paused a ruling by a federal judge in Missouri that would have cleared the way for the state to use a new congressional map intended to give Republicans an additional seat in the U.S. House of Representatives in the November 2026 elections, the opponents of that map once again asked the justices to intervene in the dispute over the state's congressional",
+      "categories": [
+        "Court News",
+        "Emergency appeals and applications"
+      ]
+    },
+    {
+      "title": "Trump administration brings immigration disputes to SCOTUS",
+      "link": "https://www.scotusblog.com/2026/09/trump-administration-brings-immigration-disputes-to-scotus/",
+      "date": "Wed, 23 Sep 2026 13:00:00 +0000",
+      "description": "Plus, Amy explains how she prepares to cover the \"long conference.\"",
+      "categories": []
+    },
+    {
+      "title": "Trump administration takes important immigration question back to the Supreme Court",
+      "link": "https://www.scotusblog.com/2026/09/trump-administration-takes-important-immigration-question-back-to-the-supreme-court/",
+      "date": "Tue, 22 Sep 2026 19:35:55 +0000",
+      "description": "On Sept. 11, the Trump administration notified the Supreme Court that Genalo v. Black, an immigration case set to be argued in October, was now moot – that is, no longer a live controversy – and should be dismissed from the oral argument docket. However, U.S. Solicitor General D. John Sauer noted that the administration hoped the justices would still \"resolve the questions presented\" during the",
+      "categories": [
+        "Court News"
+      ]
+    },
+    {
+      "title": "The Supreme Court refuses to become partisan in two fights over the midterms",
+      "link": "https://www.scotusblog.com/2026/09/the-supreme-court-refuses-to-become-partisan-in-two-fights-over-the-midterms/",
+      "date": "Tue, 22 Sep 2026 14:00:00 +0000",
+      "description": "People complain that the current Supreme Court is a partisan institution, with the six Republican appointees deciding cases based on their partisan beliefs. But two recent and significant cases on the court's emergency docket refute that complaint, or at least the most simplistic version of it. The two cases are, first, the fight over Missouri's congressional map and, second, the suit to stop",
+      "categories": []
+    },
+    {
+      "title": "The court’s coming climate-change case and the very confused doctrine of preemption",
+      "link": "https://www.scotusblog.com/2026/09/the-courts-coming-climate-change-case-and-the-very-confused-doctrine-of-preemption/",
+      "date": "Tue, 22 Sep 2026 13:30:00 +0000",
+      "description": "On the first day of the October 2026 Term, the court will hear Suncor Energy, Inc. v. County Commissioners of Boulder County, which poses the issue of whether suits under state law against energy companies for their role in causing climate change are preempted, or superseded, by federal law. Preemption issues constantly come to the Supreme Court. Yet it is difficult to find a pattern in the",
+      "categories": []
+    },
+    {
+      "title": "Missouri redistricting dispute may return to Supreme Court",
+      "link": "https://www.scotusblog.com/2026/09/missouri-redistricting-dispute-may-return-to-supreme-court/",
+      "date": "Tue, 22 Sep 2026 13:00:00 +0000",
+      "description": "Plus, is it time to rethink the chief justice's duties?",
+      "categories": []
+    }
+  ]
+}

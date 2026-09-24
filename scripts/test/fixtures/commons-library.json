@@ -1,0 +1,84 @@
+{
+  "feed": "commons-library",
+  "url": "https://commonslibrary.parliament.uk/feed/",
+  "format": "rss",
+  "fetchedAt": "2026-09-23T17:16:00Z",
+  "items": [
+    {
+      "title": "Constituency data: Universal Credit claimants",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/cbp-10513/",
+      "date": "Mon, 21 Sep 2026 15:27:15 +0000",
+      "description": "Explore constituency-level data on people claiming Universal Credit in Great Britain using our interactive dashboard.",
+      "categories": [
+        "Local data",
+        "Social security",
+        "Work and incomes data"
+      ]
+    },
+    {
+      "title": "Conscription and national service in the UK",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/cbp-10226/",
+      "date": "Mon, 21 Sep 2026 15:19:56 +0000",
+      "description": "When has the UK had conscription and why are some European countries reintroducing some form of mandatory military service?",
+      "categories": []
+    },
+    {
+      "title": "Domestic energy prices: In short",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/cbp-10958/",
+      "date": "Mon, 21 Sep 2026 15:11:29 +0000",
+      "description": "What are current energy prices? How and why have they changed over time? Does the UK have the highest domestic energy prices in Europe?",
+      "categories": []
+    },
+    {
+      "title": "Retrospective taxation",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/sn04369/",
+      "date": "Mon, 21 Sep 2026 11:58:35 +0000",
+      "description": "Retrospective tax legislation imposes or increases a tax charge prior to the legislation being introduced. Although this is a controversial practice, retrospective provisions are often introduced to mitigate the risks to the public finances from tax avoidance.",
+      "categories": []
+    },
+    {
+      "title": "Changes to UK visa and settlement rules after the 2025 immigration white paper",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/cbp-10267/",
+      "date": "Mon, 21 Sep 2026 11:10:36 +0000",
+      "description": "Frequently asked questions about the UK government's immigration white paper proposals in 2025, including longer qualifying periods for indefinite leave to remain.",
+      "categories": []
+    },
+    {
+      "title": "High cost of living: Impact on households",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/cbp-10100/",
+      "date": "Mon, 21 Sep 2026 10:51:04 +0000",
+      "description": "This briefing covers how the high period of inflation in the UK from 2021 to 2024 continues to affect household incomes, spending, poverty, savings and debt.",
+      "categories": []
+    },
+    {
+      "title": "Evolution and changing composition of departmental select committees",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/cbp-8603/",
+      "date": "Mon, 21 Sep 2026 10:50:16 +0000",
+      "description": "Departmental select committees were first established in 1979. This briefing paper charts changes in their number and size since 1979.",
+      "categories": []
+    },
+    {
+      "title": "VAT on solar panels and other energy-saving materials",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/cbp-8602/",
+      "date": "Mon, 21 Sep 2026 10:33:08 +0000",
+      "description": "The installation of energy-saving materials (such as solar panels) on eligible buildings is zero-rated for VAT until 31 March 2027.",
+      "categories": []
+    },
+    {
+      "title": "Financial markets: Economic indicators",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/sn05207/",
+      "date": "Fri, 18 Sep 2026 15:50:45 +0000",
+      "description": "The price of shares and commodities can help show the health of the economy. Find the latest data on the prices of shares, oil and gold.",
+      "categories": [
+        "Economic indicators"
+      ]
+    },
+    {
+      "title": "Police service strength",
+      "link": "https://commonslibrary.parliament.uk/research-briefings/sn00634/",
+      "date": "Fri, 18 Sep 2026 15:20:29 +0000",
+      "description": "This briefing looks at the strength and diversity of police forces in the UK.",
+      "categories": []
+    }
+  ]
+}

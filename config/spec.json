@@ -1,0 +1,763 @@
+{
+  "_help": "Edexcel A level Politics (9PL0) map + the keyword rules used to tag stories. Keyword syntax: 'word' = whole word, any case; 'word*' = word + any ending; 'cs:Word' = case-sensitive; 're:regex' = regular expression (any case); 'rcs:regex' = case-sensitive regex. Weights: 3 = strong signal, 2 = medium, 1 = weak. A story gets a tag when its score reaches 'min' (default 3). 'neg' keywords subtract 2 each. context: uk | us | any | both.",
+  "specNote": "Based on the Pearson Edexcel A level Politics specification (9PL0). Topic numbers follow Issue 3 (A level exams up to 2027); Issue 4 (first A level exams 2028) keeps the same topics with small changes, e.g. the closed list system replaces the supplementary vote in 3.1.",
+  "components": [
+    {
+      "id": "ukpol",
+      "name": "UK Politics",
+      "short": "UK Politics",
+      "paper": "Paper 1",
+      "blurb": "Democracy & participation, parties, electoral systems, voting behaviour & the media."
+    },
+    {
+      "id": "ukgov",
+      "name": "UK Government",
+      "short": "UK Gov",
+      "paper": "Paper 2",
+      "blurb": "The constitution, Parliament, the PM & executive, relations between the branches."
+    },
+    {
+      "id": "ideas",
+      "name": "Political Ideas",
+      "short": "Ideas",
+      "paper": "Papers 1 & 2",
+      "blurb": "Core ideas (Paper 1) and the non-core idea you study (Paper 2)."
+    },
+    {
+      "id": "usa",
+      "name": "USA",
+      "short": "USA",
+      "paper": "Paper 3A",
+      "blurb": "Constitution & federalism, Congress, presidency, Supreme Court & rights, democracy & participation."
+    },
+    {
+      "id": "global",
+      "name": "Global Politics",
+      "short": "Global",
+      "paper": "Paper 3B",
+      "blurb": "State & globalisation, global governance, power, regionalism & the EU, realism vs liberalism."
+    }
+  ],
+  "topics": [
+    {"id": "ukpol-1", "component": "ukpol", "num": "1", "name": "Democracy and participation"},
+    {"id": "ukpol-2", "component": "ukpol", "num": "2", "name": "Political parties"},
+    {"id": "ukpol-3", "component": "ukpol", "num": "3", "name": "Electoral systems"},
+    {"id": "ukpol-4", "component": "ukpol", "num": "4", "name": "Voting behaviour and the media"},
+    {"id": "ukgov-1", "component": "ukgov", "num": "1", "name": "The constitution"},
+    {"id": "ukgov-2", "component": "ukgov", "num": "2", "name": "Parliament"},
+    {"id": "ukgov-3", "component": "ukgov", "num": "3", "name": "Prime Minister and executive"},
+    {"id": "ukgov-4", "component": "ukgov", "num": "4", "name": "Relationships between the branches"},
+    {"id": "ideas-core", "component": "ideas", "num": "C", "name": "Core ideas (Paper 1)"},
+    {"id": "ideas-noncore", "component": "ideas", "num": "N", "name": "Non-core ideas (Paper 2)"},
+    {"id": "usa-1", "component": "usa", "num": "1", "name": "The US Constitution and federalism"},
+    {"id": "usa-2", "component": "usa", "num": "2", "name": "US Congress"},
+    {"id": "usa-3", "component": "usa", "num": "3", "name": "US presidency"},
+    {"id": "usa-4", "component": "usa", "num": "4", "name": "The US Supreme Court and civil rights"},
+    {"id": "usa-5", "component": "usa", "num": "5", "name": "US democracy and participation"},
+    {"id": "usa-6", "component": "usa", "num": "6", "name": "Comparative approaches (UK vs US)"},
+    {"id": "global-1", "component": "global", "num": "1", "name": "The state and globalisation"},
+    {"id": "global-2", "component": "global", "num": "2", "name": "Global governance: political and economic"},
+    {"id": "global-3", "component": "global", "num": "3", "name": "Global governance: human rights and environmental"},
+    {"id": "global-4", "component": "global", "num": "4", "name": "Power and developments"},
+    {"id": "global-5", "component": "global", "num": "5", "name": "Regionalism and the European Union"},
+    {"id": "global-6", "component": "global", "num": "6", "name": "Comparative theories (realism & liberalism)"}
+  ],
+  "contexts": {
+    "uk": {
+      "3": ["Westminster", "Whitehall", "Downing Street", "No 10", "Number 10", "House of Commons", "House of Lords", "Holyrood", "Senedd", "Stormont", "cs:Tory", "cs:Tories", "cs:Labour", "Lib Dem*", "Liberal Democrat*", "cs:SNP", "Plaid Cymru", "Reform UK", "Burnham", "Badenoch", "Farage", "Swinney", "ap Iorwerth", "Polanski", "Ed Davey", "cs:UK", "Britain", "British", "Keir Starmer", "Starmer", "Hoyle", "cs:DUP", "Sinn Féin", "Sinn Fein", "Electoral Commission", "Ofcom", "Home Office", "Foreign Office", "Home Secretary", "Foreign Secretary"],
+      "2": ["cs:MPs", "cs:NHS", "England", "English", "Scotland", "cs:Scottish", "Wales", "cs:Welsh", "Northern Ireland", "London", "Manchester", "Birmingham", "Liverpool", "Leeds", "Glasgow", "Edinburgh", "Cardiff", "Belfast", "cs:Treasury", "cs:Chancellor", "cs:Conservative", "cs:Conservatives", "re:£\\s?\\d", "Mahmood", "Healey", "Rayner", "Streeting", "Haigh", "Jenrick", "Corbyn", "King Charles", "councillor*"],
+      "1": ["cs:MP", "cs:Parliament", "cs:Prime Minister", "cabinet", "peers", "by-election", "general election", "council", "councils", "cs:PM"]
+    },
+    "us": {
+      "3": ["cs:Trump", "White House", "Congress", "congressional", "cs:Senate", "cs:GOP", "cs:Republican", "cs:Republicans", "rcs:(?<!Liberal |Social |Christian |Sweden |Swedish )\\bDemocrats\\b", "Capitol Hill", "Pentagon", "cs:FBI", "cs:DOJ", "Justice Department", "Homeland Security", "cs:SCOTUS", "cs:US", "rcs:\\bU\\.S\\.", "United States", "America", "American", "Americans", "Vance", "Mike Johnson", "Jeffries", "Thune", "Schumer", "Rubio", "Hegseth", "Oval Office", "midterm*", "Medicaid", "Medicare", "Obamacare", "Affordable Care Act"],
+      "2": ["federal", "cs:ICE", "Washington", "California", "Texas", "Florida", "New York", "Pennsylvania", "Arizona", "Michigan", "Wisconsin", "Ohio", "North Carolina", "Illinois", "Minnesota", "Virginia", "Louisiana", "Missouri", "Alabama", "Tennessee", "Indiana", "Utah", "Oregon", "Colorado", "Nevada", "Iowa", "New Hampshire", "Alaska", "Nebraska", "Kentucky", "Mississippi", "New Jersey", "Maryland", "Massachusetts", "Chicago", "Los Angeles", "Minneapolis", "cs:Gov.", "cs:Sen.", "cs:Rep.", "re:\\$\\s?\\d"],
+      "1": ["governor", "state legislature", "attorney general", "president"]
+    }
+  },
+  "tags": [
+    {
+      "id": "dp-democracy",
+      "topic": "ukpol-1",
+      "ref": "1.1",
+      "name": "Representative & direct democracy",
+      "context": "uk",
+      "about": "How well the UK's democracy works: participation, turnout, trust, petitions, referendums and citizens' assemblies.",
+      "look": "Turnout figures, trust polls, e-petitions debated in Parliament, recall petitions, citizens' assemblies.",
+      "keywords": {
+        "3": ["participation crisis", "democratic deficit", "e-petition*", "petitions committee", "citizens' assembl*", "citizens assembl*", "recall petition*", "direct democracy", "representative democracy", "voter apathy", "anti-politics"],
+        "2": ["turnout", "apathy", "petition", "petitions", "trust in politic*", "trust in politicians", "trust in democracy", "disillusion*", "democratic engagement", "political engagement"],
+        "1": ["democracy", "democratic", "voters", "participation", "engagement"]
+      }
+    },
+    {
+      "id": "dp-franchise",
+      "topic": "ukpol-1",
+      "ref": "1.2",
+      "name": "Franchise & suffrage",
+      "context": "uk",
+      "about": "Who gets to vote and how: votes at 16, voter ID, registration and debates over extending the franchise.",
+      "look": "Votes at 16, automatic voter registration, voter ID rules, overseas voters, prisoner voting.",
+      "keywords": {
+        "3": ["votes at 16", "re:vote[sd]? at 16", "voting age", "re:16[- ]and 17[- ]year[- ]olds", "automatic voter registration", "automatic registration", "Representation of the People Bill", "voter ID", "photo ID", "franchise", "suffrage", "overseas voters", "overseas electors", "re:prisoners?'? (?:right to )?vot"],
+        "2": ["electoral register", "voter registration", "registered to vote", "right to vote", "young voters", "disenfranchis*", "Electoral Commission"],
+        "1": ["vote", "voting"]
+      }
+    },
+    {
+      "id": "dp-pressure",
+      "topic": "ukpol-1",
+      "ref": "1.3",
+      "name": "Pressure groups & other influences",
+      "context": "uk",
+      "about": "Pressure groups, think tanks, lobbyists, trade unions, protest movements and their influence on government.",
+      "look": "Campaigns that won (or lost) concessions, insider vs outsider groups, strikes, protests, lobbying rows.",
+      "keywords": {
+        "3": ["pressure group*", "lobbying", "lobbyist*", "lobby group*", "think tank*", "think-tank*", "Palestine Action", "Just Stop Oil", "Extinction Rebellion", "Greenpeace", "cs:BMA", "British Medical Association", "cs:TUC", "Trades Union Congress", "trade union*", "cs:NFU", "National Farmers' Union", "Countryside Alliance", "Amnesty International", "Unite the Kingdom", "Stand Up to Racism", "TaxPayers' Alliance", "Taxpayers' Alliance", "Institute of Economic Affairs", "Resolution Foundation", "Institute for Fiscal Studies", "cs:IFS", "cs:CBI", "Confederation of British Industry", "cs:RMT", "cs:Unison", "cs:GMB", "Unite union", "Stonewall", "Sex Matters", "Dignity in Dying", "Care Not Killing", "38 Degrees", "Hope not Hate", "Migration Watch", "Refugee Council", "Child Poverty Action Group", "campaign group*", "campaigners", "industrial action", "resident doctors", "junior doctors"],
+        "2": ["activists", "protest", "protests", "protesters", "protestors", "demonstration*", "demonstrators", "strike", "strikes", "striking", "walkout*", "re:\\bmarch(?:ed|es|ers|ing)\\b", "protest march*", "rally", "petition*", "charities", "proscri*", "re:\\bunion (?:leader|boss|bosses|members|chief|chiefs|official)s?\\b", "unions"],
+        "1": ["campaign", "campaigns", "charity", "lobby", "direct action", "boycott*"]
+      }
+    },
+    {
+      "id": "dp-rights",
+      "topic": "ukpol-1",
+      "ref": "1.4",
+      "name": "Rights in context",
+      "context": "uk",
+      "about": "How rights are protected or restricted in the UK: the Human Rights Act, ECHR, Equality Act, protest law, free speech.",
+      "look": "Protest restrictions, proscription, ECHR rows, judicial reviews on rights, free-speech disputes, the EHRC.",
+      "keywords": {
+        "3": ["Human Rights Act", "cs:ECHR", "European Convention on Human Rights", "European Court of Human Rights", "civil libert*", "free speech", "freedom of speech", "freedom of expression", "right to protest", "Equality Act", "cs:EHRC", "Equality and Human Rights Commission", "proscription", "proscribed", "Public Order Act", "Crime and Policing Act", "Article 8", "Article 3", "Online Safety Act", "Investigatory Powers", "facial recognition", "Bill of Rights", "jury trial*", "Legacy Act", "Joint Committee on Human Rights", "digital ID"],
+        "2": ["human rights", "discrimination", "privacy", "surveillance", "protest law*", "protest powers", "Illegal Migration", "Immigration and Asylum Bill", "judicial review", "asylum"],
+        "1": ["rights", "equality", "deport*", "police powers", "Rwanda"]
+      },
+      "neg": ["jailed", "sentenced", "guilty", "murder*"]
+    },
+    {
+      "id": "pp-established",
+      "topic": "ukpol-2",
+      "ref": "2.2",
+      "name": "Labour, Conservatives & Lib Dems",
+      "context": "uk",
+      "about": "The established parties: their ideas, policies, factions, leaders and conferences.",
+      "look": "Party conferences, factional fights (e.g. Labour left vs right), policy shifts, leadership positioning.",
+      "keywords": {
+        "3": ["Labour Party", "Labour conference", "Labour leadership", "Labour leader", "Labour members", "Labour membership", "Labour left", "Labour right", "Socialist Campaign Group", "Blue Labour", "Conservative Party", "Tory party", "Conservative conference", "Tory conference", "Conservative leader", "Tory leader", "Kemi Badenoch", "Badenoch", "shadow cabinet", "shadow chancellor", "shadow home secretary", "shadow foreign secretary", "Liberal Democrat*", "Lib Dem*", "Ed Davey", "Daisy Cooper", "party conference*", "re:\\bone[- ]nation\\b", "Labour deputy leader*"],
+        "2": ["cs:Labour MPs", "cs:Tories", "cs:Conservatives", "deputy leader*", "manifesto", "cs:Momentum", "Lucy Powell", "Tory MPs", "Conservative MPs", "Starmer"],
+        "1": ["cs:Labour", "cs:Tory", "cs:Conservative", "opposition"]
+      }
+    },
+    {
+      "id": "pp-minor",
+      "topic": "ukpol-2",
+      "ref": "2.3",
+      "name": "Emerging & minor parties",
+      "context": "uk",
+      "about": "Reform UK, the Greens, SNP, Plaid Cymru, NI parties, Your Party, Restore Britain and other challengers.",
+      "look": "Poll surges, by-election and council wins, defections, minor parties in devolved government.",
+      "keywords": {
+        "3": ["Reform UK", "Farage", "Richard Tice", "Green Party", "cs:Greens", "Zack Polanski", "Polanski", "cs:SNP", "Scottish National Party", "Plaid Cymru", "cs:Plaid", "cs:DUP", "Democratic Unionist*", "Sinn Féin", "Sinn Fein", "Your Party", "Zarah Sultana", "Restore Britain", "Rupert Lowe", "Alliance Party", "cs:UKIP", "minor part*", "smaller part*", "insurgent part*", "Green MP*", "Reform MP*", "Reform council*", "Reform-run", "Reform-led", "rcs:\\bReform(?:'s)? (?:leader|deputy|chair|party|voters|candidates?|councillors?|MPs?|surge|lead|donors?|donations?|figures?|members|policy|policies|government|conference|councils?)\\b", "rcs:\\bGreen (?:leader|co-leader|candidates?|councillors?|surge|vote|MPs?|party)\\b"],
+        "2": ["Jenrick", "Corbyn", "cs:SDLP", "cs:UUP", "Workers Party", "independent MPs", "cs:Reform"],
+        "1": ["Count Binface"]
+      }
+    },
+    {
+      "id": "pp-system",
+      "topic": "ukpol-2",
+      "ref": "2.1, 2.4",
+      "name": "Party system, funding & leadership",
+      "context": "uk",
+      "about": "How parties are funded and organised, leadership contests, defections, and whether the UK is now multi-party.",
+      "look": "Big donations, funding rules, membership figures, leadership elections, defections, polls showing fragmentation.",
+      "keywords": {
+        "3": ["party funding", "party donation*", "party finance*", "party membership", "membership figures", "two-party system", "two-party", "multi-party", "multiparty", "party system", "leadership election", "leadership contest", "leadership challenge", "leadership race", "leadership bid", "defect", "defects", "defected", "defection*", "crossed the floor", "Short money", "crypto donation*", "Harborne", "Rycroft", "donor*", "five-party", "four-party"],
+        "2": ["donation*", "fundraising", "party leader*", "Electoral Commission", "foreign interference", "membership"],
+        "1": ["funding", "gift", "gifts"]
+      }
+    },
+    {
+      "id": "es-systems",
+      "topic": "ukpol-3",
+      "ref": "3.1, 3.3",
+      "name": "Electoral systems & elections",
+      "context": "uk",
+      "about": "FPTP, AMS, STV, SV and closed list systems, how they perform, and UK elections as evidence.",
+      "look": "Disproportional results, by-elections, devolved/mayoral election outcomes, electoral reform campaigns.",
+      "keywords": {
+        "3": ["first past the post", "first-past-the-post", "cs:FPTP", "proportional representation", "electoral reform", "voting system*", "electoral system*", "additional member system", "cs:AMS", "single transferable vote", "cs:STV", "supplementary vote", "closed list", "closed-list", "D'Hondt", "Make Votes Matter", "Electoral Reform Society", "by-election*", "general election", "local election*", "mayoral election*", "Senedd election", "Holyrood election", "Scottish Parliament election", "tactical voting", "wasted vote*", "safe seat*", "marginal seat*", "boundary review", "Boundary Commission"],
+        "2": ["polling day", "polling station*", "election result*", "majority of", "seats"],
+        "1": ["election", "elections", "ballot*", "candidate*", "councillors", "seat", "constituenc*"]
+      }
+    },
+    {
+      "id": "es-referendums",
+      "topic": "ukpol-3",
+      "ref": "3.2",
+      "name": "Referendums",
+      "context": "uk",
+      "about": "How referendums are used in the UK and the arguments for and against them.",
+      "look": "Calls for independence referendums, border poll debates, local referendums, Brexit referendum legacy.",
+      "keywords": {
+        "3": ["referendum", "referendums", "referenda", "indyref*", "independence referendum", "border poll", "second referendum", "Section 30", "plebiscite"],
+        "2": ["Brexit referendum", "vote on independence"],
+        "1": []
+      }
+    },
+    {
+      "id": "vb-voting",
+      "topic": "ukpol-4",
+      "ref": "4.1",
+      "name": "Voting behaviour & polls",
+      "context": "uk",
+      "about": "Why people vote as they do: class, age, education, region, leaders, issues; polls and election case studies.",
+      "look": "Poll leads and demographic splits, leader ratings, analysis of why a party won or lost.",
+      "keywords": {
+        "3": ["voting intention", "opinion poll*", "poll lead", "exit poll", "voting behaviour", "swing voters", "class divide", "age gap", "generational divide", "cs:YouGov", "Opinium", "Ipsos", "More in Common", "Savanta", "Survation", "Redfield", "cs:JL Partners", "Find Out Now", "British Election Study", "Curtice", "polling"],
+        "2": ["polls", "working-class voters", "re:working[- ]class", "young voters", "older voters", "red wall", "blue wall", "net approval", "approval rating*", "favourability", "net rating", "poll"],
+        "1": ["voter", "voters", "survey*"]
+      }
+    },
+    {
+      "id": "vb-media",
+      "topic": "ukpol-4",
+      "ref": "4.2",
+      "name": "Media influence",
+      "context": "uk",
+      "about": "The role of TV, the press and social media in shaping opinion, elections and political agendas.",
+      "look": "Ofcom rulings, BBC governance and impartiality rows, social media & misinformation, press investigations.",
+      "keywords": {
+        "3": ["re:\\bBBC (?:licence fee|charter|director[- ]general|board|chair|impartiality|bias|Panorama|funding|News chief)", "Ofcom", "GB News", "Channel 4 News", "social media", "TikTok", "misinformation", "disinformation", "deepfake*", "fake news", "Online Safety Act", "press regulation", "Leveson", "newspaper*", "tabloid*", "broadcaster*", "social media ban", "Matt Brittin", "Tim Davie", "Panorama", "due impartiality", "broadcasting impartiality", "BBC impartiality"],
+        "2": ["journalist*", "algorithm*", "influencer*", "cs:Telegraph", "Daily Mail", "cs:The Sun", "media", "podcast*", "free press", "press freedom"],
+        "1": ["cs:BBC", "cs:ITV", "Channel 4", "impartiality"]
+      }
+    },
+    {
+      "id": "con-nature",
+      "topic": "ukgov-1",
+      "ref": "1.1, 1.2, 1.4",
+      "name": "Constitution: sources & reform",
+      "context": "uk",
+      "about": "The uncodified constitution, conventions, the prerogative, and reforms such as Lords reform.",
+      "look": "Constitutional reforms, conventions being tested or broken, codification debates, monarchy and prerogative.",
+      "keywords": {
+        "3": ["uncodified", "codified", "codify", "codification", "written constitution", "constitutional reform*", "constitutional convention", "royal prerogative", "prerogative power*", "Hereditary Peers", "hereditary peer*", "Lords reform", "reform of the House of Lords", "Removal of Peerages", "Sewel convention", "Magna Carta", "Dissolution and Calling of Parliament", "Fixed-term Parliaments", "constitutional crisis", "constitutional change", "constitutional outrage", "Constitution Unit"],
+        "2": ["constitution", "constitutional", "rule of law", "conventions", "monarch*", "cs:King Charles", "the Union", "unionis*", "separation of powers"],
+        "1": ["convention", "cs:King"]
+      }
+    },
+    {
+      "id": "con-devolution",
+      "topic": "ukgov-1",
+      "ref": "1.3",
+      "name": "Devolution",
+      "context": "uk",
+      "about": "The Scottish Parliament, Senedd, NI Assembly and English devolution (mayors, strategic authorities) and their impact.",
+      "look": "Devolved governments' decisions, rows with Westminster, independence debates, English mayors' powers.",
+      "keywords": {
+        "3": ["devolution", "devolved", "Scottish Parliament", "Holyrood", "Scottish Government", "Senedd", "Welsh Government", "Welsh Parliament", "Stormont", "Northern Ireland Assembly", "Northern Ireland Executive", "First Minister", "Swinney", "ap Iorwerth", "Michelle O'Neill", "Little-Pengelly", "metro mayor*", "combined authorit*", "strategic authorit*", "English Devolution", "Barnett formula", "Sewel", "Scottish independence", "Welsh independence", "Irish unity", "Irish reunification", "Mayor of London", "Sadiq Khan", "West Lothian question", "English votes", "regional mayor*", "Scottish Labour", "Welsh Labour", "Michael Marra", "Ken Skates"],
+        "2": ["local government", "local power*", "police and crime commissioner*", "mayoral", "Greater Manchester", "cs:MSPs", "cs:MSP", "cs:MSs"],
+        "1": ["cs:Scottish", "cs:Welsh", "Scotland", "Wales", "Northern Ireland", "mayor", "mayors", "council", "councils"]
+      }
+    },
+    {
+      "id": "parl-commons",
+      "topic": "ukgov-2",
+      "ref": "2.1, 2.4",
+      "name": "Commons & scrutiny",
+      "context": "uk",
+      "about": "MPs, the Commons and how Parliament scrutinises government: PMQs, select committees, rebellions, the whips.",
+      "look": "Rebellions, select committee hearings and reports, urgent questions, humble addresses, the Speaker.",
+      "keywords": {
+        "3": ["House of Commons", "the Commons", "cs:PMQs", "Prime Minister's Questions", "urgent question*", "select committee*", "Liaison Committee", "Public Accounts Committee", "Foreign Affairs Committee", "Treasury Committee", "Home Affairs Committee", "Justice Committee", "Public Administration and Constitutional Affairs", "backbench*", "rebellion*", "re:\\brebels?\\b", "revolt", "the whip", "whips", "chief whip", "humble address", "Lindsay Hoyle", "Hoyle", "Commons Speaker", "Speaker of the House", "opposition day*", "Standards Commissioner", "Committee on Standards", "Privileges Committee", "MPs voted", "MPs vote", "MPs back*", "MPs reject*", "Commons vote", "Leader of the House"],
+        "2": ["cs:MPs", "scrutiny", "scrutinis*", "scrutiniz*", "committee chair*", "grilled", "parliamentary", "cs:Parliament"],
+        "1": ["cs:MP", "hearing", "debate", "debates", "vote", "committee"]
+      }
+    },
+    {
+      "id": "parl-lords",
+      "topic": "ukgov-2",
+      "ref": "2.1, 2.2",
+      "name": "House of Lords",
+      "context": "uk",
+      "about": "The Lords' composition, powers and legitimacy; defeats and amendments; reform.",
+      "look": "Lords defeats, ping-pong, appointments rows, hereditary peers, Salisbury convention, Parliament Acts.",
+      "keywords": {
+        "3": ["House of Lords", "the Lords", "cs:Lords", "cs:peers", "cs:Peers", "peerage*", "life peer*", "crossbench*", "cross-bench*", "Lord Speaker", "Lords Appointments Commission", "cs:HOLAC", "Salisbury convention", "Parliament Act", "Parliament Acts", "hereditary peer*", "Lords defeat*", "Lords amendment*", "Lords reform", "second chamber", "upper house", "Lords Spiritual", "Lord Forsyth"],
+        "2": ["peer", "Baroness", "unelected"],
+        "1": ["cs:Lord"]
+      }
+    },
+    {
+      "id": "parl-legislation",
+      "topic": "ukgov-2",
+      "ref": "2.3",
+      "name": "Legislative process",
+      "context": "uk",
+      "about": "How bills become law: readings, committee and report stages, Lords amendments, royal assent, private members' bills.",
+      "look": "Bills moving through stages, amendments, free votes, private members' bills, secondary legislation.",
+      "keywords": {
+        "3": ["second reading", "third reading", "report stage", "committee stage", "public bill committee", "royal assent", "private member's bill", "private members' bill*", "private member's bill*", "ten minute rule", "ten-minute rule", "King's Speech", "free vote", "conscience vote", "statutory instrument*", "secondary legislation", "Henry VIII power*", "ping-pong", "carry-over", "programme motion", "guillotine", "draft bill", "Terminally Ill Adults", "rcs:\\b[A-Z][\\w'()-]*(?: (?:[A-Z(][\\w'()-]*|and|of|for|the|to))* Bill\\b", "re:\\bAct 20\\d\\d\\b"],
+        "2": ["legislation", "new law*", "amendment*", "assisted dying", "bill"],
+        "1": ["law"]
+      }
+    },
+    {
+      "id": "exec-pm",
+      "topic": "ukgov-3",
+      "ref": "3.1, 3.3",
+      "name": "PM, cabinet & executive power",
+      "context": "uk",
+      "about": "The Prime Minister's power, the cabinet, No 10, the civil service and how the executive makes policy.",
+      "look": "Reshuffles, No 10 power struggles, U-turns, special advisers, the Budget, PM–cabinet relations.",
+      "keywords": {
+        "3": ["Andy Burnham", "cs:Burnham", "Downing Street", "No 10", "Number 10", "cs:No10", "reshuffle*", "cabinet minister*", "special adviser*", "cs:spad", "cs:spads", "cs:Spad", "civil service", "permanent secretar*", "Cabinet Secretary", "First Secretary of State", "Deputy Prime Minister", "core executive", "Cabinet Office"],
+        "2": ["cs:Prime Minister", "cabinet", "chief of staff", "civil servant*", "Louise Haigh", "John Healey", "cs:Chancellor", "the Budget", "cs:Budget", "cs:Treasury", "Home Secretary", "Foreign Secretary", "Starmer", "U-turn*", "Whitehall", "presidential"],
+        "1": ["Healey", "Mahmood", "Ed Miliband", "Streeting", "Yvette Cooper", "Rayner", "minister", "ministers", "government"]
+      }
+    },
+    {
+      "id": "exec-resp",
+      "topic": "ukgov-3",
+      "ref": "3.2",
+      "name": "Ministerial responsibility",
+      "context": "uk",
+      "about": "Individual and collective ministerial responsibility: resignations, sackings, the ministerial code, cabinet splits.",
+      "look": "Ministers resigning or refusing to, code breaches, ethics adviser rulings, collective responsibility suspended.",
+      "keywords": {
+        "3": ["ministerial code", "collective responsibility", "ministerial responsibility", "independent adviser on ministers' interests", "ethics adviser", "misled Parliament", "misleading Parliament", "calls to resign", "under pressure to resign", "cabinet split*"],
+        "2": ["resign", "resigns", "resigned", "resignation*", "quit", "quits", "stepped down", "steps down", "sacked", "ethics watchdog", "breach*"],
+        "1": ["minister", "ministers", "cabinet", "apologis*", "leak*"]
+      }
+    },
+    {
+      "id": "rel-judiciary",
+      "topic": "ukgov-4",
+      "ref": "4.1",
+      "name": "Supreme Court & judiciary",
+      "context": "uk",
+      "about": "The UK Supreme Court and senior judges: judicial review, independence, neutrality and influence on policy.",
+      "look": "Judicial reviews against ministers, Supreme Court judgments with political impact, clashes over the rule of law.",
+      "keywords": {
+        "3": ["Supreme Court", "judicial review", "High Court", "Court of Appeal", "judicial independence", "judiciary", "Lord Chancellor", "Lord Reed", "Lord Briggs", "President of the Supreme Court", "Sentencing Council", "For Women Scotland", "declaration of incompatibility", "judicial activism", "Judicial Appointments Commission", "quash*"],
+        "2": ["judges", "judge", "ruling", "ruled", "unlawful", "judgment", "Attorney General", "Justice Secretary", "legal challenge", "rule of law", "jury trial*"],
+        "1": ["court", "courts", "lawful", "tribunal"]
+      },
+      "neg": ["jailed", "sentenced", "guilty", "pleaded", "murder*", "manslaughter", "stabb*", "inquest", "coroner", "admitted"]
+    },
+    {
+      "id": "rel-execparl",
+      "topic": "ukgov-4",
+      "ref": "4.2",
+      "name": "Executive–Parliament balance",
+      "context": "uk",
+      "about": "Who has the upper hand, government or Parliament? Majorities, defeats, concessions, 'elective dictatorship'.",
+      "look": "Government defeats or forced U-turns, big majorities pushing bills through, confidence votes.",
+      "keywords": {
+        "3": ["elective dictatorship", "government defeat*", "defeated the government", "government majority", "working majority", "Commons majority", "large majority", "climbdown", "climb-down", "vote of no confidence", "confidence vote", "executive dominance", "payroll vote"],
+        "2": ["rebellion", "concession*", "U-turn", "backbench*", "rebels"],
+        "1": ["whip", "whips", "majority"]
+      }
+    },
+    {
+      "id": "rel-eu",
+      "topic": "ukgov-4",
+      "ref": "4.3",
+      "name": "The EU & the UK",
+      "context": "uk",
+      "about": "The EU's aims and its impact on UK government before and after Brexit, including the UK–EU 'reset'.",
+      "look": "Reset deals (SPS/agrifood, youth scheme, Erasmus+), alignment with EU rules, Windsor Framework, rejoin debates.",
+      "keywords": {
+        "3": ["European Union", "cs:EU", "Brexit", "UK-EU", "EU-UK", "European Commission", "von der Leyen", "Erasmus*", "youth mobility", "youth experience scheme", "SPS deal", "sanitary and phytosanitary", "agrifood", "dynamic alignment", "European Partnership Bill", "single market", "customs union", "Windsor Framework", "Northern Ireland Protocol"],
+        "2": ["Brussels", "rejoin*", "Leave voters", "Emissions Trading", "fishing access", "reset"],
+        "1": ["cs:Remain", "Europe", "European"]
+      }
+    },
+    {
+      "id": "rel-sovereignty",
+      "topic": "ukgov-4",
+      "ref": "4.4",
+      "name": "Location of sovereignty",
+      "context": "uk",
+      "about": "Where sovereignty lies: Parliament, the people, the executive, devolved bodies, the EU (past) and the ECHR.",
+      "look": "ECHR exit pledges, Brexit sovereignty claims, referendums as popular sovereignty, devolution tensions.",
+      "keywords": {
+        "3": ["sovereignty", "parliamentary sovereignty", "take back control", "leave the ECHR", "quit the ECHR", "exit the ECHR", "withdraw from the ECHR", "leaving the ECHR", "popular sovereignty", "supremacy of Parliament", "rule-taker*", "legal sovereignty", "political sovereignty"],
+        "2": ["sovereign", "Strasbourg", "European Court of Human Rights"],
+        "1": ["cs:ECHR", "Brexit", "devolution", "referendum"]
+      }
+    },
+    {
+      "id": "ideas-conservatism",
+      "topic": "ideas-core",
+      "ref": "Core",
+      "name": "Conservatism",
+      "context": "any",
+      "min": 3,
+      "about": "Tradition, pragmatism, human imperfection, organic society, paternalism; one-nation vs New Right.",
+      "look": "One-nation vs New Right tensions, tax cuts and small-state arguments, law-and-order and tradition debates.",
+      "keywords": {
+        "3": ["conservatism", "re:\\bone[- ]nation\\b", "Thatcherism", "Thatcherite", "neoliberal*", "neo-liberal*", "New Right", "neoconservat*", "neo-conservat*", "libertarian*", "paternalis*", "traditional values", "small state", "smaller state", "Oakeshott", "Nozick", "Ayn Rand", "Edmund Burke", "Hobbes"],
+        "2": ["tax cuts", "deregulat*", "free market*", "free-market", "law and order", "family values", "privatis*", "privatiz*", "red tape"],
+        "1": ["tradition*", "authority"]
+      }
+    },
+    {
+      "id": "ideas-liberalism",
+      "topic": "ideas-core",
+      "ref": "Core",
+      "name": "Liberalism",
+      "context": "any",
+      "min": 3,
+      "about": "Individualism, liberty, limited government, rationalism, social justice; classical vs modern liberalism.",
+      "look": "Free speech and civil liberty debates, welfare-state arguments, equality of opportunity, liberal democracy under strain.",
+      "keywords": {
+        "3": ["liberalism", "classical liberal*", "social liberal*", "modern liberal*", "liberal democracy", "individual liberty", "individual freedom*", "John Stuart Mill", "Rawls", "John Locke", "Wollstonecraft", "Betty Friedan", "harm principle", "equality of opportunity"],
+        "2": ["civil libert*", "free speech", "freedom of speech", "tolerance", "social contract", "limited government", "welfare state", "meritocra*"],
+        "1": ["rule of law", "liberal"]
+      }
+    },
+    {
+      "id": "ideas-socialism",
+      "topic": "ideas-core",
+      "ref": "Core",
+      "name": "Socialism",
+      "context": "any",
+      "min": 3,
+      "about": "Collectivism, common humanity, equality, social class, workers' control; revolutionary socialism, social democracy, Third Way.",
+      "look": "Nationalisation and public ownership, wealth taxes, workers' rights, inequality, debates on Labour's direction.",
+      "keywords": {
+        "3": ["socialism", "socialist*", "nationalisation", "nationalise", "nationalised", "nationalising", "nationalization", "nationalize*", "public ownership", "common ownership", "wealth tax*", "redistribut*", "workers' rights", "trade union rights", "Employment Rights Act", "collectivis*", "Marxis*", "Karl Marx", "Third Way", "New Labour", "Old Labour", "social democra*", "Crosland", "Giddens", "Beatrice Webb", "Rosa Luxemburg", "class struggle", "democratic socialis*", "steel nationalisation"],
+        "2": ["capitalism", "inequality", "universal basic income", "Great British Railways", "Great British Energy", "Mamdani", "communis*"],
+        "1": ["Your Party", "Corbyn", "Bernie Sanders", "working class"]
+      }
+    },
+    {
+      "id": "ideas-anarchism",
+      "topic": "ideas-noncore",
+      "ref": "Non-core",
+      "name": "Anarchism",
+      "context": "any",
+      "min": 3,
+      "about": "Rejection of the state, liberty, 'anarchy is order', economic freedom; collectivist vs individualist anarchism.",
+      "look": "Anti-state movements, mutual aid, direct-action groups that reject state authority.",
+      "keywords": {
+        "3": ["anarchis*", "anarchist*", "anti-state", "mutual aid", "re:\\banarcho-\\w+", "Proudhon", "Bakunin", "Kropotkin", "Emma Goldman", "Max Stirner"],
+        "2": ["stateless"],
+        "1": ["direct action"]
+      }
+    },
+    {
+      "id": "ideas-ecologism",
+      "topic": "ideas-noncore",
+      "ref": "Non-core",
+      "name": "Ecologism",
+      "context": "any",
+      "min": 3,
+      "about": "Ecology, holism, environmental ethics, sustainability; deep vs shallow green, social ecology.",
+      "look": "Net zero politics, degrowth vs green growth, climate activism, biodiversity policy.",
+      "keywords": {
+        "3": ["ecologis*", "deep green", "shallow green", "eco-socialis*", "eco-anarchis*", "ecofeminis*", "eco-feminis*", "degrowth", "post-material*", "anti-consumeris*", "Rachel Carson", "Schumacher", "Aldo Leopold", "Murray Bookchin", "Carolyn Merchant", "environmentalis*", "rewilding", "climate activist*"],
+        "2": ["sustainab*", "biodiversity", "net zero", "net-zero", "climate change", "climate crisis", "Just Stop Oil", "Extinction Rebellion"],
+        "1": ["Green Party", "fossil fuel*", "environment", "environmental"]
+      }
+    },
+    {
+      "id": "ideas-feminism",
+      "topic": "ideas-noncore",
+      "ref": "Non-core",
+      "name": "Feminism",
+      "context": "any",
+      "min": 3,
+      "about": "Sex and gender, patriarchy, 'the personal is political', equality vs difference feminism, intersectionality.",
+      "look": "Gender pay gap, violence against women, representation of women, debates over sex and gender.",
+      "keywords": {
+        "3": ["feminis*", "gender equality", "gender pay gap", "women's rights", "misogyn*", "patriarch*", "violence against women", "cs:VAWG", "MeToo", "equal pay", "reproductive rights", "biological sex", "gender identity", "intersectional*", "bell hooks", "de Beauvoir", "Kate Millett", "Sheila Rowbotham", "Charlotte Perkins Gilman", "female representation", "gender-critical"],
+        "2": ["abortion", "For Women Scotland", "trans rights", "women MPs", "sexual harassment", "domestic abuse"],
+        "1": ["transgender", "women", "gender"]
+      }
+    },
+    {
+      "id": "ideas-multiculturalism",
+      "topic": "ideas-noncore",
+      "ref": "Non-core",
+      "name": "Multiculturalism",
+      "context": "any",
+      "min": 3,
+      "about": "Politics of recognition, culture and identity, minority rights, diversity; liberal, pluralist and cosmopolitan multiculturalism.",
+      "look": "Integration and cohesion debates, minority rights, responses to racism and religious hatred.",
+      "keywords": {
+        "3": ["multicultural*", "community cohesion", "British values", "minority rights", "cultural identity", "politics of recognition", "Parekh", "Modood", "Kymlicka", "Charles Taylor", "Isaiah Berlin"],
+        "2": ["integration", "social cohesion", "Islamophobia", "antisemitism", "racism", "ethnic minorit*", "asylum hotel*", "hate crime*"],
+        "1": ["diversity", "racial", "migrants", "immigration"]
+      }
+    },
+    {
+      "id": "ideas-nationalism",
+      "topic": "ideas-noncore",
+      "ref": "Non-core",
+      "name": "Nationalism",
+      "context": "any",
+      "min": 3,
+      "about": "Nations, self-determination, the nation-state, culturalism; liberal, conservative, anti-colonial and expansionist nationalism.",
+      "look": "Independence movements, patriotism and flag politics, far-right nationalism, expansionist claims on territory.",
+      "keywords": {
+        "3": ["nationalism", "nationalist*", "self-determination", "national identity", "patriotis*", "independence movement*", "separatis*", "secession*", "civic nationalis*", "ethnic nationalis*", "Rousseau", "Herder", "Mazzini", "Maurras", "Marcus Garvey", "anti-colonial*", "post-colonial*", "expansionis*", "irredentis*"],
+        "2": ["Scottish independence", "Irish unity", "far-right", "far right", "populis*", "St George", "Union Jack", "Union flag"],
+        "1": ["flags", "flag", "annex*", "sovereignty"]
+      }
+    },
+    {
+      "id": "us-constitution",
+      "topic": "usa-1",
+      "ref": "1.1, 1.2, 1.4",
+      "name": "The Constitution",
+      "context": "us",
+      "about": "The nature and principles of the US Constitution: separation of powers, checks and balances, amendments, interpretation.",
+      "look": "Constitutional clashes between branches, amendment-based disputes, originalism vs living constitution.",
+      "keywords": {
+        "3": ["unconstitutional", "First Amendment", "Second Amendment", "Fourth Amendment", "Fifth Amendment", "Tenth Amendment", "14th Amendment", "Fourteenth Amendment", "re:\\b\\d+(?:st|nd|rd|th) Amendment\\b", "Bill of Rights", "separation of powers", "checks and balances", "Founding Fathers", "framers", "constitutional amendment", "Article II", "Article III", "emoluments", "living constitution", "constitutional crisis", "Federalist Papers"],
+        "2": ["cs:Constitution", "constitutional", "originalis*", "textualis*", "Article I"],
+        "1": ["amendment", "rule of law"]
+      }
+    },
+    {
+      "id": "us-federalism",
+      "topic": "usa-1",
+      "ref": "1.3",
+      "name": "Federalism",
+      "context": "us",
+      "about": "The balance of power between Washington and the states — and fights over it.",
+      "look": "National Guard deployments, sanctuary cities, states suing the federal government, state laws diverging.",
+      "keywords": {
+        "3": ["federalism", "states' rights", "states rights", "National Guard", "sanctuary cit*", "sanctuary jurisdiction*", "sanctuary state*", "Insurrection Act", "Posse Comitatus", "federal troops", "state legislature*", "state supreme court", "Operation Metro Surge", "Midway Blitz", "funding cuts to states", "Tenth Amendment", "state-level"],
+        "2": ["federal agents", "governor", "governors", "cs:Gov.", "state lawmakers", "attorneys general", "state law", "state laws", "Newsom", "Pritzker", "DeSantis", "Greg Abbott", "Walz", "Hochul", "Spanberger", "Sherrill", "block grant*", "federal funding", "preempt*"],
+        "1": ["mayor", "Mamdani", "Medicaid", "attorney general"]
+      }
+    },
+    {
+      "id": "us-congress",
+      "topic": "usa-2",
+      "ref": "2",
+      "name": "Congress",
+      "context": "us",
+      "about": "The House and Senate: structure, legislation, representation, oversight, the power of the purse.",
+      "look": "Shutdowns and spending fights, filibuster, discharge petitions, hearings and subpoenas, war powers votes.",
+      "keywords": {
+        "3": ["Congress", "congressional", "cs:Senate", "House of Representatives", "House Republicans", "House Democrats", "Senate Republicans", "Senate Democrats", "House vote*", "Speaker Johnson", "Mike Johnson", "Hakeem Jeffries", "Jeffries", "John Thune", "Thune", "Schumer", "filibuster", "cloture", "discharge petition", "government shutdown", "shutdown", "continuing resolution", "appropriation*", "spending bill", "debt ceiling", "congressional hearing", "Senate hearing", "House committee", "Senate committee", "Oversight Committee", "impeach*", "war powers", "confirmation hearing", "confirmed by the Senate", "Senate confirm*", "Freedom Caucus", "cs:Capitol Hill", "reconciliation bill"],
+        "2": ["senator*", "cs:Sen.", "cs:Rep.", "the House", "reconciliation", "stopgap", "funding bill", "oversight", "subpoena*", "Judiciary Committee", "lawmakers", "bipartisan", "Epstein files", "Massie", "Marjorie Taylor Greene"],
+        "1": ["caucus", "legislation", "bill", "vote"]
+      }
+    },
+    {
+      "id": "us-presidency",
+      "topic": "usa-3",
+      "ref": "3",
+      "name": "Presidency",
+      "context": "us",
+      "about": "Formal and informal powers of the president, relations with other branches, limits on presidential power.",
+      "look": "Executive orders, emergency powers, tariffs, pardons, firing officials, military action without Congress, approval ratings.",
+      "keywords": {
+        "3": ["executive order*", "President Trump", "Trump administration", "White House", "Oval Office", "pardon*", "clemency", "commander-in-chief", "commander in chief", "imperial presiden*", "imperilled presiden*", "unitary executive", "emergency powers", "national emergency", "cs:IEEPA", "Executive Office of the President", "signing statement*", "State of the Union", "bully pulpit", "Humphrey's Executor"],
+        "2": ["cs:Trump", "cs:Vance", "vice president", "presidential", "the president", "veto", "vetoed", "vetoes", "Section 301", "Section 122", "approval rating*", "Rubio", "Hegseth", "Bessent", "Mullin", "Todd Blanche", "Karoline Leavitt", "press secretary", "Susie Wiles", "cs:EOP", "independent agenc*", "Lisa Cook", "cs:DOGE", "Trump TV"],
+        "1": ["tariff*", "chief of staff", "fired", "Federal Reserve", "Project 2025", "cabinet"]
+      }
+    },
+    {
+      "id": "us-scotus",
+      "topic": "usa-4",
+      "ref": "4.1-4.3",
+      "name": "Supreme Court",
+      "context": "us",
+      "about": "The Supreme Court's role, appointments and impact on public policy; judicial activism vs restraint.",
+      "look": "Major rulings and their vote splits, emergency-docket orders, nominations, originalism vs living constitution.",
+      "keywords": {
+        "3": ["Supreme Court", "cs:SCOTUS", "justices", "re:\\bJustices? (?:Roberts|Thomas|Alito|Sotomayor|Kagan|Gorsuch|Kavanaugh|Barrett|Jackson)\\b", "Chief Justice", "John Roberts", "Clarence Thomas", "Samuel Alito", "Alito", "Gorsuch", "Kavanaugh", "Coney Barrett", "Sotomayor", "Elena Kagan", "Kagan", "Ketanji Brown Jackson", "shadow docket", "emergency docket", "emergency application", "oral argument*", "court's conservative*", "Callais", "Roe v. Wade", "Dobbs", "Humphrey's Executor", "Supreme Court nominee", "court packing", "judicial restraint", "judicial activism"],
+        "2": ["conservative majority", "re:\\b6[-–]3\\b", "federal judge*", "appeals court", "circuit court", "re:\\b\\d+(?:st|nd|rd|th) Circuit\\b", "judicial review", "cs:Trump v.", "Citizens United", "judicial nominee*"],
+        "1": ["ruling", "ruled", "court", "judge"]
+      }
+    },
+    {
+      "id": "us-rights",
+      "topic": "usa-4",
+      "ref": "4.4-4.5",
+      "name": "Civil rights & liberties",
+      "context": "us",
+      "about": "Protection of civil liberties and rights today, including race and rights, voting rights, immigration and LGBTQ+ rights.",
+      "look": "Voting Rights Act cases, affirmative action/DEI, immigration enforcement, abortion, guns, free speech, trans rights.",
+      "keywords": {
+        "3": ["civil rights", "civil libert*", "Voting Rights Act", "cs:VRA", "voting rights", "affirmative action", "cs:DEI", "diversity, equity and inclusion", "racial discrimination", "racial justice", "Black Lives Matter", "police brutality", "trans athlete*", "gender-affirming", "abortion", "reproductive rights", "gun control", "gun rights", "Second Amendment", "religious liberty", "religious freedom", "birthright citizenship", "due process", "cs:ACLU", "cs:NAACP", "racial gerrymander*", "majority-Black", "majority-minority", "equal protection", "Title IX", "same-sex marriage", "conversion therapy"],
+        "2": ["transgender", "Planned Parenthood", "free speech", "First Amendment", "cs:ICE", "Immigration and Customs Enforcement", "deportation*", "immigration raid*", "police shooting", "segregation", "cs:LGBTQ", "LGBTQ+", "hate crime*", "Renée Good", "Alex Pretti", "free press", "press freedom"],
+        "1": ["detention", "immigrants", "immigration"]
+      }
+    },
+    {
+      "id": "us-elections",
+      "topic": "usa-5",
+      "ref": "5.1",
+      "name": "Elections & campaign finance",
+      "context": "us",
+      "about": "Presidential and congressional elections, primaries, redistricting, incumbency and campaign finance.",
+      "look": "Midterm races, primary upsets, gerrymandering fights, super PAC spending, voting-rule changes.",
+      "keywords": {
+        "3": ["midterm*", "primaries", "Electoral College", "redistricting", "gerrymander*", "Prop 50", "Proposition 50", "ballot measure*", "ballot initiative*", "campaign finance", "super PAC*", "cs:PACs", "Citizens United", "dark money", "incumbency", "generic ballot", "swing state*", "Cook Political", "Senate race*", "House race*", "governor's race", "gubernatorial", "mail-in ballot*", "mail ballot*", "SAVE Act", "SAVE America Act", "proof of citizenship", "election denial", "stolen election", "special election", "Fairshake", "America PAC", "Leading the Future", "cs:FEC", "Federal Election Commission", "cs:NRSC", "cs:DCCC", "cs:NRCC", "congressional map*", "district map*", "House map*"],
+        "2": ["primary", "runoff", "caucuses", "cs:PAC", "fundraising", "incumbent*", "battleground*", "toss-up", "voter ID", "voter turnout", "Paxton", "Platner", "El-Sayed", "Talarico", "open seat*", "campaign", "new map*", "map"],
+        "1": ["fundraiser", "donor*", "turnout", "candidate*", "election", "elections", "poll", "polls", "retire*"]
+      }
+    },
+    {
+      "id": "us-parties",
+      "topic": "usa-5",
+      "ref": "5.2",
+      "name": "Parties",
+      "context": "us",
+      "about": "Ideas and principles of Democrats and Republicans, factions and conflicts within them, coalitions of supporters.",
+      "look": "MAGA vs establishment, progressive vs moderate Democrats, party leadership rows, polarisation.",
+      "keywords": {
+        "3": ["cs:Republican Party", "cs:Democratic Party", "cs:GOP", "cs:DNC", "cs:RNC", "Democratic National Committee", "Republican National Committee", "cs:MAGA", "Make America Great Again", "Tea Party", "moderate Democrats", "moderate Republicans", "centrist Democrats", "party unity", "polarization", "polarisation", "Ken Martin", "party establishment", "Ocasio-Cortez", "cs:AOC", "America Party", "third part*", "Libertarian Party"],
+        "2": ["cs:Republicans", "rcs:(?<!Liberal |Social |Christian |Sweden |Swedish )\\bDemocrats\\b", "Freedom Caucus", "progressive*", "partisan*", "insurgent*", "cs:Squad", "Bernie Sanders", "Mamdani", "Kiley"],
+        "1": ["bipartisan", "establishment", "party leaders"]
+      }
+    },
+    {
+      "id": "us-groups",
+      "topic": "usa-5",
+      "ref": "5.3",
+      "name": "Interest groups",
+      "context": "us",
+      "about": "Interest groups' methods and influence: lobbying, litigation, campaign spending, grassroots mobilisation.",
+      "look": "Lobby spending, groups backing lawsuits, PAC money in primaries, big industry lobbies (crypto, AI, guns).",
+      "keywords": {
+        "3": ["interest group*", "lobbying", "lobbyist*", "cs:AIPAC", "cs:NRA", "National Rifle Association", "Heritage Foundation", "Project 2025", "Chamber of Commerce", "cs:AARP", "Sierra Club", "cs:AFL-CIO", "Teamsters", "labor union*", "amicus", "advocacy group*", "crypto industry", "crypto lobby", "Club for Growth", "Americans for Prosperity", "EMILY's List", "Susan B. Anthony", "MoveOn", "Indivisible", "Turning Point", "pro-Israel group*", "gun lobby"],
+        "2": ["lobby", "cs:ACLU", "cs:NAACP", "Planned Parenthood", "think tank*", "AI industry", "Big Tech", "tech industry", "pharmaceutical industry", "oil industry", "Fairshake", "Leading the Future", "grassroots", "Koch", "Charlie Kirk"],
+        "1": ["unions", "advocates"]
+      }
+    },
+    {
+      "id": "us-compare",
+      "topic": "usa-6",
+      "ref": "6",
+      "name": "UK–US comparisons",
+      "context": "both",
+      "about": "Stories that link the UK and US systems — useful for comparative (rational, cultural, structural) answers.",
+      "look": "UK–US relations, similar debates in both countries (e.g. courts vs executives, populism, party splits).",
+      "keywords": {
+        "3": ["special relationship", "US-UK", "UK-US", "US and UK", "UK and US", "Britain and America", "Anglo-American", "Burnham and Trump", "Trump and Burnham", "re:\\bTrump\\b[^.]{0,80}\\bBurnham\\b", "re:\\bBurnham\\b[^.]{0,80}\\bTrump\\b", "rcs:\\b(?:Prime Minister|PM)\\b[^.]{0,60}\\b(?:President )?Trump\\b", "rcs:\\bTrump\\b[^.]{0,60}\\b(?:Prime Minister|PM)\\b[^.]{0,20}\\b(?:Burnham|UK|Britain)"],
+        "2": ["transatlantic", "state visit"],
+        "1": []
+      }
+    },
+    {
+      "id": "gl-state",
+      "topic": "global-1",
+      "ref": "1",
+      "name": "State, sovereignty & globalisation",
+      "context": "any",
+      "about": "The nation-state and sovereignty; economic, political and cultural globalisation and its impact on states.",
+      "look": "Tariffs and trade wars, supply-chain shocks, migration, cyber and AI governance, territorial disputes.",
+      "keywords": {
+        "3": ["globalisation", "globalization", "deglobali*", "national sovereignty", "state sovereignty", "territorial integrity", "nation-state*", "interdependen*", "trade war*", "protectionis*", "reshoring", "cyberattack*", "cyber attack*", "AI governance", "AI summit", "global economy", "world economy", "America First"],
+        "2": ["sovereignty", "supply chain*", "tariff*", "migration", "multinational*", "tech giant*", "cyber", "AI safety", "oil price*", "Strait of Hormuz", "Hormuz", "secession", "annex*", "self-determination", "failed state*", "global governance", "Greenland"],
+        "1": ["migrants", "refugee*", "border", "borders", "hack*", "artificial intelligence", "shipping"]
+      }
+    },
+    {
+      "id": "gl-un-nato",
+      "topic": "global-2",
+      "ref": "2.1",
+      "name": "UN & NATO",
+      "context": "any",
+      "about": "The UN (Security Council, General Assembly, Secretary-General, peacekeeping) and NATO: roles and effectiveness.",
+      "look": "Security Council vetoes and resolutions, UN reform and funding, the Secretary-General race, NATO summits and Article 4/5.",
+      "keywords": {
+        "3": ["United Nations", "Security Council", "cs:UNSC", "General Assembly", "cs:UNGA", "Guterres", "Secretary-General", "peacekeep*", "blue helmets", "cs:UN80", "cs:NATO", "cs:Nato", "North Atlantic Treaty", "Article 5", "Article 4", "Rutte", "Eastern Sentry", "Arctic Sentry", "Board of Peace", "stabilization force", "stabilisation force", "Hague summit", "Ankara summit", "Grynspan", "straw poll*"],
+        "2": ["secretary general", "veto", "vetoed", "vetoes", "Human Rights Council", "cs:UNRWA", "cs:UNESCO", "cs:UNHCR", "cs:OSCE", "defence spending", "defense spending", "alliance", "cs:UN"],
+        "1": ["resolution", "allies", "cs:UNICEF", "World Health Organization"]
+      },
+      "neg": ["tobacco", "fertility", "vaccin*", "Ebola", "malaria", "disease*", "health agency", "polio", "measles", "cholera", "out of school"]
+    },
+    {
+      "id": "gl-economic",
+      "topic": "global-2",
+      "ref": "2.2",
+      "name": "IMF, World Bank, WTO, G7/G20",
+      "context": "any",
+      "about": "Global economic governance: the IMF, World Bank, WTO, G7 and G20, trade, debt and global poverty.",
+      "look": "Trade disputes and deals, IMF loans, debt crises, aid cuts, G7/G20 summits, BRICS finance.",
+      "keywords": {
+        "3": ["cs:IMF", "International Monetary Fund", "World Bank", "cs:WTO", "World Trade Organization", "World Trade Organisation", "cs:G7", "cs:G20", "cs:G-7", "cs:G-20", "Group of Seven", "Group of 20", "debt relief", "sovereign debt", "structural adjustment", "Poverty Reduction Strategy", "aid cuts", "development aid", "cs:USAID", "Sustainable Development Goals", "cs:SDGs", "global poverty", "extreme poverty", "New Development Bank", "global minimum tax", "Busan truce"],
+        "2": ["trade deal*", "trade agreement*", "free trade", "tariff*", "trade talks", "debt crisis", "bailout", "foreign aid", "economic sanctions", "BRICS", "Davos", "World Economic Forum", "trade war", "Turnberry", "critical minerals", "rare earth*", "cs:OECD"],
+        "1": ["poverty", "sanctions", "Mercosur", "trade"]
+      }
+    },
+    {
+      "id": "gl-rights",
+      "topic": "global-3",
+      "ref": "3.1",
+      "name": "Human rights & international law",
+      "context": "any",
+      "about": "The ICJ, ICC and human rights regime; humanitarian intervention and the responsibility to protect.",
+      "look": "ICC/ICJ cases and warrants, war crimes allegations, humanitarian crises, interventions and their legitimacy.",
+      "keywords": {
+        "3": ["International Criminal Court", "cs:ICC", "International Court of Justice", "cs:ICJ", "war crime*", "genocide", "crimes against humanity", "ethnic cleansing", "humanitarian intervention", "responsibility to protect", "cs:R2P", "humanitarian aid", "famine", "civilian casualties", "atrocit*", "Amnesty International", "Human Rights Watch", "Geneva Convention*", "international law", "international humanitarian law", "Duterte", "Karim Khan", "Rome Statute", "political prisoner*", "cs:UNHCR", "UN human rights chief", "rights chief"],
+        "2": ["human rights", "arrest warrant*", "humanitarian", "civilians", "massacre*", "refugees", "displaced", "torture", "crackdown", "death penalty", "executions", "El Fasher", "cs:RSF", "aid workers", "starvation", "malnutrition", "displacement", "Gaza", "Volker Türk", "cs:Türk", "cs:Turk"],
+        "1": ["tribunal", "Sudan", "ceasefire", "hostage*", "Palestinians", "Palestinian", "West Bank", "occupation", "hunger"]
+      }
+    },
+    {
+      "id": "gl-environment",
+      "topic": "global-3",
+      "ref": "3.2",
+      "name": "Environmental governance",
+      "context": "any",
+      "about": "Global climate governance: the UNFCCC, COP summits, the Paris Agreement, and why cooperation is hard.",
+      "look": "COP negotiations, national pledges (NDCs), climate finance, withdrawals from agreements, record temperatures.",
+      "keywords": {
+        "3": ["climate change", "climate crisis", "global warming", "cs:COP31", "cs:COP30", "rcs:\\bCOP ?\\d\\d\\b", "UN climate", "cs:UNFCCC", "Paris Agreement", "Paris climate", "cs:IPCC", "greenhouse gas*", "carbon emissions", "climate finance", "loss and damage", "adaptation finance", "deforestation", "1.5C", "re:1\\.5\\s?(?:°C|C\\b|degrees)", "climate summit", "Kyoto", "Mutirão", "Tropical Forest Forever", "NDCs", "nationally determined contribution*"],
+        "2": ["emissions", "net zero", "net-zero", "fossil fuel*", "renewable*", "biodiversity", "hottest", "sea level*", "extreme weather", "carbon tax", "carbon market*", "emissions trading", "cs:NDC"],
+        "1": ["climate", "heatwave*", "Chris Bowen", "floods"]
+      }
+    },
+    {
+      "id": "gl-power",
+      "topic": "global-4",
+      "ref": "4",
+      "name": "Power & polarity",
+      "context": "any",
+      "about": "Types of power, great and emerging powers, polarity (uni/bi/multipolar), state systems and global developments.",
+      "look": "US–China rivalry, Russia's war, rising powers and BRICS, uses of hard/soft power, authoritarian vs democratic states.",
+      "keywords": {
+        "3": ["superpower*", "great power*", "hegemon*", "multipolar*", "bipolar*", "unipolar*", "polarity", "balance of power", "soft power", "hard power", "smart power", "sphere of influence", "spheres of influence", "South China Sea", "Global South", "BRICS", "Shanghai Cooperation Organisation", "Shanghai Cooperation Organization", "nuclear weapon*", "arms race", "rogue state*", "regime change", "middle power*", "emerging power*", "rising power*", "US-China", "China-US", "Donroe", "Monroe Doctrine", "Operation Epic Fury"],
+        "2": ["cs:Xi Jinping", "Putin", "Kremlin", "Beijing", "Taiwan", "cs:SCO", "nuclear deal", "nuclear programme", "nuclear program", "invasion", "invade*", "peace talks", "peace deal", "peace plan", "Zelensky*", "North Korea", "Kim Jong Un", "authoritarian*", "autocra*", "dictator*", "coup", "defence pact", "arms deal", "Maduro", "Khamenei", "Ukraine", "Russia", "Russian", "China", "Chinese", "Iran", "Iranian", "Houthi*", "Hezbollah", "security deal", "security pact", "defence deal", "defense deal"],
+        "1": ["military", "airstrike*", "missile*", "drone*", "war", "Modi", "India", "Venezuela", "Netanyahu", "Hamas", "terroris*"]
+      },
+      "neg": ["Nasdaq", "stock market*", "Wall Street", "cs:FTSE", "Dow Jones", "celebrit*", "football", "FIFA", "box office"]
+    },
+    {
+      "id": "gl-regionalism",
+      "topic": "global-5",
+      "ref": "5",
+      "name": "Regionalism & the EU",
+      "context": "any",
+      "about": "Regional organisations (EU, ASEAN, AU, Arab League, USMCA) — integration, enlargement and global influence.",
+      "look": "EU sanctions and trade deals, enlargement, EU defence moves, divisions between member states, ASEAN/AU action.",
+      "keywords": {
+        "3": ["European Union", "European Commission", "von der Leyen", "European Parliament", "European Council", "Council of the EU", "Kaja Kallas", "eurozone", "Schengen", "EU enlargement", "EU membership", "EU sanctions", "sanctions package", "cs:ASEAN", "African Union", "Arab League", "cs:USMCA", "cs:NAFTA", "Mercosur", "Gulf Cooperation Council", "cs:GCC", "cs:ECOWAS", "regional bloc*", "regional organisation*", "regional organization*", "regionalism", "regional integration", "ReArm Europe", "Pact on Migration"],
+        "2": ["cs:EU", "Kallas", "enlargement", "accession", "candidate countr*", "single market", "customs union", "Orbán", "Orban", "Péter Magyar", "SAFE loans", "European defence", "European defense", "coalition of the willing", "EU-India", "EU-US", "Council of Europe", "Timor-Leste"],
+        "1": ["Brussels", "cs:AU", "Magyar", "Europe", "European"]
+      }
+    },
+    {
+      "id": "gl-theories",
+      "topic": "global-6",
+      "ref": "6",
+      "name": "Realism vs liberalism",
+      "context": "any",
+      "about": "How realist and liberal theories explain events: state self-interest and power vs cooperation, institutions and interdependence.",
+      "look": "'Rules-based order' debates, unilateral vs multilateral action, cooperation through institutions, security dilemmas.",
+      "keywords": {
+        "3": ["liberal internationalis*", "rules-based order", "rules-based international order", "international order", "world order", "global order", "multilateralism", "anarchical society", "security dilemma", "collective security", "complex interdependence", "power politics", "realpolitik"],
+        "2": ["realism", "realist*", "multilateral", "unilateral*", "interdependence", "national interest*", "global governance"],
+        "1": ["cooperation", "diplomacy", "rupture"]
+      }
+    }
+  ]
+}

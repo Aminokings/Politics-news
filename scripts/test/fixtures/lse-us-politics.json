@@ -1,0 +1,103 @@
+{
+  "feed": "lse-us-politics",
+  "url": "https://blogs.lse.ac.uk/usappblog/feed/",
+  "format": "rss",
+  "fetchedAt": "2026-09-23T17:24:00Z",
+  "items": [
+    {
+      "title": "American democracy has continued to decline under Donald Trump",
+      "link": "https://blogs.lse.ac.uk/usappblog/2026/09/17/democracy-us-decline-trump/",
+      "date": "Thu, 17 Sep 2026 15:02:38 +0000",
+      "description": "During his second term Donald Trump has sought to undermine American democracy by restricting voting and weakening the rule of law. Using World Bank data Paul Whiteley writes that American democracy has been eroding for some time and that the decline has been even more rapid under Trump. These efforts to undermine democracy, may come … Continued The post American democracy has continued to",
+      "categories": [
+        "Democracy and culture",
+        "democratic decline",
+        "midterms",
+        "Trump",
+        "World Bank"
+      ]
+    },
+    {
+      "title": "A president’s greatness depends on their stewardship of the constitutional order",
+      "link": "https://blogs.lse.ac.uk/usappblog/2026/09/17/constitution-presidential-greatness/",
+      "date": "Thu, 17 Sep 2026 11:44:07 +0000",
+      "description": "On entering office, the president of the United States must swear an oath to “preserve, protect and defend the Constitution”. Justin S. Vaughn writes that how the president performs the role of constitutional stewardship is an important standard for judging presidential greatness. Looking at examples of the constitutional stewardship of James Buchanan, Abraham Lincoln, Dwight … Continued The post",
+      "categories": [
+        "Democracy and culture",
+        "Buchanan",
+        "Constitution",
+        "Eisenhower",
+        "Lincoln",
+        "Nixon",
+        "power"
+      ]
+    },
+    {
+      "title": "Mark Carney’s EU associate membership bid reflects deepening Canada-EU ties amid a changing international order",
+      "link": "https://blogs.lse.ac.uk/usappblog/2026/09/16/canada-eu-associate-membership-bid/",
+      "date": "Wed, 16 Sep 2026 17:23:26 +0000",
+      "description": "Against the backdrop of an ongoing trade war with the US, Canada’s Prime Minister, Mark Carney has been exploring the possibility of closer relations with the European Union (EU). Amy Verdun writes that discussions of potential EU “associate membership” for Canada are the latest expression of the deepening relations between the two in the face … Continued The post Mark Carney’s EU associate",
+      "categories": [
+        "US foreign affairs and the North American neighbourhood",
+        "Canada",
+        "EU",
+        "European Union"
+      ]
+    },
+    {
+      "title": "Behavioural AI and decision-making with Professor Ganna Pogrebna | The Ballpark podcast",
+      "link": "https://blogs.lse.ac.uk/usappblog/2026/09/15/behavioural-ai-and-decision-making-with-professor-ganna-pogrebna-the-ballpark-podcast/",
+      "date": "Tue, 15 Sep 2026 15:25:49 +0000",
+      "description": "As the popularity of AI continues to grow, this new technology is increasingly being applied to make decisions based on interactions with humans, and their behaviours. But what happens if the way these AI systems have been built mean that they get it wrong? AI systems are increasingly being used to make important decisions about … Continued The post Behavioural AI and decision-making with",
+      "categories": [
+        "AI and the US",
+        "The Ballpark podcast interviews",
+        "behavioural AI",
+        "behavioural economics",
+        "jobs",
+        "LLMs",
+        "machines"
+      ]
+    },
+    {
+      "title": "Confusing US tariff announcements doubled the decline in trade",
+      "link": "https://blogs.lse.ac.uk/usappblog/2026/09/14/confusing-tariff-announcements-trade-decline/",
+      "date": "Mon, 14 Sep 2026 15:52:27 +0000",
+      "description": "During 2025 the US administration made more than 50 tariff-related announcements. In new research, Kalina Manova, Dennis Novy, Thomas Sampson and Aaron Tang examine how the complexity of these announcements disrupted US imports. They find that tariff confusion stemming from the way these policy changes were made doubled their negative impact on imports. In 2025, … Continued The post Confusing US",
+      "categories": [
+        "Economy",
+        "tariff confusion",
+        "tariff measures",
+        "tariffs",
+        "trade"
+      ]
+    },
+    {
+      "title": "How domestic policy choices can build trust between rival nations",
+      "link": "https://blogs.lse.ac.uk/usappblog/2026/09/10/foreign-policy-trust-rival-nations/",
+      "date": "Thu, 10 Sep 2026 16:00:22 +0000",
+      "description": "Foreign policy rivalries between countries have been a constant in global politics for decades. But how can countries begin to move towards cooperation when there is a lack of trust between them? In new research, Michael Goldfien, Michael Joseph and Roseanne McManus argue that domestic policies, which are often largely independent of foreign policies, can … Continued The post How domestic policy",
+      "categories": [
+        "US foreign affairs and the North American neighbourhood",
+        "conflict",
+        "domestic policy",
+        "rivals",
+        "trust"
+      ]
+    },
+    {
+      "title": "The 2026 Midterms: Early and mail in voting means that the election starts weeks before November",
+      "link": "https://blogs.lse.ac.uk/usappblog/2026/09/10/election-starts-before-november/",
+      "date": "Thu, 10 Sep 2026 14:42:23 +0000",
+      "description": "While Election Day 2026 is still eight weeks away, the midterm elections are about to begin, with early and mail in voting in many states opening this month. As the election starts to unfold, Peter Finn gives an overview on early and mail in voting and how both have been politicised by the White House. … Continued The post The 2026 Midterms: Early and mail in voting means that the election starts",
+      "categories": [
+        "Elections and party politics across the US",
+        "The 2026 Midterms",
+        "early voting",
+        "mail in voting",
+        "states",
+        "voting"
+      ]
+    }
+  ]
+}
