@@ -1,0 +1,93 @@
+# Fetches the news every 3 hours, tags it to the Edexcel spec, saves the archive
+# to the `data` branch and publishes the site to GitHub Pages. The first update
+# of the day is live before 6:00 am Dubai time.
+# You can also run it by hand: Actions tab → "Update news and deploy" → Run workflow.
+name: Update news and deploy
+
+on:
+  schedule:
+    # Cron times are UTC. Dubai is UTC+4 all year, so this starts at 5:40, 8:40,
+    # 11:40, 14:40, 17:40, 20:40, 23:40 and 2:40 Dubai time. GitHub often starts
+    # scheduled runs a few minutes late, so 5:40 gets new stories up by 6:00.
+    - cron: "40 1,4,7,10,13,16,19,22 * * *"
+    # A second morning run (6:10 Dubai) in case GitHub skips the 5:40 one.
+    - cron: "10 2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write # save the news archive to the `data` branch
+  pages: write # publish to GitHub Pages
+  id-token: write
+
+concurrency:
+  group: update-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Get the previous news archive (data branch)
+        id: prev
+        run: |
+          mkdir -p .prev
+          if git ls-remote --exit-code --heads origin data > /dev/null 2>&1; then
+            git fetch --depth=1 origin data
+            git archive --format=tar FETCH_HEAD | tar -x -C .prev
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No archive yet: this is the first run."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch the news and tag it
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # optional, see README
+          AI_MAX_PER_RUN: ${{ vars.AI_MAX_PER_RUN }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+        run: node scripts/update-news.mjs --prev .prev --out .out ${{ steps.prev.outputs.found == 'true' && '--require-prev' || '' }}
+
+      - name: Save the archive to the data branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd .out
+          git init -q
+          git checkout -q -b data
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "News update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push -q --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" data
+
+      - name: Build the site
+        run: node scripts/build-site.mjs --data .out --out _site
+
+      - name: Set up Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

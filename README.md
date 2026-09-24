@@ -39,7 +39,7 @@ You need a free GitHub account.
 4. **Run the updater.** On the **Actions** tab, open **Update news and deploy** and click **Run workflow**. If GitHub asks, enable workflows first. The first run takes 1–2 minutes.
 5. **Open your site** at `https://YOUR-USERNAME.github.io/case-in-point/` (the link is also shown under *Settings → Pages*).
 
-After that, the site updates itself every 3 hours.
+After that, the site updates itself every 3 hours. The first update of the day is live before 6:00 am Dubai time.
 
 ## How it works
 
@@ -82,7 +82,7 @@ No internet? `npm run update:fixtures` builds demo data from saved sample feeds.
 | Tagging rules | `config/spec.json` |
 | Exam questions | `config/questions.json` |
 | Quiz facts | `config/facts.json` |
-| How often it updates | the `cron` line in `.github/workflows/update.yml` (times are UTC) |
+| How often it updates | the `cron` lines in `.github/workflows/update.yml` (times are UTC; Dubai is UTC+4) |
 
 **Adding or removing news sources.** Each line in `config/feeds.json` is one RSS or Atom feed with these fields:
 
