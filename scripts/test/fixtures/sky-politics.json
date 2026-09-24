@@ -2,42 +2,55 @@
   "feed": "sky-politics",
   "url": "https://feeds.skynews.com/feeds/rss/politics.xml",
   "format": "rss",
-  "fetchedAt": "2026-09-23T17:14:00Z",
+  "fetchedAt": "2026-09-24T04:14:00Z",
   "items": [
+    {
+      "title": "<a href='https://news.sky.com/story/politics-latest-burnham-un-speech-new-york-trump-chagos-12593360?postid=12503049#liveblog-body'>Long-term benefits claimants could be banned from buying alcohol and cigarettes under Tory plans</a>",
+      "link": "https://news.sky.com/story/long-term-benefits-claimants-could-be-banned-from-buying-alcohol-and-cigarettes-under-tory-plans-13591237",
+      "date": "Thu, 24 Sep 2026 02:27:00 +0100",
+      "description": "",
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/07/1920x1080/skynews-kemi-badenoch-pool-clip_7292311.png?20260707181029", "width": 1920, "type": "image/png"}]
+    },
+    {
+      "title": "Teenagers to be offered new vocational GCSEs",
+      "link": "https://news.sky.com/story/teenagers-in-england-to-be-offered-new-vocational-gcses-13591233",
+      "date": "Wed, 23 Sep 2026 23:59:00 +0100",
+      "description": "Teenagers in England will be able to study new vocational GCSEs as part of the government's plans to tackle youth unemployment.",
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/09/1920x1080/skynews-vocational-gcses-education_7359906.jpg?20260924011134", "width": 1920, "type": "image/jpeg"}]
+    },
+    {
+      "title": "Home secretary orders 'urgent review' as second small boat in two days evades Border Force",
+      "link": "https://news.sky.com/story/home-secretary-orders-urgent-review-as-second-small-boat-in-two-days-reaches-uk-after-evading-border-force-13591067",
+      "date": "Wed, 23 Sep 2026 14:46:00 +0100",
+      "description": "Home secretary Shabana Mahmood has ordered an \"urgent review\" after the Border Force failed to intercept a second migrant boat in two days before it reached the Kent coast.",
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/09/1920x1080/skynews-shabana-mahmood-home-office_7359618.jpg?20260923171808", "width": 1920, "type": "image/jpeg"}]
+    },
     {
       "title": "Has Burnham changed tack on Russia?",
       "link": "https://news.sky.com/story/has-burnham-changed-tack-on-russia-13590666",
       "date": "Wed, 23 Sep 2026 07:40:00 +0100",
       "description": "👉Listen to Politics at Sam and Anne's on your podcast app👈",
-      "categories": []
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/08/1920x1080/skynews-pasaa-sam-and-anne_7332493.png?20260827102415", "width": 1920, "type": "image/png"}]
     },
     {
       "title": "Kemi Badenoch told 'I would have shot you dead' by man claiming to be ex-IRA",
       "link": "https://news.sky.com/story/kemi-badenoch-told-i-would-have-shot-you-dead-by-man-claiming-to-be-ex-ira-court-hears-13590829",
       "date": "Tue, 22 Sep 2026 20:15:00 +0100",
       "description": "A man has admitted sending Conservative leader Kemi Badenoch threatening emails, including one in which he said \"when I was in the IRA I would have shot you f****** dead\".",
-      "categories": []
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/09/1920x1080/skynews-kieran-kyle-ira-kemi-badenoch_7358920.jpg?20260922203509", "width": 1920, "type": "image/jpeg"}]
     },
     {
       "title": "Rape and sexual offences to be dealt with in specialist courts",
       "link": "https://news.sky.com/story/specialist-rape-courts-to-be-rolled-out-in-england-and-wales-13590239",
       "date": "Sun, 20 Sep 2026 19:42:00 +0100",
       "description": "Specialist courts to deal with rape and sexual offences are to be introduced across England and Wales, the prime minister has said.",
-      "categories": []
-    },
-    {
-      "title": "National taskforce launched to tackle misogyny and violence against girls",
-      "link": "https://news.sky.com/story/no-woman-should-have-to-curb-ambitions-out-of-fear-national-taskforce-to-tackle-misogyny-launched-13589964",
-      "date": "Sat, 19 Sep 2026 22:06:00 +0100",
-      "description": "A national taskforce aimed at tackling misogyny across society has been launched by the government.",
-      "categories": []
-    },
-    {
-      "title": "Are the Lib Dems still delivering or should they change course?",
-      "link": "https://news.sky.com/story/the-liberal-democrats-holding-firm-or-missing-out-13589307",
-      "date": "Sat, 19 Sep 2026 00:01:00 +0100",
-      "description": "Sir Keir Starmer's departure means Sir Ed Davey, in post since early 2020, is now the longest-serving national party leader.",
-      "categories": []
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/04/1920x1080/skynews-old-bailey-courts-london_7221010.jpg?20260415194737", "width": 1920, "type": "image/jpeg"}]
     }
   ]
 }

@@ -2,68 +2,228 @@
   "feed": "scotusblog",
   "url": "https://www.scotusblog.com/feed/",
   "format": "rss",
-  "fetchedAt": "2026-09-23T17:19:00Z",
+  "fetchedAt": "2026-09-24T04:16:00Z",
   "items": [
+    {
+      "title": "Missouri seeks to use congressional redistricting map expected to benefit Republicans",
+      "link": "https://www.scotusblog.com/2026/09/missouri-seeks-to-use-congressional-redistricting-map-expected-to-benefit-republicans/",
+      "date": "Wed, 23 Sep 2026 20:17:48 +0000",
+      "description": "",
+      "content": "Missouri and a group of candidates and voters seeking to implement a new congressional map enacted in 2025 urged the Supreme Court on Wednesday afternoon to leave in place a ruling by a federal appeals court that directs the state to use that map, which was intended to give Republicans another seat",
+      "categories": [
+        "Court News"
+      ],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/d43179f287d2a91583cdf45c22ba1994eef8e23c-1024x683.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
+      ]
+    },
     {
       "title": "Respecting our multi-branch lawmaking process",
       "link": "https://www.scotusblog.com/2026/09/respecting-our-multi-branch-lawmaking-process/",
       "date": "Wed, 23 Sep 2026 14:00:00 +0000",
-      "description": "In my inaugural entry for this column, I critiqued the Supreme Court's reliance on an abstract conception of the \"separation of powers.\" Because the Constitution does not contain a \"separation of powers\" clause, but instead contains a collection of specific provisions that enforce the separation of powers in specific ways, I contended that the court should more carefully refer to the specific",
-      "categories": []
+      "description": "",
+      "content": "In my inaugural entry for this column, I critiqued the Supreme Court’s reliance on an abstract conception of the “separation of powers.” Because the Constitution does not contain a “separation of powers” clause, but instead contains a collection of specific provisions that enforce the separation of",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/00406489d1115718c65b99b4c54df97790da3e65-1024x683.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
+      ]
     },
     {
       "title": "The decision before the decision",
       "link": "https://www.scotusblog.com/2026/09/the-decision-before-the-decision/",
       "date": "Wed, 23 Sep 2026 13:30:00 +0000",
-      "description": "On Friday, Aug. 21, Chief Justice John Roberts issued an administrative, or temporary, stay, allowing construction to continue on the White House ballroom. The order put on hold a district court injunction that would have halted work by midnight, and it explained nothing, staying the injunction \"pending further order.\" Ten days later, the court concluded that the challengers to the ballroom",
-      "categories": []
+      "description": "",
+      "content": "On Friday, Aug. 21, Chief Justice John Roberts issued an administrative, or temporary, stay, allowing construction to continue on the White House ballroom. The order put on hold a district court injunction that would have halted work by midnight, and it explained nothing, staying the injunction…",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/337fa2eade0518c6da635f829ca1d6b1f2b7c9f7-1024x659.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        },
+        {
+          "from": "content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/50819c15098135573ec78b9f2c236f4d97f25ab4-936x528.png?w=1200&fit=max"
+        }
+      ]
     },
     {
       "title": "Missouri congressional redistricting battle goes to Supreme Court for the third time",
       "link": "https://www.scotusblog.com/2026/09/missouri-congressional-redistricting-battle-goes-to-supreme-court-for-the-third-time/",
       "date": "Wed, 23 Sep 2026 13:21:00 +0000",
-      "description": "Less than two weeks after the Supreme Court paused a ruling by a federal judge in Missouri that would have cleared the way for the state to use a new congressional map intended to give Republicans an additional seat in the U.S. House of Representatives in the November 2026 elections, the opponents of that map once again asked the justices to intervene in the dispute over the state's congressional",
+      "description": "",
+      "content": "Less than two weeks after the Supreme Court paused a ruling by a federal judge in Missouri that would have cleared the way for the state to use a new congressional map intended to give Republicans an additional seat in the U.S. House of Representatives in the November 2026 elections, the opponents…",
       "categories": [
         "Court News",
         "Emergency appeals and applications"
+      ],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/d43179f287d2a91583cdf45c22ba1994eef8e23c-1024x683.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
       ]
     },
     {
       "title": "Trump administration brings immigration disputes to SCOTUS",
       "link": "https://www.scotusblog.com/2026/09/trump-administration-brings-immigration-disputes-to-scotus/",
       "date": "Wed, 23 Sep 2026 13:00:00 +0000",
-      "description": "Plus, Amy explains how she prepares to cover the \"long conference.\"",
-      "categories": []
+      "description": "Plus, Amy explains how she prepares to cover the “long conference.”",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/d9859e7706474213efb48f53e5f281d6f579f544-2560x1708.jpg?w=1200&fit=max",
+          "width": 2560,
+          "type": "image/jpeg",
+          "medium": "image"
+        },
+        {
+          "from": "content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/992c255c9dcc1d2e160edbe074ab98038e55fbf2-1024x683.jpg?w=1200&fit=max"
+        }
+      ]
     },
     {
       "title": "Trump administration takes important immigration question back to the Supreme Court",
       "link": "https://www.scotusblog.com/2026/09/trump-administration-takes-important-immigration-question-back-to-the-supreme-court/",
       "date": "Tue, 22 Sep 2026 19:35:55 +0000",
-      "description": "On Sept. 11, the Trump administration notified the Supreme Court that Genalo v. Black, an immigration case set to be argued in October, was now moot – that is, no longer a live controversy – and should be dismissed from the oral argument docket. However, U.S. Solicitor General D. John Sauer noted that the administration hoped the justices would still \"resolve the questions presented\" during the",
+      "description": "",
+      "content": "On Sept. 11, the Trump administration notified the Supreme Court that Genalo v. Black, an immigration case set to be argued in October, was now moot – that is, no longer a live controversy – and should be dismissed from the oral argument docket. However, U.S. Solicitor General D. John Sauer noted…",
       "categories": [
         "Court News"
+      ],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/992c255c9dcc1d2e160edbe074ab98038e55fbf2-1024x683.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
       ]
     },
     {
       "title": "The Supreme Court refuses to become partisan in two fights over the midterms",
       "link": "https://www.scotusblog.com/2026/09/the-supreme-court-refuses-to-become-partisan-in-two-fights-over-the-midterms/",
       "date": "Tue, 22 Sep 2026 14:00:00 +0000",
-      "description": "People complain that the current Supreme Court is a partisan institution, with the six Republican appointees deciding cases based on their partisan beliefs. But two recent and significant cases on the court's emergency docket refute that complaint, or at least the most simplistic version of it. The two cases are, first, the fight over Missouri's congressional map and, second, the suit to stop",
-      "categories": []
+      "description": "",
+      "content": "People complain that the current Supreme Court is a partisan institution, with the six Republican appointees deciding cases based on their partisan beliefs. But two recent and significant cases on the court’s emergency docket refute that complaint, or at least the most simplistic version of it.",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/316d8a65090f55eed677c463e635177467eceacf-1024x681.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
+      ]
     },
     {
       "title": "The court’s coming climate-change case and the very confused doctrine of preemption",
       "link": "https://www.scotusblog.com/2026/09/the-courts-coming-climate-change-case-and-the-very-confused-doctrine-of-preemption/",
       "date": "Tue, 22 Sep 2026 13:30:00 +0000",
-      "description": "On the first day of the October 2026 Term, the court will hear Suncor Energy, Inc. v. County Commissioners of Boulder County, which poses the issue of whether suits under state law against energy companies for their role in causing climate change are preempted, or superseded, by federal law. Preemption issues constantly come to the Supreme Court. Yet it is difficult to find a pattern in the",
-      "categories": []
+      "description": "",
+      "content": "On the first day of the October 2026 Term, the court will hear Suncor Energy, Inc. v. County Commissioners of Boulder County, which poses the issue of whether suits under state law against energy companies for their role in causing climate change are preempted, or superseded, by federal law.",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/b1f368e387c191fcbe4046a1daa309525a8564dc-1024x679.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
+      ]
     },
     {
       "title": "Missouri redistricting dispute may return to Supreme Court",
       "link": "https://www.scotusblog.com/2026/09/missouri-redistricting-dispute-may-return-to-supreme-court/",
       "date": "Tue, 22 Sep 2026 13:00:00 +0000",
-      "description": "Plus, is it time to rethink the chief justice's duties?",
-      "categories": []
+      "description": "Plus, is it time to rethink the chief justice’s duties?",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/d9859e7706474213efb48f53e5f281d6f579f544-2560x1708.jpg?w=1200&fit=max",
+          "width": 2560,
+          "type": "image/jpeg",
+          "medium": "image"
+        },
+        {
+          "from": "content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/2cb7b45498d3dc6ece661c89df30b74fafabe461-4032x3024.jpg?w=1200&fit=max"
+        }
+      ]
+    },
+    {
+      "title": "Some lessons of open-minded discourse on the Supreme Court",
+      "link": "https://www.scotusblog.com/2026/09/some-lessons-of-open-minded-discourse-on-the-supreme-court/",
+      "date": "Mon, 21 Sep 2026 14:30:00 +0000",
+      "description": "",
+      "content": "Ever since the Supreme Court formally recognized the power of judicial review in the landmark 1803 case of Marbury v. Madison, the be-all and end-all on constitutionality has been the Supreme Court. Informed Americans and readers of SCOTUSblog know that means the court ultimately decides the laws…",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/171ebb1522bf8bc03f0ab681225ea368607f2524-1024x683.jpg?w=1200&fit=max",
+          "width": 1024,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
+      ]
+    },
+    {
+      "title": "Is it time to rethink the office of the chief justice of the United States?",
+      "link": "https://www.scotusblog.com/2026/09/is-it-time-to-rethink-the-office-of-the-chief-justice-of-the-united-states/",
+      "date": "Mon, 21 Sep 2026 14:00:00 +0000",
+      "description": "",
+      "content": "In a recent SCOTUSblog article, law professor Josh Blackman proposed that the chief justice farm out to his colleagues his roles of presiding at oral argument and assigning opinions when in the majority. “[S]ometimes old traditions run their course,” he wrote, “and new traditions should begin.”",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/863cf34c10b50482e01911178c4844193f3d5d3a-1170x781.jpg?w=1200&fit=max",
+          "width": 1170,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
+      ]
+    },
+    {
+      "title": "The “born free and equal” clauses, incorporation, and 12-person juries",
+      "link": "https://www.scotusblog.com/2026/09/the-born-free-and-equal-clauses-incorporation-and-12-person-juries/",
+      "date": "Mon, 21 Sep 2026 13:30:00 +0000",
+      "description": "",
+      "content": "This is the sixth of seven introductory articles on the relevance for constitutional law and the Supreme Court of the “born free and equal” clauses, which appeared in the Declaration of Independence and in six out of 12 state constitutions when the federal Bill of Rights was ratified in 1791…",
+      "categories": [],
+      "images": [
+        {
+          "from": "media:content",
+          "url": "https://cdn.sanity.io/images/pito4za5/production/2cb7b45498d3dc6ece661c89df30b74fafabe461-4032x3024.jpg?w=1200&fit=max",
+          "width": 4032,
+          "type": "image/jpeg",
+          "medium": "image"
+        }
+      ]
     }
   ]
 }

@@ -18,6 +18,7 @@ import { fetchFeed, mapLimit } from './lib/fetch.mjs';
 import { buildTagger, relevance } from './lib/tagger.mjs';
 import { titleTokens, similarity, SAME_STORY, WINDOW_MS } from './lib/cluster.mjs';
 import { stripHtml, firstParagraph, cleanSummary, cleanTitle, canonicalUrl, shortId, parseDate } from './lib/text.mjs';
+import { pickImage } from './lib/images.mjs';
 import { enrichWithAI, DEFAULT_MODEL } from './lib/ai.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -43,7 +44,9 @@ const log = (...a) => console.log(...a);
 
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 const spec = readJson(path.join(ROOT, 'config/spec.json'));
-const feedsCfg = readJson(path.join(ROOT, 'config/feeds.json')).feeds.filter((f) => f.enabled !== false && (!only || only.includes(f.id)));
+const feedsFile = readJson(path.join(ROOT, 'config/feeds.json'));
+const IMAGES_ON = feedsFile.images !== false;
+const feedsCfg = feedsFile.feeds.filter((f) => f.enabled !== false && (!only || only.includes(f.id)));
 const questions = readJson(path.join(ROOT, 'config/questions.json')).questions;
 const feedsById = Object.fromEntries(feedsCfg.map((f) => [f.id, f]));
 const tagger = buildTagger(spec);
@@ -78,7 +81,8 @@ async function getFeedItems(feed, prevState) {
     const fx = readJson(p);
     const items = fx.items.map((it) => ({
       title: it.title, link: it.link, guid: it.link, date: it.date,
-      description: it.description || '', content: '', categories: it.categories || [], stage: it.stage || '',
+      description: it.description || '', content: it.content || '', categories: it.categories || [], stage: it.stage || '',
+      images: it.images || [],
     }));
     return { ok: true, status: 200, items };
   }
@@ -127,6 +131,9 @@ function toStory(raw, feed) {
   let date = parseDate(raw.date);
   if (!date || date.getTime() > now.getTime() + 3600000) date = now;
 
+  // One photo from the feed, if it has one (see scripts/lib/images.mjs)
+  const pic = IMAGES_ON && feed.images !== false ? pickImage(raw.images, { fromContent: feed.imageFromContent === true }) : null;
+
   return {
     id,
     title,
@@ -134,6 +141,8 @@ function toStory(raw, feed) {
     source: feed.id,
     date: date.toISOString(),
     summary,
+    ...(pic ? { img: pic.url } : {}),
+    ...(pic?.fallback ? { img0: pic.fallback } : {}),
     categories: cats.slice(0, 8),
   };
 }

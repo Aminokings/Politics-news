@@ -1,6 +1,7 @@
 // Parse RSS 2.0, RSS 1.0 (RDF) and Atom feeds into a common item shape:
-// { title, link, guid, date, description, content, categories[], stage }
+// { title, link, guid, date, description, content, categories[], stage, images[] }
 import { XMLParser } from 'fast-xml-parser';
+import { imagesFromHtml, dedupeImages } from './images.mjs';
 
 const ARRAY_TAGS = new Set(['item', 'entry', 'category', 'link']);
 
@@ -59,6 +60,42 @@ function findStage(node) {
     }
   }
   return '';
+}
+
+/** Media RSS (media:thumbnail / media:content, also inside media:group), whatever the prefix. */
+function mediaImages(node, depth = 0) {
+  const out = [];
+  for (const [k, v] of Object.entries(node || {})) {
+    if (k.startsWith('@_') || !k.includes(':')) continue;
+    const [prefix, local] = [k.split(':')[0], k.split(':').pop()];
+    if (prefix === 'content' || prefix === 'dc' || prefix === 'atom') continue;
+    if (local === 'group' && depth === 0) {
+      for (const g of [].concat(v)) if (g && typeof g === 'object') out.push(...mediaImages(g, 1));
+      continue;
+    }
+    if (local !== 'thumbnail' && local !== 'content') continue;
+    for (const n of [].concat(v)) {
+      if (!n || typeof n !== 'object' || !n['@_url']) continue;
+      out.push({ from: `media:${local}`, url: n['@_url'], width: n['@_width'], height: n['@_height'], type: n['@_type'], medium: n['@_medium'] });
+    }
+  }
+  return out;
+}
+
+function enclosureImages(node) {
+  const out = [];
+  for (const e of [].concat(node?.enclosure || [])) {
+    if (e && typeof e === 'object' && e['@_url']) out.push({ from: 'enclosure', url: e['@_url'], type: e['@_type'] });
+  }
+  // Atom: <link rel="enclosure" type="image/jpeg" href="…"/>
+  for (const l of [].concat(node?.link || [])) {
+    if (l && typeof l === 'object' && l['@_rel'] === 'enclosure' && l['@_href']) out.push({ from: 'enclosure', url: l['@_href'], type: l['@_type'] });
+  }
+  return out;
+}
+
+function imagesOf(node, html) {
+  return dedupeImages([...mediaImages(node), ...enclosureImages(node), ...imagesFromHtml(html)]);
 }
 
 function rssLink(item) {
@@ -123,27 +160,33 @@ function rssItem(item) {
   const guid = text(guidNode);
   let link = rssLink(item);
   if (!link && /^https?:\/\//.test(guid)) link = guid;
+  const description = text(pick(item, ['description', 'summary', 'media:description', 'dc:description']));
+  const content = text(pick(item, ['content:encoded', 'content']));
   return {
     title: text(item.title),
     link,
     guid,
     date: text(pick(item, ['pubDate', 'dc:date', 'a10:updated', 'updated', 'published', 'dc:created', 'dcterms:modified'])),
-    description: text(pick(item, ['description', 'summary', 'media:description', 'dc:description'])),
-    content: text(pick(item, ['content:encoded', 'content'])),
+    description,
+    content,
     categories: categoriesOf(item),
     stage: findStage(item),
+    images: imagesOf(item, `${content} ${description}`),
   };
 }
 
 function atomEntry(entry) {
+  const description = text(entry.summary);
+  const content = text(entry.content);
   return {
     title: text(entry.title),
     link: atomLink(entry),
     guid: text(entry.id),
     date: text(entry.published || entry.updated || pick(entry, ['dc:date'])),
-    description: text(entry.summary),
-    content: text(entry.content),
+    description,
+    content,
     categories: categoriesOf(entry),
     stage: findStage(entry),
+    images: imagesOf(entry, `${content} ${description}`),
   };
 }

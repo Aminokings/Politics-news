@@ -2,77 +2,108 @@
   "feed": "npr-politics",
   "url": "https://feeds.npr.org/1014/rss.xml",
   "format": "rss",
-  "fetchedAt": "2026-09-23T17:19:00Z",
+  "fetchedAt": "2026-09-24T04:15:00Z",
   "items": [
     {
-      "title": "White House launches 'Trump TV' after ban on major news outlets",
-      "link": "https://www.npr.org/2026/09/22/nx-s1-5977768/trump-tv-media-ban-white-house",
-      "date": "Tue, 22 Sep 2026 17:31:01 -0400",
-      "description": "Days after President Trump barred reporters from three major news outlets from the White House, the administration has launched a 24/7 YouTube channel promising to put its \"biggest moments all in one place.\"",
-      "categories": []
+      "title": "Results are in from the newest NPR/PBS News/Marist poll",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978130/results-are-in-from-the-newest-npr-pbs-news-marist-poll",
+      "date": "Wed, 23 Sep 2026 17:14:52 -0400",
+      "description": "People say they are more likely to choose a Democrat to represent them in Congress, and feel Democrats would be better at tackling top issues like the economy and foreign policy.",
+      "categories": [],
+      "images": [{"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978130"}]
     },
     {
-      "title": "RFK Jr.'s ethics disclosure reveals free travel and hefty book advances",
-      "link": "https://www.npr.org/2026/09/22/nx-s1-5974931/rfk-jr-s-ethics-disclosure-reveals-free-travel-and-hefty-book-advances",
-      "date": "Tue, 22 Sep 2026 16:46:24 -0400",
-      "description": "Health Secretary Robert F. Kennedy Jr.'s latest financial disclosure reveals he accepted free flights to Fiji and Greece and lucrative book advances.",
-      "categories": []
+      "title": "Trump and Xi meet at moment of global consequence",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
+      "date": "Wed, 23 Sep 2026 14:23:19 -0400",
+      "description": "It is the second time the leaders are meeting this year after the Beijing summit in May.",
+      "categories": [],
+      "images": [
+        {"from": "content", "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5869x3913+0+0/resize/5869x3913!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fef%2F7a%2F1094091b469a9206052f1f67c31e%2Fgettyimages-2275589464.jpg"},
+        {"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978733"}
+      ]
     },
     {
-      "title": "Is President Trump the world's peacekeeper?",
-      "link": "https://www.npr.org/2026/09/22/nx-s1-5976857/is-president-trump-the-worlds-peacekeeper",
-      "date": "Tue, 22 Sep 2026 16:46:23 -0400",
-      "description": "NPR's Mary Louise Kelly speaks with State Department spokesman Tommy Pigott about President Trump's speech to the United Nations and America's place in the world.",
-      "categories": []
+      "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
+      "date": "Wed, 23 Sep 2026 12:13:52 -0400",
+      "description": "As President Trump and China's President Xi prepare to meet, Rush Doshi of the Council on Foreign Relations explains the current state of U.S.-China relations and what to expect from this summit.",
+      "categories": [],
+      "images": [{"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978691"}]
     },
     {
-      "title": "Trump's D.C. arch is now a military complex. Here's how that complicates things",
-      "link": "https://www.npr.org/2026/09/22/nx-s1-5977646/trump-dc-arch-military-complex-questions",
-      "date": "Tue, 22 Sep 2026 15:25:05 -0400",
-      "description": "The future of Trump's D.C. arch was already fraught. Then he rebranded it as a military complex. Experts say that only raises more legal and logistical questions.",
-      "categories": []
+      "title": "Trump touts his economy and U.S. actions in Iran in UNGA address",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5977795/trump-touts-his-economy-and-u-s-actions-in-iran-in-unga-address",
+      "date": "Wed, 23 Sep 2026 06:49:41 -0400",
+      "description": "President Trump touted what he portrayed as international and domestic triumphs in a speech to the U.N. General Assembly.",
+      "categories": [],
+      "images": [{"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5977795"}]
     },
     {
-      "title": "The House Freedom Caucus has to transform — it could preview the GOP's post-Trump era",
-      "link": "https://www.npr.org/2026/09/22/g-s1-144369/freedom-caucus-trump-republicans",
-      "date": "Tue, 22 Sep 2026 05:00:00 -0400",
-      "description": "The conservative House Freedom Caucus grew in prominence alongside President Trump. Now they are considering what the future of their movement looks like.",
-      "categories": []
+      "title": "DOJ defends White House media ban, urges court to reject lawsuit",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978614/doj-defend-white-house-media-ban",
+      "date": "Wed, 23 Sep 2026 05:06:47 -0400",
+      "description": "The Department of Justice defended President Trump's recent media ban, arguing that reporting by CNN, MS Now and Politico on a wide range of issues jeopardized national security and spread falsehoods.",
+      "categories": [],
+      "images": [
+        {"from": "content", "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8192x5464+0+0/resize/8192x5464!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbb%2F37%2F8b7d1c7544fd927b8a6718d64216%2Fgettyimages-2296402979.jpg"},
+        {"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978614"}
+      ]
     },
     {
-      "title": "Trump heads to the U.N. looking for wins after a rough week",
-      "link": "https://www.npr.org/2026/09/22/nx-s1-5976843/trump-heads-to-u-n-looking-for-wins-after-a-rough-week",
-      "date": "Tue, 22 Sep 2026 05:00:00 -0400",
-      "description": "The past couple of weeks have been particularly challenging for Trump with a series of legal and political setbacks.",
-      "categories": []
+      "title": "Major news outlets banned by Trump will have their day in court",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978069/cnn-msnow-politico-trump-white-house-ban",
+      "date": "Wed, 23 Sep 2026 05:01:00 -0400",
+      "description": "CNN, MS NOW, and Politico are asking a federal judge to hold the president in check for what they say is a violation of their Constitutional rights simply because he doesn't like how they cover him.",
+      "categories": [],
+      "images": [
+        {"from": "content", "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x4000+0+0/resize/6000x4000!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F07%2Fef%2F969437ab4f08b80d40e8bfd85bfd%2Fap26262737935550.jpg"},
+        {"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978069"}
+      ]
     },
     {
-      "title": "A U.S. House race in Arizona could hinge on voters' opinion of the Big Beautiful Bill",
-      "link": "https://www.npr.org/2026/09/22/nx-s1-5973072/a-u-s-house-race-in-arizona-could-hinge-on-voters-opinion-of-the-big-beautiful-bill",
-      "date": "Tue, 22 Sep 2026 04:47:14 -0400",
-      "description": "The reelection campaign by a Republican congressman in Arizona could hinge on voter perceptions of last year's massive GOP-backed spending bill.",
-      "categories": []
+      "title": "There's growing concern that Trump may deploy the National Guard ahead of elections",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978015/national-guard-election-military-midterms",
+      "date": "Wed, 23 Sep 2026 05:00:00 -0400",
+      "description": "Fears are growing that President Trump may deploy the U.S. military to polling places in the upcoming elections, despite strict state and federal laws against such a move.",
+      "categories": [],
+      "images": [
+        {"from": "content", "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x4000+0+0/resize/6000x4000!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd7%2F1a%2F9b6573f74c73adb4761c2c257395%2Fgettyimages-2286655279.jpg"},
+        {"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978015"}
+      ]
     },
     {
-      "title": "Trump's big weekend: The arch, Greenland, and media outlets banned from White House",
-      "link": "https://www.npr.org/2026/09/21/nx-s1-5976738/trumps-big-weekend-the-arch-greenland-and-media-outlets-banned-from-white-house",
-      "date": "Mon, 21 Sep 2026 17:52:34 -0400",
-      "description": "President Trump's exertion of power over the press, Greenland and even the D.C. landscape are teeing up questions over the president's limits.",
-      "categories": []
+      "title": "Poll: Trust in the U.S. Postal Service delivering mail-in ballots on time has fallen",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978081/usps-election-mail-in-ballot",
+      "date": "Wed, 23 Sep 2026 05:00:00 -0400",
+      "description": "Registered voters are less confident that USPS will deliver election mail on time compared with 2024, an NPR/PBS News/Marist poll finds, after USPS was part of Trump's bid to limit mail voting.",
+      "categories": [],
+      "images": [
+        {"from": "content", "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4804x3203+0+0/resize/4804x3203!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F81%2F70%2F55c21b564870b8ddc82d7dbd221b%2Fap23009534843228.jpg"},
+        {"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978081"}
+      ]
     },
     {
-      "title": "Many GOP candidates still echo Trump's 2020 claims. Lots of voters want to move on",
-      "link": "https://www.npr.org/2026/09/21/nx-s1-5974313/election-denial-trump-2026",
-      "date": "Mon, 21 Sep 2026 05:00:00 -0400",
-      "description": "While many Republican candidates, even in some critical tossup races, still back President Trump's baseless claims about election integrity, some GOP voters say they are ready to move on.",
-      "categories": []
+      "title": "As Congress confronts AI, Senate lawmakers are shut off from its most advanced tools",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5978055/congress-ai-regulation",
+      "date": "Wed, 23 Sep 2026 05:00:00 -0400",
+      "description": "While Senate offices have access to chatbots like ChatGPT, they are not authorized to use any of the more advanced tools that are at the center of regulatory talks and public debate about AI safety.",
+      "categories": [],
+      "images": [
+        {"from": "content", "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4676x3117+0+0/resize/4676x3117!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbb%2Fe2%2F0fd3ddf94b09b25afb4815d800e2%2Fap26257499640719.jpg"},
+        {"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5978055"}
+      ]
     },
     {
-      "title": "CNN, MS NOW and Politico sue Trump after being barred from White House",
-      "link": "https://www.npr.org/2026/09/21/nx-s1-5975451/reporters-say-they-were-blocked-from-entering-white-house-after-trump-banned-outlets",
-      "date": "Mon, 21 Sep 2026 04:39:38 -0400",
-      "description": "Reporters from CNN, MS NOW and Politico say they were prevented from entering the White House grounds after President Trump announced plans to ban all three outlets.",
-      "categories": []
+      "title": "Trump is on voters' minds in the midterms -- and they're not happy, poll shows",
+      "link": "https://www.npr.org/2026/09/23/nx-s1-5977613/trump-poll-democrats-congress",
+      "date": "Wed, 23 Sep 2026 05:00:00 -0400",
+      "description": "A new NPR/PBS News/Marist poll finds President Trump — and his unpopularity — is an outsize factor in why most voters say they want Democrats to win the midterms.",
+      "categories": [],
+      "images": [
+        {"from": "content", "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4107x2738+0+0/resize/4107x2738!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa7%2Fa3%2Ff896d6054fd4981444891f80d9c4%2Fgettyimages-2295283241.jpg"},
+        {"from": "content", "url": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5977613"}
+      ]
     }
   ]
 }

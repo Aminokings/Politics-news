@@ -2,261 +2,135 @@
   "feed": "pbs-politics",
   "url": "https://www.pbs.org/newshour/feeds/rss/politics",
   "format": "rss",
-  "fetchedAt": "2026-09-23T17:19:00Z",
+  "fetchedAt": "2026-09-24T04:15:00Z",
   "items": [
+    {
+      "title": "At UN General Assembly, Iran's president responds to Trump's 'annihilation' threat",
+      "link": "https://www.pbs.org/newshour/show/at-un-general-assembly-irans-president-responds-to-trumps-annihilation",
+      "date": "Wed, 23 Sep 2026 18:55:53 -0400",
+      "description": "The president of Iran told the United Nations General Assembly his country won't bend to U.S. intimidation. Masoud Pezeshkian spoke one day after President Trump threatened to escalate the war from the same stage. On the sidelines, U.S. and Iranian officials signaled no breakthroughs in mediated talks. Nick Schifrin reports.",
+      "categories": ["Iran", "iran war", "Masoud Pezeshkian", "UN General Assembly", "United Nations"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/unga-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Xi arrives for state visit amid U.S.-China trade tensions and AI concerns",
+      "link": "https://www.pbs.org/newshour/show/xi-arrives-for-state-visit-amid-u-s-china-trade-tensions-and-ai-concerns",
+      "date": "Wed, 23 Sep 2026 18:50:01 -0400",
+      "description": "Chinese President Xi Jinping arrived in Washington Wednesday evening for his first state visit in more than a decade. At the same time, a federal judge heard arguments in a lawsuit brought by CNN, MS NOW and Politico challenging President Trump's ban on the outlets from the White House. Liz Landers reports.",
+      "categories": ["Donald Trump news", "first amendment", "press freedom", "press pool", "White House"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/presss-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "News Wrap: FBI investigating hacking group's claim it breached jobs website",
+      "link": "https://www.pbs.org/newshour/show/news-wrap-fbi-investigating-hacking-groups-claim-it-breached-jobs-website",
+      "date": "Wed, 23 Sep 2026 18:45:42 -0400",
+      "description": "In our news wrap Wednesday, the FBI says it's investigating a claim by a criminal hacking group that it stole \"very sensitive data\" from the bureau's job website, Hurricane Polo off Mexico's western coast has strengthened into one of the most powerful storms in decades and a federal court temporarily blocked the deportation of a Venezuelan delivery driver wh",
+      "categories": ["news wrap"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/newswrap-7-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "New poll reveals how Trump's low approval might affect midterms",
+      "link": "https://www.pbs.org/newshour/show/new-poll-reveals-how-trumps-low-approval-might-affect-midterms",
+      "date": "Wed, 23 Sep 2026 18:40:41 -0400",
+      "description": "With voting for the midterm elections already underway, President Trump is asking voters to pretend he's on the ballot. A new PBS News/NPR/Marist poll finds that people are, but that could be bad news for the president. We found Democratic congressional candidates hold a significant lead over Republicans. Lisa Desjardins has the insights from that poll.",
+      "categories": ["Democrats", "Donald Trump news", "midterms", "PBS News/NPR/Marist poll", "republicans", "Vote 2026"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/vote-2-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Former Kansas GOP governor explains why he's backing Democrat Adam Hamilton for Senate",
+      "link": "https://www.pbs.org/newshour/show/former-kansas-gop-governor-explains-why-hes-backing-democrat-adam-hamilton-for-senate",
+      "date": "Wed, 23 Sep 2026 18:35:05 -0400",
+      "description": "Former Kansas Gov. Bill Graves, a Republican, crossed party lines to endorse Democrat Adam Hamilton in his bid to unseat Republican Sen. Roger Marshall. Graves said the country is facing \"increasing partisan gridlock and division\" and that it's \"time Kansas does something different.\" He joined Geoff Bennett to discuss that decision and what it says about his",
+      "categories": ["Adam Hamilton", "bill graves", "Kansas", "senate", "Vote 2026"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/graves-1024x576.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Moldova's PM on confronting Russian threats and backing Ukraine",
+      "link": "https://www.pbs.org/newshour/show/moldovas-pm-on-confronting-russian-threats-and-backing-ukraine",
+      "date": "Wed, 23 Sep 2026 18:30:12 -0400",
+      "description": "Moldova is an Eastern European nation of almost three million people nestled between NATO member Romania and Ukraine. It has become a stage for Russian interference and drone incursions. Moldovan Prime Minister Vasile Tofan spoke with Nick Schifrin about Russia's attempts to sway the former Soviet republic back into its orbit, and the government's current ef",
+      "categories": ["Moldova", "NATO", "russia", "Ukraine", "Ukraine war", "Vasile Tofan"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/russia-1-1024x695.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "What's making it harder for American family farms to survive",
+      "link": "https://www.pbs.org/newshour/show/whats-making-it-harder-for-american-family-farms-to-survive",
+      "date": "Wed, 23 Sep 2026 18:25:55 -0400",
+      "description": "For generations, the family farm has been central to the American story. But these days, farmers are struggling with sharply higher costs and crushing debt on top of the same economic pressures the rest of the country feels. Judy Woodruff reports on what it takes to keep a farm going and who will carry on the tradition. It's part of her series, Crossroads: A",
+      "categories": ["America at a Crossroads"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/crossroads-1-1024x576.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Maine Dems hammer Collins over report of pay-to-play probe. GOP senator calls it 'completely false'",
+      "link": "https://www.pbs.org/newshour/politics/maine-dems-hammer-collins-over-report-of-pay-to-play-probe-gop-senator-calls-it-completely-false",
+      "date": "Wed, 23 Sep 2026 18:17:35 -0400",
+      "description": "Maine Democrats on Wednesday assailed U.S. Sen. Susan Collins over a news report that the FBI investigated how much she knew about illegal campaign contributions that sent one of her donors to prison.",
+      "categories": ["2026 midterm elections", "maine", "susan collins", "Vote 2026"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2026-09-22T231332Z_1349230240_RC2NONAB4VNJ_RTRMADP_3_USA-CONGRESS-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Judge questions Trump's ban of three prominent news outlets from White House",
+      "link": "https://www.pbs.org/newshour/politics/trump-administrations-ban-of-three-prominent-news-outlets-from-white-house-is-in-court",
+      "date": "Wed, 23 Sep 2026 16:19:22 -0400",
+      "description": "A federal judge weighing whether to block President Donald Trump's ban of three news outlets from White House grounds expressed some skepticism Wednesday in response to the government's defense of the move.",
+      "categories": ["cnn", "Donald Trump news", "first amendment", "freedom of the press", "ms now", "Politico"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2026-09-23T192326Z_438432603_RC25PNAZHTJQ_RTRMADP_3_USA-TRUMP-MEDIA-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Trump's focus on noncitizen voting has led to 160 arrests. That shows it's rare, experts say",
+      "link": "https://www.pbs.org/newshour/politics/trumps-focus-on-noncitizen-voting-has-led-to-160-arrests-that-shows-its-rare-experts-say",
+      "date": "Wed, 23 Sep 2026 15:56:42 -0400",
+      "description": "The Trump administration's whole-of-government effort to find and prosecute noncitizens illegally on state voter rolls has resulted in about 1,600 voter fraud cases that have led to 160 arrests, Homeland Security Investigations senior official Matthew Millhollin said in a press briefing Tuesday.",
+      "categories": ["2026 midterm elections", "Donald Trump news", "election security", "elections", "mail-in balllots", "mail-in voting"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2026-08-26T153029Z_773523816_RC2G2NA8ONIZ_RTRMADP_3_USA-TRUMP-ELECTION-LAWSUIT-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Sen. Bernie Sanders unveils bill to ban artificial superintelligence and create Department of AI",
+      "link": "https://www.pbs.org/newshour/politics/sen-bernie-sanders-unveils-bill-to-ban-artificial-superintelligence-and-create-department-of-ai",
+      "date": "Wed, 23 Sep 2026 14:10:58 -0400",
+      "description": "Two leading progressive lawmakers, Sen. Bernie Sanders and Rep. Greg Casar, are unveiling legislation Wednesday that would ban artificial superintelligence and create a federal agency to oversee advanced AI.",
+      "categories": ["artificial intelligence", "Bernie Sanders", "congress", "Greg Casar", "senate"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2026-07-18T182712Z_1834643752_RC2HGMAT4VP7_RTRMADP_3_USA-DATACENTERS-PROTEST-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Trump's Board of Peace proposes $2.45 billion blueprint to begin Gaza reconstruction",
+      "link": "https://www.pbs.org/newshour/world/trumps-board-of-peace-proposes-2-45-billion-blueprint-to-begin-gaza-reconstruction",
+      "date": "Wed, 23 Sep 2026 11:03:08 -0400",
+      "description": "At a meeting of the group's board, the governors unveiled a 66-project blueprint to get things started while acknowledging enormous hurdles that must still be overcome.",
+      "categories": ["board of peace", "Donald Trump news", "Gaza", "Hamas", "Israel", "Israel-Hamas war"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2026-08-10T105113Z_610598345_RC2LVMAM7590_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-ISF-1024x683.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Voters don't like data centers. They really don't like them close to home",
+      "link": "https://www.pbs.org/newshour/politics/voters-dont-like-data-centers-they-really-dont-like-them-close-to-home",
+      "date": "Wed, 23 Sep 2026 05:00:57 -0400",
+      "description": "Fifty-eight percent of U.S. voters say the construction of new data centers by tech will mostly have a negative effect on the country. And 65% of voters oppose construction in their communities.",
+      "categories": ["2026 midterm elections", "AI", "artificial intelligence", "data center", "president donald trump news"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2026-07-27T202910Z_856777938_RC2JMMARSUV2_RTRMADP_3_USA-TRUMP-MICHIGAN-1024x642.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "Democrats hold midterm lead with independents breaking sharply against Trump",
+      "link": "https://www.pbs.org/newshour/politics/democrats-lead-in-new-poll-as-trump-looms-over-midterms",
+      "date": "Wed, 23 Sep 2026 05:00:44 -0400",
+      "description": "President Donald Trump's efforts to make the midterm elections a referendum on his presidency appear to be backfiring as Democratic congressional candidates hold a significant lead over Republicans in the latest poll from PBS News, NPR and Marist.",
+      "categories": ["data", "donlad trump", "lee miringoff", "Marist Poll", "Vote 2026"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2026-09-11T023356Z_1810727803_RC2QGNAHPIHW_RTRMADP_3_USA-ELECTION-REPUBLICANS-1024x654.jpg", "width": 1024, "medium": "image"}]
+    },
+    {
+      "title": "How Trump's mail voting claims are affecting voters",
+      "link": "https://www.pbs.org/newshour/politics/voters-trust-local-election-officials-theyre-less-sure-about-the-mail",
+      "date": "Wed, 23 Sep 2026 05:00:23 -0400",
+      "description": "President Donald Trump's unfounded insistence that mail-in ballots lead to fraud appears to be persuading only his loyal coalition and almost no one else, a new PBS News/NPR/Marist poll finds ahead of midterm elections.",
+      "categories": ["data", "Donald Trump news", "mail voting", "mail-in ballots", "Marist Poll", "U.S. Postal Service"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/2020-10-19T212106Z_1909977954_RC2XLJ9VZ55C_RTRMADP_3_USA-ELECTION-1024x732.jpg", "width": 1024, "medium": "image"}]
+    },
     {
       "title": "Trump defends Iran war and threatens annihilation at UN General Assembly",
       "link": "https://www.pbs.org/newshour/show/trump-defends-iran-war-and-threatens-annihilation-at-un-general-assembly",
       "date": "Tue, 22 Sep 2026 18:55:13 -0400",
       "description": "President Trump took his \"America First\" foreign policy to the world stage, using his address to the UN General Assembly to defend the war with Iran and issue a stark warning to Iran's leadership. Trump said a deal could come after the midterm elections and that the alternative was to \"annihilate the Islamic Republic.\" Nick Schifrin reports.",
-      "categories": [
-        "Donald Trump news",
-        "iran war",
-        "UN General Assembly",
-        "United Nations"
-      ]
-    },
-    {
-      "title": "News Wrap: Grand jury declines to bring charges in death of Nolan Wells",
-      "link": "https://www.pbs.org/newshour/show/news-wrap-grand-jury-declines-to-bring-charges-in-death-of-nolan-wells",
-      "date": "Tue, 22 Sep 2026 18:45:43 -0400",
-      "description": "In our news wrap Tuesday, a grand jury declined to bring charges in the death of Nolan Wells, a coroner found that actress Hayden Panettiere died from an accidental overdose of several drugs, including fentanyl and Republican Sen. John Curtis is calling for the Senate Judiciary Committee to investigate Donald Trump Jr. after news that a Russian businessman partially bankrolled his wedding party.",
-      "categories": [
-        "news wrap"
-      ]
-    },
-    {
-      "title": "What the Paramount-Warner Bros. merger settlement means for Hollywood",
-      "link": "https://www.pbs.org/newshour/show/what-the-paramount-warner-bros-merger-settlement-means-for-hollywood",
-      "date": "Tue, 22 Sep 2026 18:40:32 -0400",
-      "description": "A day after Paramount Skydance and a group of state attorneys general announced a settlement clearing the way for its merger with Warner Bros. Discovery, questions remain about whether the deal does enough to protect consumers and competition. Geoff Bennett discussed more with Oliver Darcy of Status.",
-      "categories": [
-        "CBS",
-        "cnn",
-        "David Ellison",
-        "Media",
-        "mergers",
-        "paramount",
-        "Paramount Skydance",
-        "Warner Bros."
-      ]
-    },
-    {
-      "title": "Harris joins El-Sayed on campaign trail as Democrats focus on Michigan Senate race",
-      "link": "https://www.pbs.org/newshour/show/harris-joins-el-sayed-on-campaign-trail-as-democrats-focus-on-michigan-senate-race",
-      "date": "Tue, 22 Sep 2026 18:35:39 -0400",
-      "description": "With 42 days until Election Day, the race to control Congress is now in high gear. In Michigan, one of Democrats' biggest names made their first major campaign stop of the cycle. Former Vice President Kamala Harris joined Senate candidate Abdul El-Sayed at a roundtable in Detroit focused on Black maternal health. Lisa Desjardins discussed the Michigan race with strategist Joel Payne.",
-      "categories": [
-        "Abdul El-Sayed",
-        "Democrats",
-        "Kamala Harris news",
-        "Michigan",
-        "senate",
-        "Vote 2026"
-      ]
-    },
-    {
-      "title": "Researchers explore new uses for abortion-related drugs",
-      "link": "https://www.pbs.org/newshour/show/researchers-explore-new-uses-for-abortion-related-drugs",
-      "date": "Tue, 22 Sep 2026 18:30:36 -0400",
-      "description": "For years, mifepristone and similar drugs have been used to treat uterine fibroids and endometriosis. Now researchers are exploring whether these drugs could have other uses in women's health, including preventing some cancers. But the politics and restrictions surrounding these drugs could affect the research. Special correspondent Sarah Varney reports for our series, Beyond Abortion.",
-      "categories": [
-        "abortion",
-        "Beyond Abortion",
-        "endometriosis",
-        "Health",
-        "mifepristone",
-        "uterine fibroids",
-        "womens health"
-      ]
-    },
-    {
-      "title": "2 years after the storm, graphic novel shares stories of Hurricane Helene survivors",
-      "link": "https://www.pbs.org/newshour/show/2-years-after-the-storm-graphic-novel-shares-stories-of-hurricane-helene-survivors",
-      "date": "Tue, 22 Sep 2026 18:25:58 -0400",
-      "description": "Two years after Hurricane Helene ripped through much of the Southeast, many of the communities affected by that storm are still recovering. A new project has chronicled their journey, using what might seem like an unlikely medium: a graphic novel. William Brangham discussed \"Islands in the Sky: A People's History of Hurricane Helene\" with Andrew Aydin. It's for our arts and culture series, CANVAS.",
-      "categories": [
-        "arts",
-        "books",
-        "CANVAS",
-        "graphic novels",
-        "hurricane helene",
-        "North Carolina"
-      ]
-    },
-    {
-      "title": "Fact-checking Trump's speech to the 2026 United Nations General Assembly",
-      "link": "https://www.pbs.org/newshour/politics/fact-checking-trumps-speech-to-the-2026-united-nations-general-assembly",
-      "date": "Tue, 22 Sep 2026 17:37:21 -0400",
-      "description": "In his address to the United Nations General Assembly, President Donald Trump defended the United States' robust use of military force in Iran, Venezuela and elsewhere, saying the international community is incapable of handling threats from those countries. Here are fact-checks of some of Trump's statements.",
-      "categories": [
-        "2026 unga",
-        "Donald Trump news",
-        "Fact Checks",
-        "politifact",
-        "United Nations"
-      ]
-    },
-    {
-      "title": "WATCH: Senate candidate El-Sayed and former VP Harris speak at Black maternal health roundtable",
-      "link": "https://www.pbs.org/newshour/politics/abdul-el-sayed-says-kamala-harris-visit-for-his-michigan-u-s-senate-race-is-about-democratic-unity",
-      "date": "Tue, 22 Sep 2026 16:04:57 -0400",
-      "description": "El-Sayed said Harris, who will attend a roundtable on Black maternal health with him and separately join an event hosted by the Detroit chapter of the NAACP, is a critical advocate in helping him close ranks as he tries to defeat Republican Mike Rogers.",
-      "categories": [
-        "Abdul El-Sayed",
-        "Democrats",
-        "Kamala Harris news",
-        "Vote 2026"
-      ]
-    },
-    {
-      "title": "WATCH: Trump signs agreement with leaders of Denmark and Greenland",
-      "link": "https://www.pbs.org/newshour/world/watch-trump-signs-agreement-with-leaders-of-denmark-and-greenland",
-      "date": "Tue, 22 Sep 2026 13:53:12 -0400",
-      "description": "The signing Tuesday on the sidelines of the U.N. General Assembly in New York comes days after President Donald Trump announced the deal to bolster U.S. military presence on the vast, icy island but keep it under Danish control.",
-      "categories": [
-        "Arctic",
-        "Denmark",
-        "Donald Trump news",
-        "greenland",
-        "Mark Rutte",
-        "Military",
-        "NATO"
-      ]
-    },
-    {
-      "title": "Republican senator calls for probe of Trump Jr. after wedding party bankrolled by Russian oligarch",
-      "link": "https://www.pbs.org/newshour/politics/republican-senator-calls-for-probe-of-trump-jr-after-wedding-party-bankrolled-by-russian-oligarch",
-      "date": "Tue, 22 Sep 2026 13:41:11 -0400",
-      "description": "Republican Sen. John Curtis of Utah wants the Senate Judiciary Committee to investigate and subpoena Donald Trump Jr. after his wedding party was partially bankrolled by a Russian oligarch.",
-      "categories": [
-        "Donald Trump Jr.",
-        "John Curtis",
-        "russia",
-        "russian oligarchs",
-        "Vladimir Putin"
-      ]
-    },
-    {
-      "title": "WATCH: Trump dismisses concerns about AI risks at UN, says he won't rein it in",
-      "link": "https://www.pbs.org/newshour/politics/watch-trump-dismisses-concerns-about-ai-risks-at-un-says-he-wont-rein-it-in",
-      "date": "Tue, 22 Sep 2026 13:11:15 -0400",
-      "description": "President Donald Trump said Tuesday at the United Nations that he is changing the term \"artificial intelligence\" to \"super intelligence\" because it's \"more accurate,\" as he dismissed global concerns about the technology and its effects on humanity.",
-      "categories": [
-        "2026 unga",
-        "artificial intelligence",
-        "Donald Trump news",
-        "United Nations"
-      ]
-    },
-    {
-      "title": "WATCH: Trump addresses 2026 United Nations General Assembly",
-      "link": "https://www.pbs.org/newshour/world/watch-live-trump-addresses-2026-united-nations-general-assembly",
-      "date": "Tue, 22 Sep 2026 09:26:55 -0400",
-      "description": "President Donald Trump returned to the U.N. General Assembly on Tuesday at a tumultuous moment for the world — and for his presidency — and made the case that he's shown fortitude while other leaders have equivocated.",
-      "categories": [
-        "2026 unga",
-        "artificial intelligence",
-        "Donald Trump news",
-        "iran war",
-        "United Nations"
-      ]
-    },
-    {
-      "title": "Press pool declines to cover Trump in protest of his ban on news outlets",
-      "link": "https://www.pbs.org/newshour/show/press-pool-declines-to-cover-trump-in-protest-of-his-ban-on-news-outlets",
-      "date": "Mon, 21 Sep 2026 18:55:26 -0400",
-      "description": "CNN, MS NOW and Politico are suing the Trump administration for stripping access to the White House, calling it a \"direct assault on the First Amendment.\" Monday, CNN was removed from its duties for the rotating pool of TV journalists covering the White House. The TV pool announced there would be no replacement to cover Trump's trip to New York for the UN General Assembly. Liz Landers reports.",
-      "categories": [
-        "Donald Trump news",
-        "first amendment",
-        "press freedom",
-        "White House"
-      ]
-    },
-    {
-      "title": "Trump's attacks on free press echo rhetoric used by autocrats, Jodie Ginsberg says",
-      "link": "https://www.pbs.org/newshour/show/trumps-attacks-on-free-press-echo-rhetoric-used-by-autocrats-jodie-ginsberg-says",
-      "date": "Mon, 21 Sep 2026 18:50:37 -0400",
-      "description": "To discuss President Trump's decision to ban CNN, MS NOW and Politico from the White House, Amna Nawaz spoke with Jodie Ginsberg, CEO of the Committee to Protect Journalists.",
-      "categories": [
-        "Committee to Protect Journalists",
-        "Donald Trump news",
-        "first amendment",
-        "Jodie Ginsberg",
-        "press freedom",
-        "White House"
-      ]
-    },
-    {
-      "title": "News Wrap: FAA issues ground stops at major East Coast airports due to equipment failure",
-      "link": "https://www.pbs.org/newshour/show/news-wrap-faa-issues-ground-stops-at-major-east-coast-airports-due-to-equipment-failure",
-      "date": "Mon, 21 Sep 2026 18:45:16 -0400",
-      "description": "In our news wrap Monday, the FAA issued ground stops at a handful of major airports on the East Coast due to an equipment failure, Paramount settled antitrust concerns with a dozen states over its buyout of Warner Bros. Discovery and a Venezuelan man who was shot by an ICE officer in Austin is being held at a detention center with a bullet still lodged in his back.",
-      "categories": [
-        "news wrap"
-      ]
-    },
-    {
-      "title": "How abortion politics is blocking progress in women's healthcare",
-      "link": "https://www.pbs.org/newshour/show/how-abortion-drug-restrictions-make-it-harder-to-treat-other-conditions",
-      "date": "Mon, 21 Sep 2026 18:40:36 -0400",
-      "description": "For more than 25 years, mifepristone has been approved for abortion in the U.S. But mifepristone and a similar drug have also been proven to treat conditions like uterine fibroids and endometriosis. As anti-abortion groups lobby to further restrict these drugs, Special correspondent Sarah Varney and producer Rachel Wellford take a look at these treatments. It's for our series, Beyond Abortion.",
-      "categories": [
-        "abortion",
-        "Beyond Abortion",
-        "endometriosis",
-        "Health",
-        "mifepristone",
-        "uterine fibroids",
-        "Women's health"
-      ]
-    },
-    {
-      "title": "Appeals court favors Trump-backed Missouri congressional map, but Supreme Court will have final say",
-      "link": "https://www.pbs.org/newshour/politics/appeals-court-favors-trump-backed-missouri-congressional-map-but-supreme-court-will-have-final-say",
-      "date": "Mon, 21 Sep 2026 18:38:12 -0400",
-      "description": "A federal appeals panel has ruled in favor of new Missouri congressional districts backed by President Donald Trump. But there is no immediate impact from Monday's ruling.",
-      "categories": [
-        "2026 Midterms",
-        "Donald Trump news",
-        "missouri",
-        "Supreme Court"
-      ]
-    },
-    {
-      "title": "Tamara Keith and Amy Walter on Trump's media attacks",
-      "link": "https://www.pbs.org/newshour/show/tamara-keith-and-amy-walter-on-trumps-media-attacks",
-      "date": "Mon, 21 Sep 2026 18:35:30 -0400",
-      "description": "NPR's Tamara Keith and Amy Walter of the Cook Political Report with Amy Walter join Amna Nawaz to discuss the latest political news, including President Trump banning some news outlets from the White House, Republicans publicly breaking with Trump and where parties are spending money for the midterm elections.",
-      "categories": [
-        "Politics Monday"
-      ]
-    },
-    {
-      "title": "War correspondent Scott Anderson on the shifting landscape in the Middle East",
-      "link": "https://www.pbs.org/newshour/show/war-correspondent-scott-anderson-on-the-shifting-landscape-in-the-middle-east",
-      "date": "Mon, 21 Sep 2026 18:30:32 -0400",
-      "description": "Ten years ago, Scott Anderson's New York Times Magazine project, Fractured Lands, traced the lives of six people across the Middle East as war, dictatorship and the Arab Spring transformed the region. His latest book, \"King of Kings,\" examines the fall of Iran's last Shah in 1978 and the Islamic Revolution that followed and still shapes Iran today. Anderson joined Geoff Bennett to discuss more.",
-      "categories": [
-        "Iran",
-        "middle east",
-        "scott anderson"
-      ]
-    },
-    {
-      "title": "American Israeli held hostage by Hamas performs songs of survival and hope",
-      "link": "https://www.pbs.org/newshour/show/american-israeli-held-hostage-by-hamas-performs-songs-of-survival-and-hope",
-      "date": "Mon, 21 Sep 2026 18:25:28 -0400",
-      "description": "Recently, the small Israeli town of Nir Oz, devastated by the Oct. 7 terrorist attacks, held a unique concert. The singer was not a professional musician, but an American Israeli man who was kidnapped by Hamas and held in Gaza for nearly 500 days. Producer Karl Bostic and Nick Schifrin report.",
-      "categories": [
-        "arts",
-        "CANVAS",
-        "Israel",
-        "Music",
-        "Nir Oz",
-        "Oct. 7"
-      ]
+      "categories": ["Donald Trump news", "iran war", "UN General Assembly", "United Nations"],
+      "images": [{"from": "media:content", "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/worldstage-1-1024x683.jpg", "width": 1024, "medium": "image"}]
     }
   ]
 }

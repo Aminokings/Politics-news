@@ -2,42 +2,39 @@
   "feed": "sky-world",
   "url": "https://feeds.skynews.com/feeds/rss/world.xml",
   "format": "rss",
-  "fetchedAt": "2026-09-23T17:15:00Z",
+  "fetchedAt": "2026-09-24T04:14:00Z",
   "items": [
     {
-      "title": "Fifteen jailed for life over involvement in Sri Lanka attacks that killed more than 260",
-      "link": "https://news.sky.com/story/fifteen-jailed-for-life-over-involvement-in-sri-lanka-bombings-that-killed-more-than-260-13590838",
-      "date": "Tue, 22 Sep 2026 20:42:00 +0100",
-      "description": "Fifteen men have been convicted for their involvement in the 2019 Easter Sunday bombings which killed more than 260 people in Sri Lanka.",
-      "categories": []
+      "title": "Son of Israeli ambassador to US 'seriously injured' in West Bank ramming attack",
+      "link": "https://news.sky.com/story/son-of-israeli-ambassador-to-us-seriously-injured-in-west-bank-ramming-attack-13591205",
+      "date": "Wed, 23 Sep 2026 21:30:00 +0100",
+      "description": "The son of Israel's ambassador to the US has reportedly been seriously injured in a ramming attack in the occupied West Bank.",
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/09/1920x1080/skynews-beit-horon-west-bank_7359880.jpg?20260923231154", "width": 1920, "type": "image/jpeg"}]
     },
     {
-      "title": "Doctors warn of 'exponential' rise in e-scooter and scrambler bike injuries",
-      "link": "https://news.sky.com/story/doctors-warn-of-exponential-rise-in-e-scooter-and-scrambler-bike-injuries-in-ireland-13590867",
-      "date": "Tue, 22 Sep 2026 21:40:00 +0100",
-      "description": "Injuries related to e-scooters and scrambler motorbikes in Ireland are rising at an \"exponential rate\" and \"stretching\" an already overstretched system, experts have warned.",
-      "categories": []
+      "title": "Netherlands to return to Eurovision as it drops boycott over Israel participation",
+      "link": "https://news.sky.com/story/netherlands-to-return-to-eurovision-as-it-drops-boycott-over-israel-participation-13591176",
+      "date": "Wed, 23 Sep 2026 19:52:00 +0100",
+      "description": "The Netherlands will return to the Eurovision Song Contest in 2027 after abandoning a boycott over Israel's participation.",
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/09/1920x1080/skynews-claude-netherlands_7359857.jpg?20260923221503", "width": 1920, "type": "image/jpeg"}]
     },
     {
-      "title": "Doctor was 'supervisor' of killings during Rwanda genocide, court hears",
-      "link": "https://news.sky.com/story/doctor-was-supervisor-of-killings-during-rwanda-genocide-court-hears-13590686",
-      "date": "Tue, 22 Sep 2026 13:52:00 +0100",
-      "description": "A doctor is accused of being a party to six genocide murders, including the stoning to death of a taxi driver and the killing of a woman and her child.",
-      "categories": []
+      "title": "British businessman jailed over illegal arms deals to war zones worth millions",
+      "link": "https://news.sky.com/story/british-businessman-jailed-over-illegal-arms-deals-to-war-zones-worth-millions-13591072",
+      "date": "Wed, 23 Sep 2026 14:43:00 +0100",
+      "description": "A British businessman and an adviser to a quango funded by the UK government have each been jailed for 16 years after brokering illegal arms deals to send fighter jets and weapons to war zones.",
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/09/1920x1080/skynews-david-greenhalgh_7359523.jpg?20260923151836", "width": 1920, "type": "image/jpeg"}]
     },
     {
-      "title": "Converse apologises and removes ad after backlash",
-      "link": "https://news.sky.com/story/converse-apologises-and-removes-ad-over-image-critics-said-evoked-racist-imagery-13590324",
-      "date": "Mon, 21 Sep 2026 07:33:00 +0100",
-      "description": "Converse, the American footwear brand, has apologised for an ad which critics said evoked Ku Klux Klan imagery, saying it recognised why the image was \"deeply upsetting\".",
-      "categories": []
-    },
-    {
-      "title": "Infantino says he's 'open' to talks about FIFA reform in letter to football chiefs",
-      "link": "https://news.sky.com/story/gianni-infantino-says-hes-open-to-talks-about-fifa-reform-in-letter-to-football-chiefs-13590536",
-      "date": "Mon, 21 Sep 2026 21:12:00 +0100",
-      "description": "FIFA president Gianni Infantino has written to football chiefs across the globe saying he is open to talks about reforming the organisation, while affirming his commitment to remain in post.",
-      "categories": []
+      "title": "At least 11 dead in mass shooting at house party in South Africa",
+      "link": "https://news.sky.com/story/at-least-11-dead-in-mass-shooting-at-house-party-in-south-africa-13590905",
+      "date": "Wed, 23 Sep 2026 06:57:00 +0100",
+      "description": "At least 11 people have been killed in a mass shooting at a house party in South Africa.",
+      "categories": [],
+      "images": [{"from": "media:thumbnail", "url": "https://e3.365dm.com/26/09/1920x1080/skynews-saps-kwazulu-natal_7359130.jpg?20260923081838", "width": 1920, "type": "image/jpeg"}]
     }
   ]
 }

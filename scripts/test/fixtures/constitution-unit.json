@@ -2,171 +2,114 @@
   "feed": "constitution-unit",
   "url": "https://blogs.ucl.ac.uk/constitution-unit/feed/",
   "format": "rss",
-  "fetchedAt": "2026-09-23T17:18:00Z",
+  "fetchedAt": "2026-09-24T04:16:00Z",
   "items": [
+    {
+      "title": "AI, elections and the limits of old campaign law",
+      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/09/24/ai-elections-and-the-limits-of-old-campaign-law/",
+      "date": "Thu, 24 Sep 2026 04:00:21 +0000",
+      "description": "Generative AI is now part of election campaigns. Nicky Gillibrand and Marcus Ganley explain their recent research findings on how the EU’s regulatory frameworks dealt with the risks created by generative AI in the 2024 European Parliament elections, how this contrasts with New Zealand’s regulatory…",
+      "categories": [
+        "Digital Democracy",
+        "Elections and Referendums",
+        "Parties and Politicians",
+        "AI",
+        "artificial intelligence"
+      ],
+      "images": [
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/09/AI-elections-and-the-limits-of-old-campaign-law-3-300x225.png",
+          "width": 300,
+          "medium": "image"
+        },
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/09/AI-elections-and-the-limits-of-old-campaign-law-3.png",
+          "width": 1920,
+          "medium": "image"
+        }
+      ]
+    },
     {
       "title": "Alberta’s democratic experiment",
       "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/09/21/albertas-democratic-experiment/",
       "date": "Mon, 21 Sep 2026 04:00:46 +0000",
-      "description": "Albertans will head to the polls this autumn to vote on whether to hold a referendum on seceding from Canada. Leah Trueblood explains how this ‘vote about a vote’ came about, why the ‘two vote’ structure is different from that put forward by the Independent Commission on Referendums, and suggests that the approach of the […]",
+      "description": "Albertans will head to the polls this autumn to vote on whether to hold a referendum on seceding from Canada. Leah Trueblood explains how this ‘vote about a vote’ came about, why the ‘two vote’ structure is different from that put forward by the Independent Commission on Referendums, and suggests…",
       "categories": [
         "Elections and Referendums",
         "International",
         "Alberta",
         "Alberta independence",
-        "Independent Commission on Referendums",
-        "Leah Trueblood",
-        "referendums",
-        "secession"
+        "Independent Commission on Referendums"
+      ],
+      "images": [
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/09/Albertas-democratic-experiment-300x225.png",
+          "width": 300,
+          "medium": "image"
+        },
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/09/Albertas-democratic-experiment.png",
+          "width": 1920,
+          "medium": "image"
+        }
       ]
     },
     {
       "title": "Andy Burnham’s constitutional agenda, and the Constitution Unit’s future plans",
       "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/09/17/andy-burnhams-constitutional-agenda-and-the-constitution-units-future-plans/",
       "date": "Thu, 17 Sep 2026 04:00:56 +0000",
-      "description": "Recent months have brought transition both in government and here at the Constitution Unit. The Prime Minister changed in July, and the Unit has had a new Director since May. Having spent the summer taking stock of the constitutional landscape, our Director, Alan Renwick explores what we know so far about the government’s agenda, what […]",
+      "description": "Recent months have brought transition both in government and here at the Constitution Unit. The Prime Minister changed in July, and the Unit has had a new Director since May. Having spent the summer taking stock of the constitutional landscape, our Director, Alan Renwick explores what we know so far…",
       "categories": [
         "Constitutions and Constitution-Making",
         "Deliberative Democracy",
         "Elections and Referendums",
         "Government",
-        "Judiciary and Human Rights",
-        "Nations and Regions",
-        "Parliament",
-        "Alan Renwick",
-        "Andy Burnham",
-        "checks and balances",
-        "constitution unit",
-        "devolution",
-        "Electoral reform"
+        "Judiciary and Human Rights"
+      ],
+      "images": [
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/09/Andy-Burnhams-constitutional-agenda-and-the-Constitution-Units-future-plans-300x225.png",
+          "width": 300,
+          "medium": "image"
+        },
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/09/Andy-Burnhams-constitutional-agenda-and-the-Constitution-Units-future-plans.png",
+          "width": 1920,
+          "medium": "image"
+        }
       ]
     },
     {
       "title": "Parliament under Andy Burnham: ten things to look out for this autumn",
       "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/08/27/parliament-under-andy-burnham-ten-things-to-look-out-for-this-autumn/",
       "date": "Thu, 27 Aug 2026 04:00:26 +0000",
-      "description": "As Andy Burnham’s new government prepares to face scrutiny from MPs for the first time, Tom Fleming outlines ten key issues and questions facing parliament in the weeks and months ahead. Parliament will return from its summer recess next week, and ‘normal’ Westminster politics will resume for the first time since Andy Burnham became Prime […]",
+      "description": "As Andy Burnham’s new government prepares to face scrutiny from MPs for the first time, Tom Fleming outlines ten key issues and questions facing parliament in the weeks and months ahead. Parliament will return from its summer recess next week, and ‘normal’ Westminster politics will resume…",
       "categories": [
         "Parliament",
         "Andy Burnham",
         "house of lords reform",
         "Modernisation Committee",
-        "select committees",
-        "Tom Fleming",
-        "whipping"
-      ]
-    },
-    {
-      "title": "Safeguarding the Constitution: Key Steps to Strengthen UK Democratic Resilience",
-      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/07/23/safeguarding-the-constitution-key-steps-to-strengthen-uk-democratic-resilience/",
-      "date": "Thu, 23 Jul 2026 04:00:20 +0000",
-      "description": "The Constitution Unit today publishes a new report: Safeguarding the Constitution: Key Steps to Strengthen UK Democratic Resilience. In this post its authors, Lisa James, Meg Russell and Alan Renwick, discuss some of the report’s conclusions. The past decade has been an eventful one in constitutional terms. Shocks such as Brexit and the Covid pandemic […]",
-      "categories": [
-        "Constitutional Standards and the Health of Democracy",
-        "Constitutional Watchdogs",
-        "Constitutions and Constitution-Making",
-        "Deliberative Democracy",
-        "Elections and Referendums",
-        "Government",
-        "Parliament",
-        "Alan Renwick",
-        "democratic resilience",
-        "elections",
-        "ethics",
-        "information environment",
-        "Lisa James",
-        "Meg Russell",
-        "parliament"
-      ]
-    },
-    {
-      "title": "Time to make lobbying more transparent",
-      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/07/20/time-to-make-lobbying-more-transparent/",
-      "date": "Mon, 20 Jul 2026 05:00:27 +0000",
-      "description": "The Ethics and Integrity Commission has published a report on how to reform how lobbying of government is regulated, reported and monitored. Peter Riddell welcomes many of the findings and recommendations, and urges Andy Burnham to legislate to implement as many of the report’s recommendations as possible, preferably in a broader bill that seeks to make large scale reforms to the wider standards",
-      "categories": [
-        "Constitutional Standards and the Health of Democracy",
-        "Constitutional Watchdogs",
-        "Government",
-        "Ethics and integrity commission",
-        "lobbying",
-        "Peter Riddell"
-      ]
-    },
-    {
-      "title": "Times of transition: Starmer’s record and Burnham’s agenda",
-      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/07/17/times-of-transition-starmers-record-and-burnhams-agenda/",
-      "date": "Fri, 17 Jul 2026 05:00:33 +0000",
-      "description": "The past four months have seen nationally important by-elections, local elections in England, national elections in Scotland and Wales, and Keir Starmer’s resignation. In this post, which replicates the lead article of the latest issue of Monitor, Alan Renwick and Tom Fleming reflect on the constitutional successes and failures of the Starmer government, and look ahead to what a Burnham […]",
-      "categories": [
-        "Constitutional Watchdogs",
-        "Elections and Referendums",
-        "Government",
-        "Judiciary and Human Rights",
-        "Alan Renwick",
-        "Monitor",
-        "Tom Fleming"
-      ]
-    },
-    {
-      "title": "Revising the Cabinet Manual: five constitutional conventions which defy precise definition",
-      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/07/06/revising-the-cabinet-manual-five-constitutional-conventions-which-defy-precise-definition/",
-      "date": "Mon, 06 Jul 2026 05:00:23 +0000",
-      "description": "The third instalment of this series about the Cabinet Manual discussed what it should say about mid term changes of Prime Minister. The great value of the manual is that it seeks to codify the UK’s core constitutional conventions. But conventions are flexible, they evolve, their scope and application may be contested. In this fourth post, […]",
-      "categories": [
-        "Constitutional Standards and the Health of Democracy",
-        "Government",
-        "Monarchy, Church and State",
-        "Parliament",
-        "Parties and Politicians",
-        "Cabinet manual",
-        "Constitutional Conventions",
-        "Revising the Cabinet Manual",
-        "Robert Hazell"
-      ]
-    },
-    {
-      "title": "Andy Burnham’s Number 10 should have fewer special advisers",
-      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/07/01/andy-burnhams-number-10-should-have-fewer-special-advisers/",
-      "date": "Wed, 01 Jul 2026 05:00:21 +0000",
-      "description": "Keir Starmer had 42 Special Advisers in Number 10. The expectation is that Andy Burnham will recruit a similar number. In this post, Robert Hazell argues that to avoid the turmoil of his predecessor Burnham should aim to have fewer, more heavyweight Special Advisers, working more closely with the Number 10 civil servants. The newspapers […]",
-      "categories": [
-        "Government",
-        "Andy Burnham",
-        "Robert Hazell",
-        "Special advisers"
-      ]
-    },
-    {
-      "title": "When there is a mid-term change of Prime Minister, what should the Cabinet Manual say about access talks and the caretaker convention?",
-      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/06/26/when-there-is-a-mid-term-change-of-prime-minister-what-should-the-cabinet-manual-say-about-access-talks-and-the-caretaker-convention/",
-      "date": "Fri, 26 Jun 2026 05:00:08 +0000",
-      "description": "Important constitutional conventions around mid-term changes of Prime Minister have not yet been written down. In the latest in our mini-series of blog posts on the government’s planned update of the Cabinet Manual, Peter Riddell examines what the revised Manual should say to plug this gap. Seven of the most recent ten changes in Prime Minister – including Keir Starmer now – have occurred between",
-      "categories": [
-        "Government",
-        "access talks",
-        "Cabinet manual",
-        "caretaker convention",
-        "Peter Riddell",
-        "Revising the Cabinet Manual"
-      ]
-    },
-    {
-      "title": "Revising the Cabinet Manual: why the timetable is tight for publication in early 2027 ",
-      "link": "https://blogs.ucl.ac.uk/constitution-unit/2026/06/18/revising-the-cabinet-manual-why-the-timetable-is-tight-for-publication-in-early-2027/",
-      "date": "Thu, 18 Jun 2026 05:00:38 +0000",
-      "description": "Peter Riddell’s blog on 5 June welcomed the government’s change of heart in deciding to revise and update the Cabinet Manual, and outlined some of the key issues involved. This post by Robert Hazell explores in greater depth the process to be followed by the Cabinet Office in trying to ensure the manual enjoys the widest possible level of support. A further post will […]",
-      "categories": [
-        "Constitutional Standards and the Health of Democracy",
-        "Constitutional Watchdogs",
-        "Government",
-        "Parties and Politicians",
-        "Antonia Romeo",
-        "Cabinet Office",
-        "Cabinet Secretary",
-        "Keir Starmer",
-        "Revising the Cabinet Manual",
-        "Robert Hazell"
+        "select committees"
+      ],
+      "images": [
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/08/Parliament-under-Andy-Burnham-ten-things-to-look-out-for-this-autumn-300x225.jpg",
+          "width": 300,
+          "medium": "image"
+        },
+        {
+          "from": "media:thumbnail",
+          "url": "https://blogs.ucl.ac.uk/constitution-unit/files/2026/08/Parliament-under-Andy-Burnham-ten-things-to-look-out-for-this-autumn.jpg",
+          "width": 1920,
+          "medium": "image"
+        }
       ]
     }
   ]

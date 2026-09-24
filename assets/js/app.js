@@ -174,6 +174,16 @@ document.addEventListener('click', (e) => {
     const href = hashLink.getAttribute('href');
     e.preventDefault();
     if (href === '#main') { main.focus(); return; }
+    if (!href.startsWith('#/')) {
+      // In-page anchor, e.g. a section of the front page
+      const target = document.getElementById(decodeURIComponent(href.slice(1)));
+      if (target) {
+        target.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      }
+      return;
+    }
     if (!overlay.hidden && !href.startsWith('#/story/')) hideOverlay();
     if (location.hash === href) { rerenderBase(); return; }
     if (navPush(href)) route();
@@ -225,6 +235,16 @@ document.addEventListener('keydown', (e) => {
     setTimeout(() => feed.focusSearch(), 30);
   }
 });
+
+// Story photos load from the publishers' sites. If one fails, try its fallback size once,
+// then drop it so the coloured topic tile underneath shows instead.
+document.addEventListener('error', (e) => {
+  const img = e.target;
+  if (!(img instanceof HTMLImageElement) || !img.parentElement?.classList.contains('media')) return;
+  if (img.dataset.fb && !img.dataset.tried) { img.dataset.tried = '1'; img.src = img.dataset.fb; return; }
+  img.parentElement.classList.add('media--none');
+  img.remove();
+}, true);
 
 window.addEventListener('cip:basehash', (e) => { baseHash = e.detail; });
 window.addEventListener('popstate', route);

@@ -1,7 +1,7 @@
 // Story drawer: summary, link to the original, spec links, exam angles, citation, notes.
 import { S, bank, loadArchive } from '../store.js';
 import { esc, icon, longDate, clock, timeAgo, copyText, toast } from '../util.js';
-import { compClass, saveButton, kindLabel, miniStory } from '../ui.js';
+import { compClass, saveButton, kindLabel, miniStory, media } from '../ui.js';
 import { usesForItem } from '../match.js';
 
 export async function renderStory(drawer, id) {
@@ -39,6 +39,7 @@ export async function renderStory(drawer, id) {
       <div>
         <div class="kicker"><span class="src">${esc(it.srcName)}${feed?.section ? ` · ${esc(feed.section)}` : ''}</span><span>${esc(longDate(it.date))}, ${esc(clock(it.date))}</span><span class="badge">${esc(kindLabel(it.kind))}</span></div>
         <h1 id="drawerTitle">${esc(it.title)}</h1>
+        ${it.img ? `<figure class="drawer__fig">${media(it, { ratio: '16x9', eager: true })}<figcaption>Photo: ${esc(it.srcName)}</figcaption></figure>` : ''}
         ${it.summary ? `<p class="summary">${esc(it.summary)}</p>` : '<p class="summary muted">No summary was provided by the source. Open the full article to read it.</p>'}
         <div class="btnrow" style="margin-top:16px">
           <a class="btn btn--primary" href="${esc(it.url)}" target="_blank" rel="noopener">Read the full article on ${esc(it.srcName)}${icon('external')}</a>

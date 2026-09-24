@@ -20,31 +20,73 @@ export function saveButton(it, size = '') {
   return `<button class="savebtn ${size}" type="button" data-action="toggle-save" data-id="${esc(it.id)}" aria-pressed="${saved}" aria-label="${saved ? 'Remove from' : 'Save to'} my evidence bank" title="${saved ? 'Saved — click to remove' : 'Save to my evidence bank'}">${icon('bookmark')}</button>`;
 }
 
-function useHint(it) {
+/** The best exam question this story could be evidence for. */
+export function bestUse(it) {
   const uses = usesForItem(it);
-  const u = uses.find((x) => x.q.type === 'evaluate') || uses[0];
+  return uses.find((x) => x.q.type === 'evaluate') || uses[0] || null;
+}
+
+/** One line on how a story could be used in an essay, e.g. "Imperial presidency" → No: constrained. */
+export function essayUse(it) {
+  const u = bestUse(it);
   if (!u) return '';
   const sideLabel = u.q.sides?.[u.side] || '';
-  return `<span class="story__use"><b>Essay use</b> <span>“${esc(shortQ(u.q.text))}” → <em>${esc(sideLabel)}</em></span></span>`;
+  return `<p class="card__use"><b>Essay use</b> “${esc(shortQ(u.q.text))}” → <em>${esc(sideLabel)}</em></p>`;
 }
 
 export function shortQ(text) {
   return text.replace(/^Evaluate the view that /, '').replace(/^Examine /, 'Examine ').replace(/\.$/, '').replace(/^(.)/, (m) => m.toUpperCase());
 }
 
-export function storyItem(it, { terms = [] } = {}) {
-  const tags = it.tags.slice(0, 2).map((t) => tagChip(t)).join('');
-  const also = it.also.length ? `<span>+${it.also.length} more source${it.also.length > 1 ? 's' : ''}</span>` : '';
-  const ai = it.ai ? `<span class="badge badge--ai">${icon('sparkles')}AI notes</span>` : '';
-  const kind = it.kind !== 'news' ? `<span class="badge">${esc(kindLabel(it.kind))}</span>` : '';
-  return `<li class="story">
-    <div class="story__main">
-      <div class="story__kicker"><span class="src">${esc(it.srcName)}</span><span>${esc(timeAgo(it.t, S.now))}</span>${kind}</div>
-      <h3 class="story__title"><a href="#/story/${esc(it.id)}">${highlight(esc(it.title), terms)}</a></h3>
-      ${it.summary ? `<p class="story__sum">${highlight(esc(it.summary), terms)}</p>` : ''}
-      <div class="story__foot">${tags ? `<span class="tags">${tags}</span>` : ''}${useHint(it)}${also}${ai}</div>
+/**
+ * A story's photo, sitting on top of a coloured topic tile. If the photo is missing or fails
+ * to load (see the error handler in app.js), the tile shows instead.
+ */
+export function media(it, { ratio = '3x2', eager = false, cls = '', tile = true } = {}) {
+  if (!it.img && !tile) return '';
+  const t = S.tagById[it.tags[0]];
+  const label = t?.name || S.compById[it.comp]?.short || it.srcName;
+  const img = it.img
+    ? `<img src="${esc(it.img)}" alt="" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" referrerpolicy="no-referrer"${it.img0 ? ` data-fb="${esc(it.img0)}"` : ''}>`
+    : '';
+  return `<div class="media media--${ratio} ${compClass(it.comp)}${img ? '' : ' media--none'} ${cls}"><span class="media__tile" aria-hidden="true"><span>${esc(label)}</span></span>${img}</div>`;
+}
+
+/** Small coloured label above a headline: "USA · Supreme Court". */
+export function kicker(it, { topic = true } = {}) {
+  const comp = S.compById[it.comp];
+  const t = S.tagById[it.tags[0]];
+  if (!comp) return `<div class="kick"><span class="kick__comp">${esc(it.srcName)}</span></div>`;
+  return `<div class="kick ${compClass(it.comp)}"><span class="kick__comp">${esc(comp.short)}</span>${topic && t ? `<span class="kick__topic">${esc(t.name)}</span>` : ''}</div>`;
+}
+
+export function byline(it, { kind = true } = {}) {
+  const k = kind && it.kind !== 'news' ? `<span class="badge">${esc(kindLabel(it.kind))}</span>` : '';
+  return `<div class="byline"><span class="src">${esc(it.srcName)}</span><span>${esc(timeAgo(it.t, S.now))}</span>${k}</div>`;
+}
+
+/** Escaped headline with the first spec keyword it matched on marked, e.g. "…to <mark>Supreme Court</mark>…". */
+export function markedTitle(it) {
+  const title = esc(it.title);
+  const labels = [...new Set(Object.values(it.why || {}).flat())].filter((l) => l && l.length > 2).sort((a, b) => b.length - a.length);
+  for (const l of labels) {
+    const re = new RegExp(`(^|[^\\p{L}\\p{N}])(${esc(l).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})(?=[^\\p{L}\\p{N}]|$)`, 'iu');
+    if (re.test(title)) return title.replace(re, '$1<mark class="hl">$2</mark>');
+  }
+  return title;
+}
+
+/** Story card with a photo (or a coloured topic tile when there isn't one). */
+export function storyCard(it, { terms = [] } = {}) {
+  return `<li class="card ${compClass(it.comp)}">
+    ${media(it, { ratio: '16x9' })}
+    <div class="card__body">
+      ${kicker(it)}
+      <h3 class="card__title"><a href="#/story/${esc(it.id)}">${highlight(esc(it.title), terms)}</a></h3>
+      ${it.summary ? `<p class="card__sum">${highlight(esc(it.summary), terms)}</p>` : ''}
+      ${essayUse(it)}
+      <div class="card__foot">${byline(it)}${it.also.length ? `<span class="card__also">+${it.also.length} source${it.also.length > 1 ? 's' : ''}</span>` : ''}${it.ai ? `<span class="badge badge--ai">${icon('sparkles')}AI notes</span>` : ''}${saveButton(it, 'savebtn--sm')}</div>
     </div>
-    <div class="story__side">${saveButton(it)}</div>
   </li>`;
 }
 
@@ -57,6 +99,31 @@ export function miniStory(it, extra = '') {
 
 export function kindLabel(kind) {
   return { news: 'News', analysis: 'Analysis', explainer: 'Explainer', official: 'Official' }[kind] || kind;
+}
+
+const MONTHS = /^(January|February|March|April|May|June|July|August|September|October|November|December)\b/i;
+const FIGURE = /^(?:(?:About|Around|Roughly|Nearly|Almost|Over|More than|Some)\s+)?((?:£|\$|€)?\d[\d,.]*(?:[–-]\d[\d,.]*)?(?:\s?%|\s?°C|(?:bn|m)\b|\s(?:billion|million|trillion)\b)?(?:\s(?:days|seats|votes|MPs|years|months|weeks|members|councillors|countries|states|arrests))?)/i;
+
+/** Facts whose answer starts with a figure (not a date), e.g. "59.7%, the lowest since 2001". */
+export function numberFacts() {
+  const pool = [];
+  for (const f of S.facts) {
+    const m = f.a.match(FIGURE);
+    if (!m) continue;
+    const big = m[1].replace(/[.,]+$/, '');
+    const rest = f.a.slice(m[0].length).trim();
+    if (MONTHS.test(rest) || /^\d{4}$/.test(big)) continue;
+    pool.push({ f, big });
+  }
+  return pool;
+}
+
+/** A figure worth remembering, from config/facts.json, changing once a day. */
+export function numberToKnow(day = new Date()) {
+  const pool = numberFacts();
+  if (!pool.length) return null;
+  const doy = Math.floor((Date.UTC(day.getFullYear(), day.getMonth(), day.getDate()) - Date.UTC(day.getFullYear(), 0, 0)) / 86400000);
+  return pool[doy % pool.length];
 }
 
 export function emptyState(title, text, action = '') {

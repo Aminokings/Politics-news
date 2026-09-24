@@ -1,5 +1,7 @@
 {
   "_help": "News sources. region = uk | us | intl (a hint for the tagger). kind = news | analysis | explainer | official. politicsOnly = keep stories even if no spec topic is detected. weight = ranking boost (1 = normal). Set enabled:false to switch a feed off. See README > 'Adding or removing news sources'.",
+  "_images": "images = show the photos that feeds include (they load from the publisher's site). Set it to false to hide every photo, or set images:false on one feed. imageFromContent = also use the first picture in the article text (only for feeds where that is a real photo, not a chart).",
+  "images": true,
   "feeds": [
     {"id": "bbc-politics", "name": "BBC News", "section": "Politics", "url": "https://feeds.bbci.co.uk/news/politics/rss.xml", "home": "https://www.bbc.co.uk/news/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 1.1},
     {"id": "guardian-politics", "name": "The Guardian", "section": "Politics", "url": "https://www.theguardian.com/politics/rss", "home": "https://www.theguardian.com/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 1.0},
@@ -16,7 +18,7 @@
     {"id": "ifg", "name": "Institute for Government", "section": "Comment & explainers", "url": "https://www.instituteforgovernment.org.uk/rss.xml", "home": "https://www.instituteforgovernment.org.uk/", "region": "uk", "kind": "analysis", "politicsOnly": false, "weight": 1.0, "excludeLinks": ["/person/", "/team/"], "descriptionMode": "firstParagraph"},
     {"id": "bbc-us", "name": "BBC News", "section": "US & Canada", "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml", "home": "https://www.bbc.co.uk/news/world/us_and_canada", "region": "us", "kind": "news", "politicsOnly": false, "weight": 1.05},
     {"id": "guardian-us-politics", "name": "The Guardian", "section": "US politics", "url": "https://www.theguardian.com/us-news/us-politics/rss", "home": "https://www.theguardian.com/us-news/us-politics", "region": "us", "kind": "news", "politicsOnly": true, "weight": 1.0},
-    {"id": "npr-politics", "name": "NPR", "section": "Politics", "url": "https://feeds.npr.org/1014/rss.xml", "home": "https://www.npr.org/sections/politics/", "region": "us", "kind": "news", "politicsOnly": true, "weight": 1.0},
+    {"id": "npr-politics", "name": "NPR", "section": "Politics", "url": "https://feeds.npr.org/1014/rss.xml", "home": "https://www.npr.org/sections/politics/", "region": "us", "kind": "news", "politicsOnly": true, "weight": 1.0, "imageFromContent": true},
     {"id": "pbs-politics", "name": "PBS News", "section": "Politics", "url": "https://www.pbs.org/newshour/feeds/rss/politics", "home": "https://www.pbs.org/newshour/politics", "region": "us", "kind": "news", "politicsOnly": false, "weight": 1.0, "excludeTitles": ["^News Wrap:", "^WATCH LIVE:"]},
     {"id": "thehill", "name": "The Hill", "section": "News", "url": "https://thehill.com/homenews/feed/", "home": "https://thehill.com/", "region": "us", "kind": "news", "politicsOnly": false, "weight": 0.9},
     {"id": "politico-us", "name": "Politico", "section": "Politics", "url": "https://rss.politico.com/politics-news.xml", "home": "https://www.politico.com/politics", "region": "us", "kind": "news", "politicsOnly": true, "weight": 0.95},

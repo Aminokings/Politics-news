@@ -5,6 +5,7 @@ import { normaliseText } from './lib/keywords.js';
 export const S = {
   ready: false,
   error: null,
+  showImages: true,
   spec: null,
   formats: {},
   questions: [],
@@ -43,6 +44,7 @@ export async function loadAll() {
   S.facts = facts.facts || [];
   S.feeds = feeds.feeds || [];
   S.feedsById = Object.fromEntries(S.feeds.map((f) => [f.id, f]));
+  S.showImages = feeds.images !== false;
   for (const c of spec.components) { S.compById[c.id] = c; S.topicsByComp[c.id] = []; }
   for (const t of spec.topics) { S.topicById[t.id] = t; S.topicsByComp[t.component]?.push(t); S.tagsByTopic[t.id] = []; }
   for (const t of spec.tags) {
@@ -92,9 +94,13 @@ export function allItems(includeArchive) {
   return includeArchive && S.archiveState === 'done' ? S.latest.concat(S.archive) : S.latest;
 }
 
+const httpsOnly = (u) => (typeof u === 'string' && /^https:\/\/[^\s"'<>]+$/.test(u) ? u : null);
+
 function prepare(raw) {
   const it = { ...raw, tags: raw.tags || [], also: raw.also || [] };
   it.t = Date.parse(it.date) || 0;
+  it.img = S.showImages ? httpsOnly(raw.img) : null;
+  it.img0 = it.img ? httpsOnly(raw.img0) : null;
   const primary = it.tags.map((id) => S.tagById[id]).find(Boolean);
   it.comp = primary?.component || null;
   const feed = S.feedsById[it.source];
