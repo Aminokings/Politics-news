@@ -10,6 +10,7 @@
 //   node scripts/update-news.mjs                      # read+write ./data
 //   node scripts/update-news.mjs --prev .prev --out .out --require-prev   (GitHub Actions)
 //   node scripts/update-news.mjs --fixtures scripts/test/fixtures        (offline demo data)
+//   add --no-page-photos to skip looking up photos on article pages
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,6 +20,7 @@ import { buildTagger, relevance } from './lib/tagger.mjs';
 import { titleTokens, similarity, SAME_STORY, WINDOW_MS } from './lib/cluster.mjs';
 import { stripHtml, firstParagraph, cleanSummary, cleanTitle, canonicalUrl, shortId, parseDate } from './lib/text.mjs';
 import { pickImage } from './lib/images.mjs';
+import { addPagePhotos } from './lib/pagephoto.mjs';
 import { enrichWithAI, DEFAULT_MODEL } from './lib/ai.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -46,6 +48,7 @@ const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 const spec = readJson(path.join(ROOT, 'config/spec.json'));
 const feedsFile = readJson(path.join(ROOT, 'config/feeds.json'));
 const IMAGES_ON = feedsFile.images !== false;
+const PAGE_PHOTOS_ON = IMAGES_ON && feedsFile.pagePhotos !== false;
 const feedsCfg = feedsFile.feeds.filter((f) => f.enabled !== false && (!only || only.includes(f.id)));
 const questions = readJson(path.join(ROOT, 'config/questions.json')).questions;
 const feedsById = Object.fromEntries(feedsCfg.map((f) => [f.id, f]));
@@ -260,6 +263,22 @@ async function main() {
   }
   log(`\n${added.length} new stories added, ${merged} merged into existing stories as extra sources.`);
 
+  // Article photos for stories whose feed had none (see scripts/lib/pagephoto.mjs)
+  const blocked = new Set(prev.index?.pagePhotoBlock || []);
+  let photoStats = null;
+  if (PAGE_PHOTOS_ON && !fixturesDir && !flag('no-page-photos')) {
+    photoStats = await addPagePhotos(all, {
+      canFetch: (i) => {
+        const f = feedsById[i.source];
+        return Boolean(f) && f.images !== false && f.pagePhotos !== false;
+      },
+      since: now.getTime() - LATEST_DAYS * DAY,
+      max: Number(process.env.PAGE_PHOTOS_MAX || 100),
+      blocked,
+      log,
+    });
+  }
+
   // Optional AI notes
   let aiStats = { attempted: 0, done: 0, failed: 0 };
   const apiKey = process.env.ANTHROPIC_API_KEY;
@@ -322,6 +341,8 @@ async function main() {
     tagCounts,
     feeds: feedStatus,
     ai: { enabled: Boolean(apiKey), ...aiStats },
+    ...(photoStats ? { pagePhotos: photoStats } : {}),
+    pagePhotoBlock: [...blocked].slice(-500),
     runSeconds: Math.round((Date.now() - t0) / 100) / 10,
   };
   fs.writeFileSync(path.join(outDir, 'index.json'), JSON.stringify(index, null, 1));

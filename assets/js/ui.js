@@ -2,6 +2,7 @@
 import { S, bank } from './store.js';
 import { esc, icon, timeAgo, highlight } from './util.js';
 import { usesForItem } from './match.js';
+import { artFor, sceneSvg } from './art.js';
 
 export const compClass = (compId) => (compId ? `comp-${compId}` : '');
 
@@ -39,17 +40,17 @@ export function shortQ(text) {
 }
 
 /**
- * A story's photo, sitting on top of a coloured topic tile. If the photo is missing or fails
- * to load (see the error handler in app.js), the tile shows instead.
+ * A story's photo, or one of the site's own drawings when it has none (see art.js). If a
+ * photo fails to load, the error handler in app.js swaps in the drawing.
+ * `look` limits the drawing's colours: 'day', 'dusk', 'night' or a list of them.
  */
-export function media(it, { ratio = '3x2', eager = false, cls = '', tile = true } = {}) {
-  if (!it.img && !tile) return '';
-  const t = S.tagById[it.tags[0]];
-  const label = t?.name || S.compById[it.comp]?.short || it.srcName;
-  const img = it.img
-    ? `<img src="${esc(it.img)}" alt="" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" referrerpolicy="no-referrer"${it.img0 ? ` data-fb="${esc(it.img0)}"` : ''}>`
-    : '';
-  return `<div class="media media--${ratio} ${compClass(it.comp)}${img ? '' : ' media--none'} ${cls}"><span class="media__tile" aria-hidden="true"><span>${esc(label)}</span></span>${img}</div>`;
+export function media(it, { ratio = '3x2', eager = false, cls = '', look } = {}) {
+  const art = artFor(it, look);
+  if (it.img) {
+    const img = `<img src="${esc(it.img)}" alt="" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" referrerpolicy="no-referrer"${it.img0 ? ` data-fb="${esc(it.img0)}"` : ''}>`;
+    return `<div class="media media--${ratio} ${compClass(it.comp)} ${cls}" data-art="${art.key}">${img}</div>`;
+  }
+  return `<div class="media media--${ratio} media--art pal-${art.look} ${compClass(it.comp)} ${cls}" data-art="${art.key}">${sceneSvg(art)}</div>`;
 }
 
 /** Small coloured label above a headline: "USA · Supreme Court". */

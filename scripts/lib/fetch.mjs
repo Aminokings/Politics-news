@@ -1,5 +1,5 @@
 // Fetch a feed with a timeout, one retry and conditional-request headers (ETag / Last-Modified).
-const UA = 'Mozilla/5.0 (compatible; CaseInPointBot/1.0; politics news reader for A level students)';
+export const UA = 'Mozilla/5.0 (compatible; CaseInPointBot/1.0; politics news reader for A level students)';
 
 export async function fetchFeed(feed, prevState = {}, { timeoutMs = 20000, retries = 1 } = {}) {
   let lastErr;
@@ -32,6 +32,43 @@ export async function fetchFeed(feed, prevState = {}, { timeoutMs = 20000, retri
     }
   }
   throw lastErr;
+}
+
+/**
+ * GET a page as text, reading at most `maxBytes` and stopping early once `stopAt` matches
+ * (e.g. /<\/head>/i when only the page's <head> is needed). Never throws: failures come back
+ * as { status: 0 or the HTTP status, text: '', error }.
+ */
+export async function fetchText(url, { timeoutMs = 10000, maxBytes = 600000, stopAt = null, accept = 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5' } = {}) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: accept }, redirect: 'follow', signal: ctrl.signal });
+    if (!res.ok || !res.body) {
+      try { await res.body?.cancel(); } catch { /* ignore */ }
+      return { status: res.status, url: res.url || url, text: '', error: `HTTP ${res.status}` };
+    }
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let text = '';
+    let bytes = 0;
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      bytes += value.byteLength;
+      const chunk = decoder.decode(value, { stream: true });
+      text += chunk;
+      if (bytes >= maxBytes || (stopAt && stopAt.test(text.slice(-(chunk.length + 16))))) {
+        try { await reader.cancel(); } catch { /* ignore */ }
+        break;
+      }
+    }
+    return { status: res.status, url: res.url || url, text };
+  } catch (e) {
+    return { status: 0, url, text: '', error: e.name === 'AbortError' ? `timed out after ${timeoutMs / 1000}s` : e.message };
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 /** Run async tasks with a concurrency limit. */

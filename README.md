@@ -6,7 +6,7 @@
 
 Case in Point checks 29 politics sources every three hours: BBC, the Guardian, Sky, the Telegraph, the House of Commons and Lords Libraries, GOV.UK, NPR, PBS, SCOTUSblog, UN News, Al Jazeera, Carbon Brief and more. It tags each story to the part of the spec it's evidence for, then gives students tools to use it:
 
-- **Front page**: a newspaper-style front page with today's lead story, a numbered *Most useful this week* list, a *Number to know* fact, a practice question and a section for each paper. Stories show the photo from the publisher's feed where there is one.
+- **Front page**: a newspaper-style front page with today's lead story, a numbered *Most useful this week* list, a *Number to know* fact, a practice question and a section for each paper. Stories show the publisher's photo: from the feed, or else the one the article page shows when its link is shared. Stories with no photo get one of the site's own drawings that fits the topic (Parliament, the White House, a ballot box, a globe and so on).
 - **All the latest**: every story as a card, with the exam question it could help with. Filter by paper, spec point or source type, or search.
 - **Exam question matcher**: 52 exam-style questions. Recent stories are sorted into the arguments for and against each one, and there's a one-click essay plan.
 - **Spec coverage map**: every spec point, with how much recent evidence exists for it.
@@ -50,6 +50,7 @@ Every 3 hours, `.github/workflows/update.yml` does four things:
    - cleans each story;
    - tags it with spec points using the rules in `config/spec.json`;
    - merges near-identical headlines from different outlets into one story;
+   - for stories whose feed has no photo, reads the top of the article page for its share photo (it follows each site's robots.txt, asks each site for one page at a time and skips logos);
    - keeps a rolling archive of up to 24 months.
 3. It saves the archive back to the `data` branch. It overwrites a single commit each time, so the repository stays small.
 4. It publishes the site to GitHub Pages.
@@ -77,7 +78,8 @@ No internet? `npm run update:fixtures` builds demo data from saved sample feeds.
 |---|---|
 | Name, title, logo | `index.html`, `manifest.webmanifest`, `assets/icons/` |
 | Colours and fonts | the variables at the top of `assets/css/styles.css` |
-| Photos on or off | `"images"` at the top of `config/feeds.json` |
+| Photos on or off | `"images"` at the top of `config/feeds.json` (`"pagePhotos"` for photos from article pages) |
+| The drawings | `assets/art/scenes.svg`; which drawing each spec topic gets is in `assets/js/art.js` |
 | News sources | `config/feeds.json` |
 | Tagging rules | `config/spec.json` |
 | Exam questions | `config/questions.json` |
@@ -91,7 +93,7 @@ No internet? `npm run update:fixtures` builds demo data from saved sample feeds.
 - `politicsOnly`: keep stories even when no spec point matches.
 - `weight`: how highly the source ranks.
 - `enabled: false`: switch the feed off.
-- `images: false`: don't show this feed's photos. `imageFromContent: true` also uses the first picture in the article text (NPR needs this; for most blogs it would pick up charts).
+- `images: false`: don't show this feed's photos. `pagePhotos: false`: don't look for photos on this feed's article pages. `imageFromContent: true` also uses the first picture in the article text (NPR needs this; for most blogs it would pick up charts).
 
 **Improving the tagging.** Each spec point in `config/spec.json` has keywords with weights: 3 is strong, 2 medium, 1 weak. A story gets the tag when its score reaches 3, and matches in the headline count 1.5 times. The keyword syntax is:
 
@@ -140,7 +142,7 @@ For example `politics.laworchard.com`:
 
 ## Good to know
 
-- **Copyright:** the site shows only headlines, the publishers' short descriptions and the photos their public RSS feeds supply, and always links to the original article. Photos load straight from the publisher's website (nothing is copied), and each one belongs to its publisher. To show no photos at all, set `"images": false` at the top of `config/feeds.json`.
+- **Copyright:** the site shows only headlines, the publishers' short descriptions and the photos their feeds and share previews supply, and always links to the original article. Photos load straight from the publisher's website (nothing is copied), and each one belongs to its publisher. To stop using photos from article pages, set `"pagePhotos": false`; to show no photos at all, set `"images": false` (both at the top of `config/feeds.json`). The drawings were made for this site.
 - **Tags are automatic** and can be wrong. Each story shows which words it was matched on.
 - **The practice questions** were written for this site; they aren't official Pearson questions.
 - **Spec version:** topics follow Issue 3 of 9PL0 (A level exams up to 2027). Issue 4 (first A level exams in 2028) keeps the same topics with small changes.
@@ -152,10 +154,11 @@ For example `politics.laworchard.com`:
 ```
 index.html, manifest.webmanifest, sw.js   website shell, app manifest, offline support
 assets/css/styles.css                     all styles (light + dark)
-assets/js/                                the app: app.js (router), store.js (data), views/…
+assets/js/                                the app: app.js (router), store.js (data), art.js (drawings), views/…
+assets/art/scenes.svg                     the site's drawings for stories without a photo
 assets/js/lib/keywords.js                 keyword engine, shared by the website and the updater
 config/                                   feeds, spec map + tagging rules, questions, quiz facts
-scripts/update-news.mjs                   the news updater (lib/: fetch, parse, images, tag, cluster, AI)
+scripts/update-news.mjs                   the news updater (lib/: fetch, parse, images, pagephoto, tag, cluster, AI)
 scripts/build-site.mjs, scripts/serve.mjs build for GitHub Pages / local web server
 scripts/test/                             tests and saved sample feeds
 .github/workflows/update.yml              the 3-hourly update + deploy

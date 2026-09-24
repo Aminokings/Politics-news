@@ -8,6 +8,7 @@ import * as spec from './views/spec.js';
 import * as quiz from './views/quiz.js';
 import * as bankView from './views/bank.js';
 import * as about from './views/about.js';
+import { loadArt, drawInstead } from './art.js';
 
 const $ = (sel) => document.querySelector(sel);
 const main = $('#main');
@@ -237,13 +238,12 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Story photos load from the publishers' sites. If one fails, try its fallback size once,
-// then drop it so the coloured topic tile underneath shows instead.
+// then show the story's drawing instead.
 document.addEventListener('error', (e) => {
   const img = e.target;
   if (!(img instanceof HTMLImageElement) || !img.parentElement?.classList.contains('media')) return;
   if (img.dataset.fb && !img.dataset.tried) { img.dataset.tried = '1'; img.src = img.dataset.fb; return; }
-  img.parentElement.classList.add('media--none');
-  img.remove();
+  drawInstead(img.parentElement);
 }, true);
 
 window.addEventListener('cip:basehash', (e) => { baseHash = e.detail; });
@@ -253,7 +253,7 @@ window.addEventListener('hashchange', route);
 // ---------- Boot ----------
 (async function boot() {
   try {
-    await loadAll();
+    await Promise.all([loadAll(), loadArt()]);
   } catch (e) {
     main.innerHTML = `<div class="notice">${icon('info')}<div><b>Couldn't load the site's settings.</b> ${esc(e.message)}. If you opened index.html straight from your computer, run <code>npm run dev</code> and use the address it prints.</div></div>`;
     return;

@@ -242,7 +242,7 @@ function frontHtml() {
 
     <div class="hero">
       <article class="tile tile--lead ${compClass(lead.comp)}">
-        ${media(lead, { ratio: 'fill', eager: true })}
+        ${media(lead, { ratio: 'fill', eager: true, look: ['dusk', 'night'] })}
         <div class="tile__shade"></div>
         <div class="tile__body">
           ${kicker(lead)}

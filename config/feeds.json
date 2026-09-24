@@ -2,6 +2,8 @@
   "_help": "News sources. region = uk | us | intl (a hint for the tagger). kind = news | analysis | explainer | official. politicsOnly = keep stories even if no spec topic is detected. weight = ranking boost (1 = normal). Set enabled:false to switch a feed off. See README > 'Adding or removing news sources'.",
   "_images": "images = show the photos that feeds include (they load from the publisher's site). Set it to false to hide every photo, or set images:false on one feed. imageFromContent = also use the first picture in the article text (only for feeds where that is a real photo, not a chart).",
   "images": true,
+  "_pagePhotos": "pagePhotos = when a feed has no photo for a story, use the photo the article page shows when its link is shared (its og:image). The updater follows each site's robots.txt and skips logos. Set it to false to turn this off, or set pagePhotos:false on one feed. Stories with no photo at all show one of the site's own drawings.",
+  "pagePhotos": true,
   "feeds": [
     {"id": "bbc-politics", "name": "BBC News", "section": "Politics", "url": "https://feeds.bbci.co.uk/news/politics/rss.xml", "home": "https://www.bbc.co.uk/news/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 1.1},
     {"id": "guardian-politics", "name": "The Guardian", "section": "Politics", "url": "https://www.theguardian.com/politics/rss", "home": "https://www.theguardian.com/politics", "region": "uk", "kind": "news", "politicsOnly": true, "weight": 1.0},

@@ -2,7 +2,7 @@
 // Network first (so the news is always fresh), falling back to the cache when offline.
 const VERSION = '__BUILD__';
 const CACHE = `cip-${VERSION}`;
-const SHELL = ['./', 'index.html', 'assets/css/styles.css', 'assets/js/app.js', 'manifest.webmanifest', 'assets/icons/icon.svg'];
+const SHELL = ['./', 'index.html', 'assets/css/styles.css', 'assets/js/app.js', 'manifest.webmanifest', 'assets/icons/icon.svg', 'assets/art/scenes.svg'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
