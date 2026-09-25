@@ -41,6 +41,8 @@ You need a free GitHub account.
 
 After that, the site updates itself every 3 hours. The first update of the day is live before 6:00 am Dubai time.
 
+**Hosting on Netlify as well (optional).** Connect the repository in Netlify and it follows `netlify.toml`: it builds the site from `main` and loads the news straight from the `data` branch, so it stays as up to date as the GitHub Pages site without rebuilding. If you copied this project, change the repository name in `netlify.toml`.
+
 ## How it works
 
 Every 3 hours, `.github/workflows/update.yml` does four things:
@@ -160,6 +162,7 @@ assets/js/lib/keywords.js                 keyword engine, shared by the website 
 config/                                   feeds, spec map + tagging rules, questions, quiz facts
 scripts/update-news.mjs                   the news updater (lib/: fetch, parse, images, pagephoto, tag, cluster, AI)
 scripts/build-site.mjs, scripts/serve.mjs build for GitHub Pages / local web server
+netlify.toml                              settings for hosting on Netlify (news comes from the data branch)
 scripts/test/                             tests and saved sample feeds
 .github/workflows/update.yml              the 3-hourly update + deploy
 ```

@@ -1,0 +1,16 @@
+# Netlify settings. (The same site is also published to GitHub Pages by .github/workflows/update.yml.)
+#
+# Netlify builds the website from this branch. The news itself lives on the `data` branch, which the
+# updater refreshes every few hours, so the site's /data/ files are fetched from that branch on GitHub.
+# That way the Netlify site always shows the latest news without having to rebuild.
+# If you copy this project, change Aminokings/Politics-news below to your own repository.
+
+[build]
+  command = "node scripts/build-site.mjs --out _site"
+  publish = "_site"
+
+[[redirects]]
+  from = "/data/*"
+  to = "https://raw.githubusercontent.com/Aminokings/Politics-news/data/:splat"
+  status = 200
+  force = true
