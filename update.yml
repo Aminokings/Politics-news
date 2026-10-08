@@ -21,9 +21,11 @@ permissions:
   pages: write # publish to GitHub Pages
   id-token: write
 
+# One update at a time. A new run replaces one that's still going, so a run that gets stuck
+# (GitHub occasionally leaves one queued forever) can't hold up the updates after it.
 concurrency:
   group: update-and-deploy
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
