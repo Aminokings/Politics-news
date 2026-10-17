@@ -1,0 +1,714 @@
+{
+ "generatedAt": "2026-10-17T20:45:22.324Z",
+ "latestDays": 30,
+ "counts": {
+  "latest": 4366,
+  "total": 4470,
+  "addedThisRun": 26,
+  "mergedThisRun": 2
+ },
+ "months": [
+  {
+   "month": "2026-10",
+   "count": 2704
+  },
+  {
+   "month": "2026-09",
+   "count": 1756
+  },
+  {
+   "month": "2026-08",
+   "count": 10
+  }
+ ],
+ "tagCounts": {
+  "dp-democracy": {
+   "d7": 0,
+   "d30": 4,
+   "all": 5,
+   "last": "2026-10-09T14:46:52.000Z"
+  },
+  "dp-franchise": {
+   "d7": 1,
+   "d30": 4,
+   "all": 6,
+   "last": "2026-10-11T11:16:05.000Z"
+  },
+  "dp-pressure": {
+   "d7": 26,
+   "d30": 81,
+   "all": 83,
+   "last": "2026-10-17T19:47:45.000Z"
+  },
+  "dp-rights": {
+   "d7": 13,
+   "d30": 27,
+   "all": 29,
+   "last": "2026-10-17T19:00:24.000Z"
+  },
+  "pp-established": {
+   "d7": 24,
+   "d30": 282,
+   "all": 285,
+   "last": "2026-10-17T11:33:20.000Z"
+  },
+  "pp-minor": {
+   "d7": 66,
+   "d30": 209,
+   "all": 218,
+   "last": "2026-10-17T19:00:24.000Z"
+  },
+  "pp-system": {
+   "d7": 4,
+   "d30": 14,
+   "all": 20,
+   "last": "2026-10-16T11:33:59.000Z"
+  },
+  "es-systems": {
+   "d7": 3,
+   "d30": 64,
+   "all": 64,
+   "last": "2026-10-16T11:57:33.000Z"
+  },
+  "es-referendums": {
+   "d7": 8,
+   "d30": 16,
+   "all": 16,
+   "last": "2026-10-17T15:45:53.000Z"
+  },
+  "vb-voting": {
+   "d7": 6,
+   "d30": 38,
+   "all": 39,
+   "last": "2026-10-15T03:00:00.000Z"
+  },
+  "vb-media": {
+   "d7": 23,
+   "d30": 50,
+   "all": 50,
+   "last": "2026-10-17T12:52:08.000Z"
+  },
+  "con-nature": {
+   "d7": 5,
+   "d30": 11,
+   "all": 12,
+   "last": "2026-10-16T04:00:11.000Z"
+  },
+  "con-devolution": {
+   "d7": 20,
+   "d30": 50,
+   "all": 55,
+   "last": "2026-10-17T20:07:59.000Z"
+  },
+  "parl-commons": {
+   "d7": 26,
+   "d30": 59,
+   "all": 65,
+   "last": "2026-10-16T10:50:27.000Z"
+  },
+  "parl-lords": {
+   "d7": 8,
+   "d30": 11,
+   "all": 13,
+   "last": "2026-10-16T15:30:00.000Z"
+  },
+  "parl-legislation": {
+   "d7": 19,
+   "d30": 39,
+   "all": 58,
+   "last": "2026-10-16T10:47:20.000Z"
+  },
+  "exec-pm": {
+   "d7": 128,
+   "d30": 484,
+   "all": 505,
+   "last": "2026-10-17T13:09:12.000Z"
+  },
+  "exec-resp": {
+   "d7": 6,
+   "d30": 21,
+   "all": 21,
+   "last": "2026-10-16T16:16:59.000Z"
+  },
+  "rel-judiciary": {
+   "d7": 4,
+   "d30": 16,
+   "all": 17,
+   "last": "2026-10-16T18:20:49.000Z"
+  },
+  "rel-execparl": {
+   "d7": 1,
+   "d30": 5,
+   "all": 5,
+   "last": "2026-10-12T16:31:35.000Z"
+  },
+  "rel-eu": {
+   "d7": 54,
+   "d30": 146,
+   "all": 150,
+   "last": "2026-10-17T20:07:59.000Z"
+  },
+  "rel-sovereignty": {
+   "d7": 3,
+   "d30": 8,
+   "all": 8,
+   "last": "2026-10-13T17:42:03.000Z"
+  },
+  "ideas-conservatism": {
+   "d7": 9,
+   "d30": 27,
+   "all": 27,
+   "last": "2026-10-17T06:45:23.000Z"
+  },
+  "ideas-liberalism": {
+   "d7": 0,
+   "d30": 2,
+   "all": 2,
+   "last": "2026-09-28T07:45:57.000Z"
+  },
+  "ideas-socialism": {
+   "d7": 13,
+   "d30": 62,
+   "all": 62,
+   "last": "2026-10-16T19:15:02.000Z"
+  },
+  "ideas-anarchism": {
+   "d7": 0,
+   "d30": 0,
+   "all": 0,
+   "last": null
+  },
+  "ideas-ecologism": {
+   "d7": 8,
+   "d30": 41,
+   "all": 44,
+   "last": "2026-10-17T19:00:40.000Z"
+  },
+  "ideas-feminism": {
+   "d7": 12,
+   "d30": 44,
+   "all": 44,
+   "last": "2026-10-17T09:00:28.000Z"
+  },
+  "ideas-multiculturalism": {
+   "d7": 9,
+   "d30": 29,
+   "all": 29,
+   "last": "2026-10-15T16:35:09.000Z"
+  },
+  "ideas-nationalism": {
+   "d7": 13,
+   "d30": 52,
+   "all": 52,
+   "last": "2026-10-17T01:49:17.000Z"
+  },
+  "us-constitution": {
+   "d7": 4,
+   "d30": 19,
+   "all": 21,
+   "last": "2026-10-16T16:30:00.000Z"
+  },
+  "us-federalism": {
+   "d7": 13,
+   "d30": 74,
+   "all": 76,
+   "last": "2026-10-17T01:43:02.000Z"
+  },
+  "us-congress": {
+   "d7": 164,
+   "d30": 469,
+   "all": 473,
+   "last": "2026-10-17T17:24:07.000Z"
+  },
+  "us-presidency": {
+   "d7": 382,
+   "d30": 1153,
+   "all": 1162,
+   "last": "2026-10-17T19:51:37.000Z"
+  },
+  "us-scotus": {
+   "d7": 38,
+   "d30": 194,
+   "all": 202,
+   "last": "2026-10-17T14:00:00.000Z"
+  },
+  "us-rights": {
+   "d7": 38,
+   "d30": 145,
+   "all": 148,
+   "last": "2026-10-17T19:01:30.000Z"
+  },
+  "us-elections": {
+   "d7": 205,
+   "d30": 547,
+   "all": 553,
+   "last": "2026-10-17T17:38:53.000Z"
+  },
+  "us-parties": {
+   "d7": 101,
+   "d30": 295,
+   "all": 298,
+   "last": "2026-10-17T19:00:00.000Z"
+  },
+  "us-groups": {
+   "d7": 3,
+   "d30": 20,
+   "all": 20,
+   "last": "2026-10-17T17:12:49.000Z"
+  },
+  "us-compare": {
+   "d7": 1,
+   "d30": 20,
+   "all": 22,
+   "last": "2026-10-13T00:16:34.000Z"
+  },
+  "gl-state": {
+   "d7": 51,
+   "d30": 149,
+   "all": 154,
+   "last": "2026-10-17T20:02:22.000Z"
+  },
+  "gl-un-nato": {
+   "d7": 42,
+   "d30": 285,
+   "all": 286,
+   "last": "2026-10-16T14:42:38.000Z"
+  },
+  "gl-economic": {
+   "d7": 27,
+   "d30": 74,
+   "all": 76,
+   "last": "2026-10-17T18:00:00.000Z"
+  },
+  "gl-rights": {
+   "d7": 96,
+   "d30": 331,
+   "all": 331,
+   "last": "2026-10-17T18:26:59.000Z"
+  },
+  "gl-environment": {
+   "d7": 26,
+   "d30": 105,
+   "all": 112,
+   "last": "2026-10-17T19:00:40.000Z"
+  },
+  "gl-power": {
+   "d7": 357,
+   "d30": 973,
+   "all": 978,
+   "last": "2026-10-17T20:02:22.000Z"
+  },
+  "gl-regionalism": {
+   "d7": 90,
+   "d30": 215,
+   "all": 219,
+   "last": "2026-10-17T17:02:14.000Z"
+  },
+  "gl-theories": {
+   "d7": 1,
+   "d30": 9,
+   "all": 10,
+   "last": "2026-10-11T16:25:39.000Z"
+  }
+ },
+ "feeds": [
+  {
+   "id": "bbc-politics",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 54,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": null
+  },
+  {
+   "id": "guardian-politics",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 21,
+   "fresh": 3,
+   "added": 3,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"hash-1958975582352180798\"",
+   "lastModified": null
+  },
+  {
+   "id": "sky-politics",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 7,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"7cd57340790eccf135bc817200bf7adb40f8dc110dbefc27e81633b1eea3bd5d\"",
+   "lastModified": null
+  },
+  {
+   "id": "telegraph-politics",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "\"e98b0c65cee5d39e0d4ce1bfd12ad6f9\"",
+   "lastModified": "Thu, 15 Oct 2026 10:13:28 GMT"
+  },
+  {
+   "id": "independent-politics",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 7,
+   "fresh": 2,
+   "added": 2,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"254e-BgkseoYxRYXdabB4aFKnScT9hzY-gzip\"",
+   "lastModified": null
+  },
+  {
+   "id": "govuk-no10",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"27a6e6c6d5218804114da151ccb9da40\"",
+   "lastModified": null
+  },
+  {
+   "id": "parliament-bills",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 50,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": "Sat, 17 Oct 2026 20:44:52 GMT"
+  },
+  {
+   "id": "commons-library",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 10,
+   "fresh": 6,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"e447e822aa990a63701b5491b623aecd\"",
+   "lastModified": "Sat, 17 Oct 2026 20:17:36 GMT"
+  },
+  {
+   "id": "lords-library",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 10,
+   "fresh": 2,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"51a402ebfd9463e45bf7687a733e26cd\"",
+   "lastModified": "Sat, 17 Oct 2026 20:17:07 GMT"
+  },
+  {
+   "id": "constitution-unit",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "\"8824134110fc27a10da05c9777cf50ab\"",
+   "lastModified": "Sat, 17 Oct 2026 10:00:29 GMT"
+  },
+  {
+   "id": "ukandeu",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": "Thu, 15 Oct 2026 18:16:42 GMT"
+  },
+  {
+   "id": "lse-british-politics",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "\"83dd567a1fb606cf568bc35bf0647ed0\"",
+   "lastModified": "Fri, 16 Oct 2026 11:04:03 GMT"
+  },
+  {
+   "id": "ifg",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 10,
+   "fresh": 3,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"1792261005\"",
+   "lastModified": "Sat, 17 Oct 2026 18:16:45 GMT"
+  },
+  {
+   "id": "bbc-us",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 32,
+   "fresh": 20,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": null
+  },
+  {
+   "id": "guardian-us-politics",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 17,
+   "fresh": 1,
+   "added": 1,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"hash6590700542884531586\"",
+   "lastModified": null
+  },
+  {
+   "id": "npr-politics",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 10,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": null
+  },
+  {
+   "id": "pbs-politics",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 20,
+   "fresh": 4,
+   "added": 2,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"85b77651d58ba2fbd5b18623e4693ea9\"",
+   "lastModified": "Sat, 17 Oct 2026 20:44:05 GMT"
+  },
+  {
+   "id": "thehill",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 15,
+   "fresh": 13,
+   "added": 10,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"c5830b6e6a2ad141f80aa72600633b0d\"",
+   "lastModified": "Sat, 17 Oct 2026 20:18:35 GMT"
+  },
+  {
+   "id": "politico-us",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 30,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": "Sat, 17 Oct 2026 20:45:13 GMT"
+  },
+  {
+   "id": "sky-us",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"3cae1577b48222fdf66dccf2de2f918c50fefc6fbaaf8dee4785259c989b4b5f\"",
+   "lastModified": null
+  },
+  {
+   "id": "scotusblog",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "\"045faa791a5451b5a06f1e9f75dd8a367bac0084\"",
+   "lastModified": "Fri, 16 Oct 2026 21:27:11 GMT"
+  },
+  {
+   "id": "lse-us-politics",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "\"350ab0acf9927b030ea813d4d1b60106\"",
+   "lastModified": "Thu, 15 Oct 2026 10:39:25 GMT"
+  },
+  {
+   "id": "bbc-world",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 23,
+   "fresh": 11,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": null
+  },
+  {
+   "id": "guardian-world",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 45,
+   "fresh": 28,
+   "added": 7,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"hash-4226519843049077347\"",
+   "lastModified": null
+  },
+  {
+   "id": "sky-world",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 6,
+   "fresh": 6,
+   "added": 1,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"5c8d4dfcabd30472c3e8363767b3f64859315bb697c7f9a8789b88a8f13903d5\"",
+   "lastModified": null
+  },
+  {
+   "id": "aljazeera",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 25,
+   "fresh": 24,
+   "added": 5,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"ea7e828182fe7f985467cf7e5a0f593e\"",
+   "lastModified": "Sat, 17 Oct 2026 20:21:57 GMT"
+  },
+  {
+   "id": "un-news",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 30,
+   "fresh": 9,
+   "added": 1,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": null,
+   "lastModified": null
+  },
+  {
+   "id": "politico-eu",
+   "ok": true,
+   "status": 200,
+   "error": null,
+   "items": 10,
+   "fresh": 4,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "W/\"fea7f032e640a1cc2fb13be11c82e52e\"",
+   "lastModified": "Sat, 17 Oct 2026 18:35:00 GMT"
+  },
+  {
+   "id": "carbonbrief",
+   "ok": true,
+   "status": 304,
+   "error": null,
+   "items": 0,
+   "fresh": 0,
+   "added": 0,
+   "lastOk": "2026-10-17T20:45:22.324Z",
+   "etag": "\"ed188be2f0d8a3b213693e6cc8292bee\"",
+   "lastModified": "Fri, 16 Oct 2026 15:18:21 GMT"
+  }
+ ],
+ "ai": {
+  "enabled": false,
+  "attempted": 0,
+  "done": 0,
+  "failed": 0
+ },
+ "pagePhotos": {
+  "tried": 7,
+  "found": 7,
+  "none": 0,
+  "failed": 61,
+  "robots": 0,
+  "reused": 0
+ },
+ "pagePhotoBlock": [
+  "https://static.independent.co.uk/2026/09/22/22/3b16647c2c3cca3b88d50f0f04c97896Y29udGVudHNlYXJjaGFwaSwxNzkwMTk3NzQ3-2.85938839.jpg?width=1200&height=800&crop=1200:800",
+  "https://cdn.sanity.io/images/pito4za5/production/d43179f287d2a91583cdf45c22ba1994eef8e23c-1024x683.jpg?rect=0%2C75%2C1024%2C535&w=800&h=627&fit=crop",
+  "https://assets.publishing.service.gov.uk/media/5a37daeaed915d5a5f96602b/s960_number10.jpg",
+  "https://cdn.sanity.io/images/pito4za5/production/d9859e7706474213efb48f53e5f281d6f579f544-2560x1708.jpg?rect=0%2C185%2C2560%2C1338&w=800&h=627&fit=crop",
+  "https://www.aljazeera.com/wp-content/uploads/2026/09/epa_6ab51c82675a-1790254210_4cc32a-1790260343.jpg?resize=1200%2C630&quality=80",
+  "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6ab7d4f7ee67-1790432503.jpg?resize=1920%2C1440",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/07/14/Brussels-Playbook-Podcast_featured-image-updated-26-Feb-2026.png",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/09/29/GettyImages-2296179693-1.jpg",
+  "https://static.independent.co.uk/2026/09/27/18/2297412747..?trim=0,0,0,0&width=1200&height=800&crop=1200:800",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/01/04/Berlin-Playbook-podcast-Rixa-Frsen-43-High-Quality.jpg",
+  "https://www.instituteforgovernment.org.uk/sites/default/files/styles/og_image/public/2026-09/andy-burnham-conference-2026-speech-3FMWJM5_1504x846.jpg?itok=ck_2F5O0",
+  "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6abe52b0-1790857904.jpg?resize=1920%2C1440",
+  "https://static.independent.co.uk/2026/10/02/13/2297311007..?trim=0,0,0,0&width=1200&height=800&crop=1200:800",
+  "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6ab483903a-1790215056.jpg?resize=1920%2C1440",
+  "https://assets.publishing.service.gov.uk/media/6a5e03364e3b7c7c52ea4b6d/Andy-Burnham-Portrait.jpg",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/10/10/GettyImages-2298576419-scaled.jpg",
+  "https://static.independent.co.uk/2026/10/08/16/2299054270..?trim=0,0,0,0&width=1200&height=800&crop=1200:800",
+  "https://www.aljazeera.com/wp-content/uploads/2026/10/14348484-1791697139.jpg?resize=1620%2C1080&quality=80",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/09/17/PASAA-SEPT-2026-16x9-HERO-.png",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/10/06/Zoya-homepage-image.png",
+  "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6aba15729d5f-1790580082-1-1790586161.jpg?resize=1920%2C1440",
+  "https://static.independent.co.uk/2026/10/13/12/2296576231..?trim=69,0,69,0&width=1200&height=800&crop=1200:800",
+  "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6aba4a38ca60-1790593592.jpg?resize=1920%2C1440",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/10/13/IMG_4264-scaled.png",
+  "https://static.independent.co.uk/2026/10/13/08/2299297071..?trim=0,1,0,1&width=1200&height=800&crop=1200:800",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/02/10/INSIDE_AFD_PODCAST-WEB_2.png",
+  "https://www.politico.eu/wp-content/themes/politico/assets/images/politico-billboard.png",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/08/25/CMS-Maximilian-scaled.png",
+  "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6acf722f2e-1791980079.jpg?resize=1920%2C1440",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/10/08/Sarah-homepage-image.png",
+  "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2026/10/15/GettyImages-2299290101-scaled.jpg",
+  "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-20T042816Z_888155140_RC2QMNA71VDJ_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-REFINERY-1792058411.jpg?resize=1920%2C1440",
+  "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-08T020751Z_22596828_RC2OYNAMA7HM_RTRMADP_3_MALAYSIA-MYANMAR-1792058776.jpg?resize=1920%2C1440"
+ ],
+ "runSeconds": 9.9
+}
