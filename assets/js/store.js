@@ -32,11 +32,12 @@ async function getJson(url) {
 }
 
 export async function loadAll() {
-  const [spec, q, facts, feeds] = await Promise.all([
+  const [spec, q, facts, feeds, essays] = await Promise.all([
     getJson('config/spec.json'),
     getJson('config/questions.json'),
     getJson('config/facts.json'),
     getJson('config/feeds.json'),
+    getJson('config/essays.json').catch(() => ({ essays: [] })),
   ]);
   S.spec = spec;
   S.formats = q.formats || {};
@@ -45,6 +46,10 @@ export async function loadAll() {
   S.feeds = feeds.feeds || [];
   S.feedsById = Object.fromEntries(S.feeds.map((f) => [f.id, f]));
   S.showImages = feeds.images !== false;
+  S.essays = (essays.essays || [])
+    .filter((e) => e && e.id && e.title && e.file)
+    .map((e) => ({ ...e, tags: e.tags || [], date: e.date || '' }))
+    .sort((a, b) => b.date.localeCompare(a.date));
   for (const c of spec.components) { S.compById[c.id] = c; S.topicsByComp[c.id] = []; }
   for (const t of spec.topics) { S.topicById[t.id] = t; S.topicsByComp[t.component]?.push(t); S.tagsByTopic[t.id] = []; }
   for (const t of spec.tags) {

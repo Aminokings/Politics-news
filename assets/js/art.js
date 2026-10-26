@@ -43,7 +43,7 @@ export function artFor(it, look) {
   const h = hash(String(it.id || it.title || ''));
   const tag = (it.tags || []).find((t) => BY_TAG[t]);
   const options = BY_TAG[tag] || BY_COMP[it.comp] || ['press'];
-  const scene = options[h % options.length];
+  const scene = SCENE_IDS.includes(it.art) ? it.art : options[h % options.length];
   const looks = [].concat(look || []).filter((l) => LOOKS.includes(l));
   const pool = looks.length ? looks : LOOKS;
   const lk = pool[(h >>> 5) % pool.length];

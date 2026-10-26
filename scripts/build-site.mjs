@@ -16,6 +16,7 @@ fs.mkdirSync(outDir, { recursive: true });
 for (const f of ['index.html', 'manifest.webmanifest']) fs.copyFileSync(path.join(ROOT, f), path.join(outDir, f));
 fs.cpSync(path.join(ROOT, 'assets'), path.join(outDir, 'assets'), { recursive: true });
 fs.cpSync(path.join(ROOT, 'config'), path.join(outDir, 'config'), { recursive: true });
+if (fs.existsSync(path.join(ROOT, 'essays'))) fs.cpSync(path.join(ROOT, 'essays'), path.join(outDir, 'essays'), { recursive: true });
 if (fs.existsSync(dataDir)) fs.cpSync(dataDir, path.join(outDir, 'data'), { recursive: true });
 else console.warn(`No data folder at ${dataDir} — the site will show "no news yet".`);
 

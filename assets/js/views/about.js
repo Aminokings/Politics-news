@@ -28,6 +28,6 @@ export function render(el) {
       }).join('')}
     </div>
     <h2>Copyright and neutrality</h2>
-    <p>Headlines and descriptions come from the publishers' public RSS feeds and link back to the original articles, which belong to their publishers. Sources were chosen to cover a range of outlets and perspectives. Case in Point isn't endorsed by, or affiliated with, Pearson Edexcel. The practice questions are written for this site and aren't official exam questions.</p>
+    <p>Headlines and descriptions come from the publishers' public RSS feeds and link back to the original articles, which belong to their publishers. Sources were chosen to cover a range of outlets and perspectives. Case in Point isn't endorsed by, or affiliated with, Pearson Edexcel. The practice questions are written for this site and aren't official exam questions. The essays are written for this site too, and each one argues a single point of view, with its sources listed.</p>
   </div>`;
 }

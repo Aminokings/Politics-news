@@ -9,6 +9,7 @@ Case in Point checks 29 politics sources every three hours: BBC, the Guardian, S
 - **Front page**: a newspaper-style front page with today's lead story, a numbered *Most useful this week* list, a *Number to know* fact, a practice question and a section for each paper. Stories show the publisher's photo: from the feed, or else the one the article page shows when its link is shared. Stories with no photo get one of the site's own drawings that fits the topic (Parliament, the White House, a ballot box, a globe and so on).
 - **All the latest**: every story as a card, with the exam question it could help with. Filter by paper, spec point or source type, or search.
 - **Exam question matcher**: 52 exam-style questions. Recent stories are sorted into the arguments for and against each one, and there's a one-click essay plan.
+- **Essays**: longer arguments on debates in the spec, with clickable footnotes and a bibliography. Each essay page links to its spec points, practice questions and the latest news on the same topics, and the newest essay gets a spot on the front page.
 - **Spec coverage map**: every spec point, with how much recent evidence exists for it.
 - **Quick-fire quiz**: *Spec Sort* (which spec point does this headline fit?) and key-facts flashcards.
 - **My evidence**: save stories, add your own notes, and export them as notes or a backup.
@@ -86,6 +87,7 @@ No internet? `npm run update:fixtures` builds demo data from saved sample feeds.
 | Tagging rules | `config/spec.json` |
 | Exam questions | `config/questions.json` |
 | Quiz facts | `config/facts.json` |
+| Essays | `config/essays.json` and the files in `essays/` (see *Publishing an essay* below) |
 | How often it updates | the `cron` lines in `.github/workflows/update.yml` (times are UTC; Dubai is UTC+4) |
 
 **Adding or removing news sources.** Each line in `config/feeds.json` is one RSS or Atom feed with these fields:
@@ -107,6 +109,14 @@ No internet? `npm run update:fixtures` builds demo data from saved sample feeds.
 New names come up all the time (a new minister, a new court case), so add them as they appear. Run `npm test` afterwards.
 
 **Adding exam questions.** Each question in `config/questions.json` has spec tags, two sides and a set of *strands* (arguments). Every strand has an example hint and keywords that decide which stories appear under it.
+
+**Publishing an essay.** Each essay is a Markdown file in `essays/` plus an entry in `config/essays.json`.
+
+1. Write the essay as plain text in `essays/your-essay.md`. A blank line starts a new paragraph. Use `*italics*` for case names and titles, `## Bibliography` and `### Primary sources` for headings, and `- ` at the start of each bibliography line. For a footnote, put `[^1]` in the text and `[^1]: The note.` on its own line at the end. The site numbers the notes, links them both ways and lists them under the essay.
+2. Add an entry to `config/essays.json` with an `id` (the page address, `#/essays/your-essay`), `title`, `author`, `date` (YYYY-MM-DD), a one-sentence `summary`, the spec `tags` it covers and the `file`. Optional: `questions` to suggest (ids from `config/questions.json`), `art` (which drawing to use) and `look` (`day`, `dusk` or `night`).
+3. Run `npm test`. It checks every essay has its fields, real spec tags and a note for every footnote.
+
+From Word, the quickest route is `pandoc essay.docx -t gfm -o essays/your-essay.md`, then delete the title line (the title goes in `config/essays.json`).
 
 ## Optional: AI study notes
 
@@ -159,7 +169,9 @@ assets/css/styles.css                     all styles (light + dark)
 assets/js/                                the app: app.js (router), store.js (data), art.js (drawings), views/…
 assets/art/scenes.svg                     the site's drawings for stories without a photo
 assets/js/lib/keywords.js                 keyword engine, shared by the website and the updater
-config/                                   feeds, spec map + tagging rules, questions, quiz facts
+assets/js/lib/markdown.js                 turns essays (Markdown with footnotes) into the essay pages
+essays/                                   the essays, one Markdown file each (listed in config/essays.json)
+config/                                   feeds, spec map + tagging rules, questions, quiz facts, essays
 scripts/update-news.mjs                   the news updater (lib/: fetch, parse, images, pagephoto, tag, cluster, AI)
 scripts/build-site.mjs, scripts/serve.mjs build for GitHub Pages / local web server
 netlify.toml                              settings for hosting on Netlify (news comes from the data branch)

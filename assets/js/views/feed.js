@@ -1,4 +1,5 @@
 // News page: a newspaper-style front page, then every story as photo cards with filters and search.
+import { essayFeature } from './essays.js';
 import { S, allItems, loadArchive, rank, bank } from '../store.js';
 import { esc, icon, timeAgo, plural, debounce, navPush, navReplace } from '../util.js';
 import { storyCard, compClass, kindLabel, noDataNotice, shortQ, media, kicker, byline, markedTitle, numberToKnow, saveButton } from '../ui.js';
@@ -282,6 +283,8 @@ function frontHtml() {
         ${i.summary ? `<p>${esc(i.summary)}</p>` : ''}
         ${byline(i)}
       </article>`).join('')}</div>` : ''}
+
+    ${essayFeature()}
 
     <div class="sections">${sections}</div>
   </section>`;

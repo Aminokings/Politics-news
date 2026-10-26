@@ -8,6 +8,7 @@ import * as spec from './views/spec.js';
 import * as quiz from './views/quiz.js';
 import * as bankView from './views/bank.js';
 import * as about from './views/about.js';
+import * as essays from './views/essays.js';
 import { loadArt, drawInstead } from './art.js';
 
 const $ = (sel) => document.querySelector(sel);
@@ -27,7 +28,7 @@ function parse(hash) {
 }
 
 function setNav(view) {
-  const map = { '': 'feed', questions: 'questions', spec: 'spec', quiz: 'quiz', bank: 'bank' };
+  const map = { '': 'feed', essays: 'essays', questions: 'questions', spec: 'spec', quiz: 'quiz', bank: 'bank' };
   const active = map[view] ?? '';
   document.querySelectorAll('.mainnav a').forEach((a) => {
     if (a.dataset.nav === active) a.setAttribute('aria-current', 'page');
@@ -36,7 +37,7 @@ function setNav(view) {
 }
 
 function titleFor(view) {
-  return { '': 'News', questions: 'Questions', spec: 'Spec map', quiz: 'Quiz', bank: 'My evidence', about: 'About' }[view] || 'News';
+  return { '': 'News', essays: 'Essays', questions: 'Questions', spec: 'Spec map', quiz: 'Quiz', bank: 'My evidence', about: 'About' }[view] || 'News';
 }
 
 function renderBase(h, parts, { force = false } = {}) {
@@ -50,6 +51,7 @@ function renderBase(h, parts, { force = false } = {}) {
   document.title = `${titleFor(view)} · Case in Point`;
   switch (view) {
     case '': feed.render(main, h); break;
+    case 'essays': parts[1] ? essays.renderEssay(main, decodeURIComponent(parts[1])) : essays.renderList(main); break;
     case 'questions': parts[1] ? questions.renderDetail(main, decodeURIComponent(parts[1])) : questions.renderList(main); break;
     case 'spec': spec.render(main); break;
     case 'quiz': quiz.render(main, parts[1]); break;

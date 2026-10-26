@@ -1,0 +1,26 @@
+{
+  "_help": "Essays on the Essays page. Each essay is a Markdown file in essays/ (footnotes: put [^1] in the text and a line '[^1]: The note' at the end). Fields: id = the page address (#/essays/<id>); title; author; date = YYYY-MM-DD; summary = one or two sentences shown on cards; tags = spec tag ids from config/spec.json; file; questions (optional) = ids from config/questions.json to suggest, otherwise they're picked from the tags; art (optional) = which drawing to use (see assets/js/art.js); look (optional) = day, dusk or night. Newest first is not required: essays are sorted by date.",
+  "essays": [
+    {
+      "id": "prisoner-voting",
+      "title": "What does the prisoner-voting saga reveal about Britain's commitment to human rights?",
+      "author": "Amin B.",
+      "date": "2026-10-26",
+      "summary": "The country that helped write the European Convention on Human Rights spent over a decade refusing to follow the court that enforces it.",
+      "tags": [
+        "dp-rights",
+        "dp-franchise",
+        "rel-sovereignty",
+        "con-nature"
+      ],
+      "questions": [
+        "ukpol-rights",
+        "ukgov-sovereignty",
+        "ukgov-codify"
+      ],
+      "file": "essays/prisoner-voting.md",
+      "art": "justice",
+      "look": "dusk"
+    }
+  ]
+}
