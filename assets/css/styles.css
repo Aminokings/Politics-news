@@ -642,6 +642,7 @@ mark.hl { background: linear-gradient(transparent 56%, var(--hl) 56%); color: in
 .essayband__card:hover .scene, .essayband__card:hover img { transform: scale(1.03); }
 .essayband__text { display: grid; gap: 12px; align-content: center; padding: 30px 34px; }
 .essayband__text .kick, .essayband__text .kick__comp { color: var(--amber); }
+.essayband__text .kick__topic, .essayband__text .kick__topic::before { color: color-mix(in srgb, var(--figure-ink) 62%, transparent); }
 .essayband h2 { font: 600 clamp(1.45rem, 2.3vw, 2rem)/1.16 var(--serif); letter-spacing: -.015em; text-wrap: balance; }
 .essayband p { font: 400 1.06rem/1.5 var(--serif); color: color-mix(in srgb, var(--figure-ink) 80%, transparent); text-wrap: pretty; }
 .essayband__by { display: flex; justify-content: space-between; align-items: center; gap: 10px 14px; flex-wrap: wrap; margin-top: 6px; font-size: .86rem; color: color-mix(in srgb, var(--figure-ink) 66%, transparent); }
